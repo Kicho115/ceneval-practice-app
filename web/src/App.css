@@ -172,3 +172,143 @@
   opacity: 0.45;
   cursor: not-allowed;
 }
+
+.btn-large {
+  width: 100%;
+  max-width: 20rem;
+  padding: 0.65rem 1.1rem;
+  font-size: 1rem;
+}
+
+.btn-small {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.65rem;
+}
+
+.btn.link {
+  border: none;
+  background: none;
+  color: var(--accent);
+  padding: 0.15rem 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.btn.link:hover {
+  filter: none;
+  opacity: 0.9;
+}
+
+.back-btn {
+  margin-bottom: 0.75rem;
+}
+
+.home {
+  padding-top: 0.5rem;
+}
+
+.home-lead {
+  margin: 0 0 1.75rem;
+  font-size: 1rem;
+  line-height: 1.45;
+  max-width: 28rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.home-hint {
+  margin: 0 0 1.25rem;
+  padding-left: 0.15rem;
+  font-size: 0.85rem;
+  opacity: 0.88;
+  max-width: 26rem;
+}
+
+.study-config {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 22rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-start;
+}
+
+.field-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.field input[type='number'] {
+  width: 6rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+.field-hint {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.checkbox-field {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-field input {
+  width: auto;
+}
+
+.timer-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.timer-display {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.timer-display[data-paused='true'] {
+  opacity: 0.85;
+}
+
+.progress-fill.study-progress {
+  background: color-mix(in oklab, #0d9488 70%, var(--accent));
+}
+
+.study-done .done-stats {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.study-done-actions {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
