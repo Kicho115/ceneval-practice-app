@@ -1,54 +1,187 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
-import examBank from '../../data/questions.json'
-import type { ExamBank, QuestionItem } from './types'
-import './App.css'
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import examBank from "../../data/questions.json";
+import type { ExamBank, QuestionItem } from "./types";
+import "./App.css";
 
-const bank = examBank as ExamBank
+const bank = examBank as ExamBank;
 
 function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr]
+  const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
   }
-  return a
+  return a;
 }
 
 function optionKeys(item: QuestionItem): string[] {
-  return Object.keys(item.options).sort((a, b) => a.localeCompare(b, 'es'))
+  return Object.keys(item.options).sort((a, b) => a.localeCompare(b, "es"));
 }
 
-type Route = 'home' | 'practice' | 'study'
+/**
+ * 1–9 = select option by position (first option = 1). Enter confirms. Esc clears selection.
+ */
+function useAnswerHotkeys(
+  optionKeys: string[],
+  questionId: number,
+  enabled: boolean,
+  onPick: (letter: string) => void,
+): number | null {
+  const [pendingIdx, setPendingIdx] = useState<number | null>(null);
+  const pendingRef = useRef<number | null>(null);
+  const keysRef = useRef(optionKeys);
+  keysRef.current = optionKeys;
+  pendingRef.current = pendingIdx;
+
+  useEffect(() => {
+    setPendingIdx(null);
+  }, [questionId]);
+
+  useEffect(() => {
+    if (!enabled) setPendingIdx(null);
+  }, [enabled]);
+
+  useEffect(() => {
+    if (!enabled) return;
+
+    const handle = (e: KeyboardEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (
+        el &&
+        (el.tagName === "INPUT" ||
+          el.tagName === "TEXTAREA" ||
+          el.tagName === "SELECT" ||
+          el.isContentEditable)
+      ) {
+        return;
+      }
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+
+      const k = keysRef.current;
+
+      if (e.key === "Escape") {
+        setPendingIdx(null);
+        return;
+      }
+
+      if (e.key === "Enter") {
+        const idx = pendingRef.current;
+        if (idx !== null && idx >= 0 && idx < k.length) {
+          e.preventDefault();
+          onPick(k[idx]);
+        }
+        return;
+      }
+
+      if (/^[1-9]$/.test(e.key)) {
+        const n = parseInt(e.key, 10);
+        if (n <= k.length) {
+          e.preventDefault();
+          setPendingIdx(n - 1);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handle);
+    return () => window.removeEventListener("keydown", handle);
+  }, [enabled, onPick, questionId]);
+
+  return pendingIdx;
+}
+
+function OptionsList({
+  keys,
+  current,
+  attempt,
+  answered,
+  onPick,
+  questionId,
+  hotkeysEnabled,
+  optionDisabled,
+}: {
+  keys: string[];
+  current: QuestionItem;
+  attempt: { choice: string; correct: boolean } | undefined;
+  answered: boolean;
+  onPick: (letter: string) => void;
+  questionId: number;
+  hotkeysEnabled: boolean;
+  optionDisabled: boolean;
+}) {
+  const canHotkey = hotkeysEnabled && !answered && !optionDisabled;
+  const pendingIdx = useAnswerHotkeys(keys, questionId, canHotkey, onPick);
+
+  return (
+    <>
+      <ul className="options">
+        {keys.map((key, index) => {
+          const text = current.options[key];
+          const isPicked = attempt?.choice === key;
+          const show = attempt !== undefined;
+          const isCorrectKey = current.answer === key;
+          let cls = "opt";
+          if (show) {
+            if (isCorrectKey) cls += " opt-correct";
+            else if (isPicked) cls += " opt-wrong";
+          } else if (pendingIdx === index) {
+            cls += " opt-pending";
+          }
+          return (
+            <li key={key}>
+              <button
+                type="button"
+                className={cls}
+                disabled={answered || optionDisabled}
+                onClick={() => onPick(key)}
+              >
+                <span className="opt-key">{key}</span>
+                <span className="opt-text">{text}</span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+      {canHotkey && (
+        <p className="kbd-hint">
+          Teclado: <kbd>1</kbd>–<kbd>{keys.length}</kbd> elige la opción,{" "}
+          <kbd>Enter</kbd> confirma, <kbd>Esc</kbd> cancela.
+        </p>
+      )}
+    </>
+  );
+}
+
+type Route = "home" | "practice" | "study";
 
 export default function App() {
-  const [route, setRoute] = useState<Route>('home')
+  const [route, setRoute] = useState<Route>("home");
 
   return (
     <div className="app">
-      {route === 'home' && (
+      {route === "home" && (
         <Home
           examName={bank.exam}
           totalQuestions={bank.items.length}
-          onPractice={() => setRoute('practice')}
-          onStudy={() => setRoute('study')}
+          onPractice={() => setRoute("practice")}
+          onStudy={() => setRoute("study")}
         />
       )}
-      {route === 'practice' && (
+      {route === "practice" && (
         <PracticeSession
           examName={bank.exam}
           items={bank.items}
-          onBack={() => setRoute('home')}
+          onBack={() => setRoute("home")}
         />
       )}
-      {route === 'study' && (
+      {route === "study" && (
         <StudySession
           examName={bank.exam}
           items={bank.items}
-          onBack={() => setRoute('home')}
+          onBack={() => setRoute("home")}
         />
       )}
     </div>
-  )
+  );
 }
 
 function Home({
@@ -57,10 +190,10 @@ function Home({
   onPractice,
   onStudy,
 }: {
-  examName: string
-  totalQuestions: number
-  onPractice: () => void
-  onStudy: () => void
+  examName: string;
+  totalQuestions: number;
+  onPractice: () => void;
+  onStudy: () => void;
 }) {
   return (
     <div className="home">
@@ -73,17 +206,19 @@ function Home({
           Práctica libre
         </button>
         <p className="home-hint">
-          Todas las preguntas, orden secuencial o mezclado, sin límite de tiempo.
+          Todas las preguntas, orden secuencial o mezclado, sin límite de
+          tiempo.
         </p>
         <button type="button" className="btn btn-large" onClick={onStudy}>
           Sesión de estudio
         </button>
         <p className="home-hint">
-          Elige cuántas preguntas incluir y, si quieres, un tiempo límite para la sesión.
+          Elige cuántas preguntas incluir y, si quieres, un tiempo límite para
+          la sesión.
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 function PracticeSession({
@@ -91,61 +226,61 @@ function PracticeSession({
   items,
   onBack,
 }: {
-  examName: string
-  items: QuestionItem[]
-  onBack: () => void
+  examName: string;
+  items: QuestionItem[];
+  onBack: () => void;
 }) {
-  const [order, setOrder] = useState<number[]>(() => items.map((_, i) => i))
-  const [cursor, setCursor] = useState(0)
+  const [order, setOrder] = useState<number[]>(() => items.map((_, i) => i));
+  const [cursor, setCursor] = useState(0);
   const [attempts, setAttempts] = useState<
     Record<number, { choice: string; correct: boolean }>
-  >({})
+  >({});
 
-  const pos = Math.min(cursor, Math.max(0, order.length - 1))
-  const itemIndex = order[pos] ?? 0
-  const current = items[itemIndex]
-  const answered = current ? attempts[current.id] !== undefined : false
+  const pos = Math.min(cursor, Math.max(0, order.length - 1));
+  const itemIndex = order[pos] ?? 0;
+  const current = items[itemIndex];
+  const answered = current ? attempts[current.id] !== undefined : false;
 
   const stats = useMemo(() => {
-    const vals = Object.values(attempts)
-    const correct = vals.filter((v) => v.correct).length
-    const wrong = vals.filter((v) => !v.correct).length
-    return { correct, wrong, answered: vals.length }
-  }, [attempts])
+    const vals = Object.values(attempts);
+    const correct = vals.filter((v) => v.correct).length;
+    const wrong = vals.filter((v) => !v.correct).length;
+    return { correct, wrong, answered: vals.length };
+  }, [attempts]);
 
   const handlePick = useCallback(
     (letter: string) => {
-      if (!current?.answer) return
-      if (attempts[current.id] !== undefined) return
-      const ok = letter === current.answer
+      if (!current?.answer) return;
+      if (attempts[current.id] !== undefined) return;
+      const ok = letter === current.answer;
       setAttempts((a) => ({
         ...a,
         [current.id]: { choice: letter, correct: ok },
-      }))
+      }));
     },
     [attempts, current],
-  )
+  );
 
   const goNext = useCallback(() => {
-    setCursor((c) => Math.min(c + 1, order.length - 1))
-  }, [order.length])
+    setCursor((c) => Math.min(c + 1, order.length - 1));
+  }, [order.length]);
 
   const goPrev = useCallback(() => {
-    setCursor((c) => Math.max(c - 1, 0))
-  }, [])
+    setCursor((c) => Math.max(c - 1, 0));
+  }, []);
 
   const resetSession = useCallback(
     (reshuffle: boolean) => {
-      setCursor(0)
-      setAttempts({})
+      setCursor(0);
+      setAttempts({});
       if (reshuffle) {
-        setOrder(shuffle(items.map((_, i) => i)))
+        setOrder(shuffle(items.map((_, i) => i)));
       } else {
-        setOrder(items.map((_, i) => i))
+        setOrder(items.map((_, i) => i));
       }
     },
     [items],
-  )
+  );
 
   if (!current) {
     return (
@@ -155,12 +290,12 @@ function PracticeSession({
         </button>
         <p>No hay preguntas en el banco.</p>
       </>
-    )
+    );
   }
 
-  const keys = optionKeys(current)
-  const attempt = attempts[current.id]
-  const progress = ((pos + 1) / order.length) * 100
+  const keys = optionKeys(current);
+  const attempt = attempts[current.id];
+  const progress = ((pos + 1) / order.length) * 100;
 
   return (
     <>
@@ -194,39 +329,28 @@ function PracticeSession({
 
       <article className="card">
         <p className="prompt">{current.prompt}</p>
-        <ul className="options">
-          {keys.map((key) => {
-            const text = current.options[key]
-            const isPicked = attempt?.choice === key
-            const show = attempt !== undefined
-            const isCorrectKey = current.answer === key
-            let cls = 'opt'
-            if (show) {
-              if (isCorrectKey) cls += ' opt-correct'
-              else if (isPicked) cls += ' opt-wrong'
-            }
-            return (
-              <li key={key}>
-                <button
-                  type="button"
-                  className={cls}
-                  disabled={answered}
-                  onClick={() => handlePick(key)}
-                >
-                  <span className="opt-key">{key}</span>
-                  <span className="opt-text">{text}</span>
-                </button>
-              </li>
-            )
-          })}
-        </ul>
+        <OptionsList
+          keys={keys}
+          current={current}
+          attempt={attempt}
+          answered={answered}
+          onPick={handlePick}
+          questionId={current.id}
+          hotkeysEnabled
+          optionDisabled={false}
+        />
         {!current.answer && (
           <p className="warn">Esta pregunta no tiene respuesta en el banco.</p>
         )}
       </article>
 
       <nav className="nav">
-        <button type="button" className="btn secondary" onClick={goPrev} disabled={pos <= 0}>
+        <button
+          type="button"
+          className="btn secondary"
+          onClick={goPrev}
+          disabled={pos <= 0}
+        >
           Anterior
         </button>
         <button
@@ -240,23 +364,31 @@ function PracticeSession({
       </nav>
 
       <footer className="footer">
-        <button type="button" className="btn" onClick={() => resetSession(false)}>
+        <button
+          type="button"
+          className="btn"
+          onClick={() => resetSession(false)}
+        >
           Reiniciar (mismo orden)
         </button>
-        <button type="button" className="btn" onClick={() => resetSession(true)}>
+        <button
+          type="button"
+          className="btn"
+          onClick={() => resetSession(true)}
+        >
           Reiniciar y mezclar
         </button>
       </footer>
     </>
-  )
+  );
 }
 
-type StudyPhase = 'config' | 'active' | 'done'
+type StudyPhase = "config" | "active" | "done";
 
 function formatClock(totalSec: number): string {
-  const m = Math.floor(totalSec / 60)
-  const s = totalSec % 60
-  return `${m}:${s.toString().padStart(2, '0')}`
+  const m = Math.floor(totalSec / 60);
+  const s = totalSec % 60;
+  return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
 function StudySession({
@@ -264,122 +396,126 @@ function StudySession({
   items,
   onBack,
 }: {
-  examName: string
-  items: QuestionItem[]
-  onBack: () => void
+  examName: string;
+  items: QuestionItem[];
+  onBack: () => void;
 }) {
-  const maxN = items.length
-  const [phase, setPhase] = useState<StudyPhase>('config')
-  const [countInput, setCountInput] = useState(() => String(Math.min(20, maxN)))
-  const [useTimer, setUseTimer] = useState(false)
-  const [minutesInput, setMinutesInput] = useState('15')
+  const maxN = items.length;
+  const [phase, setPhase] = useState<StudyPhase>("config");
+  const [countInput, setCountInput] = useState(() =>
+    String(Math.min(20, maxN)),
+  );
+  const [useTimer, setUseTimer] = useState(false);
+  const [minutesInput, setMinutesInput] = useState("15");
 
-  const [order, setOrder] = useState<number[]>([])
-  const [cursor, setCursor] = useState(0)
+  const [order, setOrder] = useState<number[]>([]);
+  const [cursor, setCursor] = useState(0);
   const [attempts, setAttempts] = useState<
     Record<number, { choice: string; correct: boolean }>
-  >({})
+  >({});
 
   /** wall-clock ms when session must end; null = no limit or paused */
-  const [deadlineMs, setDeadlineMs] = useState<number | null>(null)
+  const [deadlineMs, setDeadlineMs] = useState<number | null>(null);
   /** when paused: seconds left (deadlineMs is null) */
-  const [pausedSec, setPausedSec] = useState<number | null>(null)
-  const [remainingSec, setRemainingSec] = useState(0)
-  const [finishReason, setFinishReason] = useState<'time' | 'complete' | null>(null)
-  const [hasTimeLimit, setHasTimeLimit] = useState(false)
+  const [pausedSec, setPausedSec] = useState<number | null>(null);
+  const [remainingSec, setRemainingSec] = useState(0);
+  const [finishReason, setFinishReason] = useState<"time" | "complete" | null>(
+    null,
+  );
+  const [hasTimeLimit, setHasTimeLimit] = useState(false);
 
   useEffect(() => {
-    if (phase !== 'active' || deadlineMs === null) return
+    if (phase !== "active" || deadlineMs === null) return;
     const tick = () => {
-      const r = Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000))
-      setRemainingSec(r)
+      const r = Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000));
+      setRemainingSec(r);
       if (r <= 0) {
-        setFinishReason('time')
-        setPhase('done')
+        setFinishReason("time");
+        setPhase("done");
       }
-    }
-    tick()
-    const id = window.setInterval(tick, 300)
-    return () => window.clearInterval(id)
-  }, [phase, deadlineMs])
+    };
+    tick();
+    const id = window.setInterval(tick, 300);
+    return () => window.clearInterval(id);
+  }, [phase, deadlineMs]);
 
   const startStudy = useCallback(() => {
-    const n = Math.min(maxN, Math.max(1, parseInt(countInput, 10) || 0))
-    const allIdx = shuffle(items.map((_, i) => i))
-    setOrder(allIdx.slice(0, n))
-    setCursor(0)
-    setAttempts({})
-    setFinishReason(null)
-    setHasTimeLimit(useTimer)
+    const n = Math.min(maxN, Math.max(1, parseInt(countInput, 10) || 0));
+    const allIdx = shuffle(items.map((_, i) => i));
+    setOrder(allIdx.slice(0, n));
+    setCursor(0);
+    setAttempts({});
+    setFinishReason(null);
+    setHasTimeLimit(useTimer);
     if (useTimer) {
-      const min = Math.max(1, parseInt(minutesInput, 10) || 1)
-      const sec = min * 60
-      setDeadlineMs(Date.now() + sec * 1000)
-      setPausedSec(null)
-      setRemainingSec(sec)
+      const min = Math.max(1, parseInt(minutesInput, 10) || 1);
+      const sec = min * 60;
+      setDeadlineMs(Date.now() + sec * 1000);
+      setPausedSec(null);
+      setRemainingSec(sec);
     } else {
-      setDeadlineMs(null)
-      setPausedSec(null)
-      setRemainingSec(0)
+      setDeadlineMs(null);
+      setPausedSec(null);
+      setRemainingSec(0);
     }
-    setPhase('active')
-  }, [countInput, items, maxN, minutesInput, useTimer])
+    setPhase("active");
+  }, [countInput, items, maxN, minutesInput, useTimer]);
 
   const togglePause = useCallback(() => {
     if (pausedSec === null) {
-      if (deadlineMs === null) return
-      const r = Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000))
-      setPausedSec(r)
-      setRemainingSec(r)
-      setDeadlineMs(null)
+      if (deadlineMs === null) return;
+      const r = Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000));
+      setPausedSec(r);
+      setRemainingSec(r);
+      setDeadlineMs(null);
     } else {
-      setDeadlineMs(Date.now() + pausedSec * 1000)
-      setPausedSec(null)
+      setDeadlineMs(Date.now() + pausedSec * 1000);
+      setPausedSec(null);
     }
-  }, [deadlineMs, pausedSec])
+  }, [deadlineMs, pausedSec]);
 
-  const pos = Math.min(cursor, Math.max(0, order.length - 1))
-  const itemIndex = order[pos] ?? 0
-  const current = order.length ? items[itemIndex] : undefined
-  const answered = current ? attempts[current.id] !== undefined : false
+  const pos = Math.min(cursor, Math.max(0, order.length - 1));
+  const itemIndex = order[pos] ?? 0;
+  const current = order.length ? items[itemIndex] : undefined;
+  const answered = current ? attempts[current.id] !== undefined : false;
 
   const stats = useMemo(() => {
-    const vals = Object.values(attempts)
-    const correct = vals.filter((v) => v.correct).length
-    const wrong = vals.filter((v) => !v.correct).length
-    return { correct, wrong, answered: vals.length }
-  }, [attempts])
+    const vals = Object.values(attempts);
+    const correct = vals.filter((v) => v.correct).length;
+    const wrong = vals.filter((v) => !v.correct).length;
+    return { correct, wrong, answered: vals.length };
+  }, [attempts]);
 
   const handlePick = useCallback(
     (letter: string) => {
-      if (phase !== 'active') return
-      if (!current?.answer) return
-      if (attempts[current.id] !== undefined) return
-      const ok = letter === current.answer
+      if (phase !== "active") return;
+      if (!current?.answer) return;
+      if (attempts[current.id] !== undefined) return;
+      const ok = letter === current.answer;
       setAttempts((a) => ({
         ...a,
         [current.id]: { choice: letter, correct: ok },
-      }))
+      }));
     },
     [attempts, current, phase],
-  )
+  );
 
   const goNext = useCallback(() => {
     if (pos >= order.length - 1) {
-      setFinishReason('complete')
-      setPhase('done')
-      return
+      setFinishReason("complete");
+      setPhase("done");
+      return;
     }
-    setCursor((c) => c + 1)
-  }, [order.length, pos])
+    setCursor((c) => c + 1);
+  }, [order.length, pos]);
 
   const goPrev = useCallback(() => {
-    setCursor((c) => Math.max(c - 1, 0))
-  }, [])
+    setCursor((c) => Math.max(c - 1, 0));
+  }, []);
 
-  const sessionTotal = order.length
+  const sessionTotal = order.length;
 
-  if (phase === 'config') {
+  if (phase === "config") {
     return (
       <>
         <button type="button" className="btn link back-btn" onClick={onBack}>
@@ -397,7 +533,9 @@ function StudySession({
               value={countInput}
               onChange={(e) => setCountInput(e.target.value)}
             />
-            <span className="field-hint">Máximo {maxN} (se eligen al azar del banco).</span>
+            <span className="field-hint">
+              Máximo {maxN} (se eligen al azar del banco).
+            </span>
           </label>
           <label className="field checkbox-field">
             <input
@@ -424,23 +562,23 @@ function StudySession({
           </button>
         </div>
       </>
-    )
+    );
   }
 
-  if (phase === 'done') {
+  if (phase === "done") {
     const pct =
       stats.answered > 0
         ? Math.round((stats.correct / stats.answered) * 100)
-        : 0
+        : 0;
     return (
       <>
         <header className="header">
           <div>
             <h1 className="title">Sesión terminada</h1>
             <p className="subtitle">
-              {finishReason === 'time'
-                ? 'Se agotó el tiempo.'
-                : 'Completaste todas las preguntas de la sesión.'}
+              {finishReason === "time"
+                ? "Se agotó el tiempo."
+                : "Completaste todas las preguntas de la sesión."}
             </p>
           </div>
         </header>
@@ -460,7 +598,11 @@ function StudySession({
             </li>
           </ul>
           <div className="footer study-done-actions">
-            <button type="button" className="btn" onClick={() => setPhase('config')}>
+            <button
+              type="button"
+              className="btn"
+              onClick={() => setPhase("config")}
+            >
               Nueva sesión
             </button>
             <button type="button" className="btn secondary" onClick={onBack}>
@@ -469,7 +611,7 @@ function StudySession({
           </div>
         </div>
       </>
-    )
+    );
   }
 
   if (!current) {
@@ -480,13 +622,13 @@ function StudySession({
         </button>
         <p>Error: sesión sin preguntas.</p>
       </>
-    )
+    );
   }
 
-  const keys = optionKeys(current)
-  const attempt = attempts[current.id]
-  const progress = ((pos + 1) / sessionTotal) * 100
-  const timed = hasTimeLimit
+  const keys = optionKeys(current);
+  const attempt = attempts[current.id];
+  const progress = ((pos + 1) / sessionTotal) * 100;
+  const timed = hasTimeLimit;
 
   return (
     <>
@@ -503,7 +645,7 @@ function StudySession({
           <span>Errores: {stats.wrong}</span>
           {timed && (
             <span className="timer-display" data-paused={pausedSec !== null}>
-              {pausedSec !== null ? '⏸ ' : ''}
+              {pausedSec !== null ? "⏸ " : ""}
               Tiempo: {formatClock(remainingSec)}
             </span>
           )}
@@ -512,8 +654,12 @@ function StudySession({
 
       {timed && (
         <div className="timer-bar">
-          <button type="button" className="btn secondary btn-small" onClick={togglePause}>
-            {pausedSec !== null ? 'Reanudar' : 'Pausar'}
+          <button
+            type="button"
+            className="btn secondary btn-small"
+            onClick={togglePause}
+          >
+            {pausedSec !== null ? "Reanudar" : "Pausar"}
           </button>
         </div>
       )}
@@ -525,7 +671,10 @@ function StudySession({
         aria-valuemin={1}
         aria-valuemax={sessionTotal}
       >
-        <div className="progress-fill study-progress" style={{ width: `${progress}%` }} />
+        <div
+          className="progress-fill study-progress"
+          style={{ width: `${progress}%` }}
+        />
       </div>
       <p className="progress-label">
         Pregunta {pos + 1} de {sessionTotal} (ID {current.id})
@@ -533,46 +682,34 @@ function StudySession({
 
       <article className="card">
         <p className="prompt">{current.prompt}</p>
-        <ul className="options">
-          {keys.map((key) => {
-            const text = current.options[key]
-            const isPicked = attempt?.choice === key
-            const show = attempt !== undefined
-            const isCorrectKey = current.answer === key
-            let cls = 'opt'
-            if (show) {
-              if (isCorrectKey) cls += ' opt-correct'
-              else if (isPicked) cls += ' opt-wrong'
-            }
-            const block = timed && pausedSec !== null
-            return (
-              <li key={key}>
-                <button
-                  type="button"
-                  className={cls}
-                  disabled={answered || block}
-                  onClick={() => handlePick(key)}
-                >
-                  <span className="opt-key">{key}</span>
-                  <span className="opt-text">{text}</span>
-                </button>
-              </li>
-            )
-          })}
-        </ul>
+        <OptionsList
+          keys={keys}
+          current={current}
+          attempt={attempt}
+          answered={answered}
+          onPick={handlePick}
+          questionId={current.id}
+          hotkeysEnabled={phase === "active"}
+          optionDisabled={timed && pausedSec !== null}
+        />
         {!current.answer && (
           <p className="warn">Esta pregunta no tiene respuesta en el banco.</p>
         )}
       </article>
 
       <nav className="nav">
-        <button type="button" className="btn secondary" onClick={goPrev} disabled={pos <= 0}>
+        <button
+          type="button"
+          className="btn secondary"
+          onClick={goPrev}
+          disabled={pos <= 0}
+        >
           Anterior
         </button>
         <button type="button" className="btn secondary" onClick={goNext}>
-          {pos >= sessionTotal - 1 ? 'Ver resultados' : 'Siguiente'}
+          {pos >= sessionTotal - 1 ? "Ver resultados" : "Siguiente"}
         </button>
       </nav>
     </>
-  )
+  );
 }
