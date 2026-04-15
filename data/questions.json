@@ -1,0 +1,5940 @@
+{
+  "exam": "EGEL COMPU 24",
+  "items": [
+    {
+      "id": 1,
+      "prompt": "La depuración de software es un conjunto de actividades que se pueden planificar por adelantado y realizar de manera sistemática.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 17
+      },
+      "answer": "B"
+    },
+    {
+      "id": 2,
+      "prompt": "¿Cuál de los siguientes no es un software que prueba características genéricas?",
+      "options": {
+        "A": "Diferentes técnicas de prueba son apropiadas en diferentes puntos en el tiempo",
+        "B": "La prueba la realiza el desarrollador del software o un grupo de prueba independiente",
+        "C": "Las pruebas y la depuración son actividades diferentes, pero la depuración debe incluirse en cualquier estrategia de prueba.",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 17
+      },
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "prompt": "ITG significa",
+      "options": {
+        "A": "grupo de prueba instantáneo",
+        "B": "grupo de pruebas de integración",
+        "C": "grupo de prueba individual",
+        "D": "grupo de prueba independiente"
+      },
+      "sourcePages": {
+        "question": 17
+      },
+      "answer": "D"
+    },
+    {
+      "id": 4,
+      "prompt": "Al recopilar _________   durante las pruebas de software, es posible desarrollar pautas significativas para detener el proceso de prueba.",
+      "options": {
+        "A": "Intensidad de falla",
+        "B": "tiempo de prueba",
+        "C": "Métricas",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 18
+      },
+      "answer": "C"
+    },
+    {
+      "id": 5,
+      "prompt": "¿Cuál de los siguientes problemas debe abordarse para implementar una estrategia de prueba de software exitosa?",
+      "options": {
+        "A": "Utilizar revisiones técnicas formales efectivas como filtro antes de la prueba",
+        "B": "Desarrollar un plan de pruebas que haga hincapié en las \"pruebas rápidas de ciclo\".",
+        "C": "Objetivos de las pruebas estatales explícitamente",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 18
+      },
+      "answer": "D"
+    },
+    {
+      "id": 6,
+      "prompt": "Los casos de prueba deberían descubrir errores como",
+      "options": {
+        "A": "Terminación de bucle inexistente",
+        "B": "Comparación de diferentes tipos de datos",
+        "C": "Operadores lógicos incorrectos o precedencia",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 18
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "prompt": "¿Cuál de los siguientes errores no se debe probar cuando se evalúa el manejo de errores?",
+      "options": {
+        "A": "La descripción del error es ininteligible.",
+        "B": "El error señalado no corresponde al error encontrado",
+        "C": "La condición de error causa la intervención del sistema antes del manejo de errores",
+        "D": "La descripción del error proporciona información suficiente para ayudar en la ubicación de la causa del error"
+      },
+      "sourcePages": {
+        "question": 18
+      },
+      "answer": "A"
+    },
+    {
+      "id": 8,
+      "prompt": "Lo que normalmente se considera como un complemento de la etapa de codificación:",
+      "options": {
+        "A": "Pruebas de integración",
+        "B": "pruebas unitarias",
+        "C": "Finalización de Pruebas",
+        "D": "Pruebas de regresión"
+      },
+      "sourcePages": {
+        "question": 19
+      },
+      "answer": "B"
+    },
+    {
+      "id": 9,
+      "prompt": "¿Cuál de los siguientes no es un caso de prueba de regresión?",
+      "options": {
+        "A": "Una muestra representativa de pruebas que ejercerán todas las funciones del software.",
+        "B": "Pruebas adicionales que se centran en funciones de software que pueden verse afectadas por el cambio",
+        "C": "Pruebas que se centran en los componentes de software que se han cambiado",
+        "D": "Los componentes de bajo nivel se combinan en grupos que realizan una subfunción de software específica"
+      },
+      "sourcePages": {
+        "question": 19
+      },
+      "answer": "D"
+    },
+    {
+      "id": 10,
+      "prompt": "¿Qué prueba es un enfoque de prueba de integración que se usa comúnmente cuando se están desarrollando productos de software de \"envoltura retráctil\"?",
+      "options": {
+        "A": "Pruebas de regresión",
+        "B": "Pruebas de integración",
+        "C": "pruebas de humo",
+        "D": "Pruebas de validación"
+      },
+      "sourcePages": {
+        "question": 19
+      },
+      "answer": "C"
+    },
+    {
+      "id": 11,
+      "prompt": "La arquitectura del software orientado a objetos da como resultado una serie de subsistemas en capas que encapsulan clases colaboradoras.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 19
+      },
+      "answer": "A"
+    },
+    {
+      "id": 12,
+      "prompt": "La construcción de software orientado a objetos comienza con la creación de:",
+      "options": {
+        "A": "modelo de diseño",
+        "B": "modelo de análisis",
+        "C": "niveles de código",
+        "D": "Modelo de diseño y análisis."
+      },
+      "sourcePages": {
+        "question": 20
+      },
+      "answer": "D"
+    },
+    {
+      "id": 13,
+      "prompt": "¿Qué pruebas integran el conjunto de clases requeridas para responder a una entrada o evento para el sistema?",
+      "options": {
+        "A": "pruebas de grupo (cluster)",
+        "B": "pruebas basadas en hilos",
+        "C": "pruebas basadas en el uso",
+        "D": "ninguno de los mencionados"
+      },
+      "sourcePages": {
+        "question": 20
+      },
+      "answer": "B"
+    },
+    {
+      "id": 14,
+      "prompt": "¿Cuál de los siguientes es uno de los pasos en las pruebas de integración del software OO?",
+      "options": {
+        "A": "pruebas de grupo",
+        "B": "pruebas basadas en hilos",
+        "C": "pruebas basadas en el uso",
+        "D": "ninguno de los mencionados"
+      },
+      "sourcePages": {
+        "question": 20
+      },
+      "answer": "A"
+    },
+    {
+      "id": 15,
+      "prompt": "Se pueden usar métodos _________ para conducir pruebas de validación",
+      "options": {
+        "A": "Prueba de caja amarilla",
+        "B": "Prueba de caja negra",
+        "C": "Prueba de caja blanca",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 20
+      },
+      "answer": "B"
+    },
+    {
+      "id": 16,
+      "prompt": "¿Cuál de las siguientes opciones forma parte del código OO de prueba?",
+      "options": {
+        "A": "Pruebas de validación.",
+        "B": "Pruebas de integración.",
+        "C": "pruebas de clase",
+        "D": "Pruebas del sistema."
+      },
+      "sourcePages": {
+        "question": 21
+      },
+      "answer": "C"
+    },
+    {
+      "id": 17,
+      "prompt": "El objetivo de________dentro de un sistema OO es diseñar pruebas que tengan una alta probabilidad de descubrir errores plausibles.",
+      "options": {
+        "A": "Pruebas basadas en fallas",
+        "B": "Pruebas de integración",
+        "C": "Pruebas basadas en el uso",
+        "D": "Pruebas basadas en escenarios"
+      },
+      "sourcePages": {
+        "question": 21
+      },
+      "answer": "A"
+    },
+    {
+      "id": 18,
+      "prompt": "¿Qué se refiere a la estructura observable externamente de un programa OO?",
+      "options": {
+        "A": "Estructura profunda",
+        "B": "estructura de la superficie",
+        "C": "Estructura del núcleo",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 21
+      },
+      "answer": "B"
+    },
+    {
+      "id": 19,
+      "prompt": "__________clasifica las operaciones de clase en función de la función genérica que realiza cada uno.",
+      "options": {
+        "A": "Particionamiento basado en categorías",
+        "B": "Particionamiento basado en atributos",
+        "C": "Partición basada en el estado",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 21
+      },
+      "answer": "A"
+    },
+    {
+      "id": 20,
+      "prompt": "¿Cuál de los siguientes está orientado a la caja negra y se puede lograr aplicando los mismos métodos de caja negra discutidos para el software convencional?",
+      "options": {
+        "A": "Pruebas convencionales",
+        "B": "Pruebas de validación del sistema OO",
+        "C": "Diseño de caso de prueba",
+        "D": "Pruebas convencionales y pruebas de validación del sistema OO"
+      },
+      "sourcePages": {
+        "question": 22
+      },
+      "answer": "D"
+    },
+    {
+      "id": 21,
+      "prompt": "¿En cuál de las siguientes estrategias de prueba, una unidad comprobable más pequeña es la clase u objeto encapsulado?",
+      "options": {
+        "A": "Pruebas unitarias",
+        "B": "Pruebas de integración",
+        "C": "Pruebas del sistema",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 22
+      },
+      "answer": "A"
+    },
+    {
+      "id": 22,
+      "prompt": "¿Cuál de los siguientes tipos de prueba no es parte de la prueba del sistema?",
+      "options": {
+        "A": "Pruebas de recuperación",
+        "B": "pruebas de estrés",
+        "C": "Pruebas del sistema",
+        "D": "Pruebas aleatorias"
+      },
+      "sourcePages": {
+        "question": 22
+      },
+      "answer": "D"
+    },
+    {
+      "id": 23,
+      "prompt": "¿Cuál es el primer objetivo del proceso de prueba?",
+      "options": {
+        "A": "Prevención de errores",
+        "B": "pruebas",
+        "C": "Ejecución",
+        "D": "análisis"
+      },
+      "sourcePages": {
+        "question": 22
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "prompt": "Los errores de software durante la codificación se conocen como:",
+      "options": {
+        "A": "errores",
+        "B": "fallas",
+        "C": "bichos (bugs)",
+        "D": "defectos"
+      },
+      "sourcePages": {
+        "question": 23
+      },
+      "answer": "C"
+    },
+    {
+      "id": 25,
+      "prompt": "Nombre una técnica de evaluación para evaluar la calidad de los casos de prueba.",
+      "options": {
+        "A": "Análisis de mutaciones.",
+        "B": "Validación",
+        "C": "Verificación",
+        "D": "Análisis de rendimiento"
+      },
+      "sourcePages": {
+        "question": 23
+      },
+      "answer": "A"
+    },
+    {
+      "id": 26,
+      "prompt": "La prueba debe realizarse para cada posible",
+      "options": {
+        "A": "datos",
+        "B": "caso",
+        "C": "variable",
+        "D": "todas las mencionadas"
+      },
+      "sourcePages": {
+        "question": 23
+      },
+      "answer": "D"
+    },
+    {
+      "id": 27,
+      "prompt": "¿Cuál de los siguientes no forma parte del informe de errores?",
+      "options": {
+        "A": "Caso de prueba",
+        "B": "Salida",
+        "C": "Versión de software",
+        "D": "LOC"
+      },
+      "sourcePages": {
+        "question": 23
+      },
+      "answer": "D"
+    },
+    {
+      "id": 28,
+      "prompt": "¿Cuál de las siguientes opciones no forma parte del Flujo de ejecución durante la depuración?",
+      "options": {
+        "A": "Paso sobre",
+        "B": "entrar en",
+        "C": "intensificar",
+        "D": "Salir"
+      },
+      "sourcePages": {
+        "question": 24
+      },
+      "answer": "C"
+    },
+    {
+      "id": 29,
+      "prompt": "El método de Complejidad ciclomática viene bajo el método de prueba.",
+      "options": {
+        "A": "caja amarilla",
+        "B": "caja blanca",
+        "C": "caja gris",
+        "D": "caja negra"
+      },
+      "sourcePages": {
+        "question": 24
+      },
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "prompt": "¿Cuál es una técnica de prueba de caja negra apropiada para todos los niveles de prueba?",
+      "options": {
+        "A": "Pruebas de aceptación",
+        "B": "Pruebas de regresión",
+        "C": "partición de equivalencia",
+        "D": "Aseguramiento de la calidad"
+      },
+      "sourcePages": {
+        "question": 24
+      },
+      "answer": "C"
+    },
+    {
+      "id": 31,
+      "prompt": "¿Cuál de las siguientes es la manera de asegurar que las pruebas estén realmente probando el código?",
+      "options": {
+        "A": "Pruebas de estructura de control",
+        "B": "Prueba de trayectoria compleja",
+        "C": "cobertura del código",
+        "D": "Aseguramiento de la calidad del software."
+      },
+      "sourcePages": {
+        "question": 24
+      },
+      "answer": "C"
+    },
+    {
+      "id": 32,
+      "prompt": "Las pruebas efectivas reducirán el costo de _______- .",
+      "options": {
+        "A": "mantenimiento",
+        "B": "diseño",
+        "C": "codificación",
+        "D": "documentación"
+      },
+      "sourcePages": {
+        "question": 25
+      },
+      "answer": "A"
+    },
+    {
+      "id": 33,
+      "prompt": "¿Cuál de los siguientes es un problema común?",
+      "options": {
+        "A": "Errores de intercambio de datos",
+        "B": "Accediendo a elementos de datos del tipo equivocado.",
+        "C": "Intentar usar áreas de memoria después de liberarlas.",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 25
+      },
+      "answer": "D"
+    },
+    {
+      "id": 34,
+      "prompt": "Standard Enforcer es un:",
+      "options": {
+        "A": "Herramienta de prueba estática",
+        "B": "Pruebas dinámicas",
+        "C": "Pruebas estáticas y dinámicas",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 25
+      },
+      "answer": "A"
+    },
+    {
+      "id": 35,
+      "prompt": "Muchas aplicaciones que usan análisis estático encuentran 0.1-0.2% de NCSS. NCSS significa:",
+      "options": {
+        "A": "Declaración de fuente no codificada",
+        "B": "Oraciones de fuente sin comentarios",
+        "C": "Declaración de fuente sin comentarios",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 25
+      },
+      "answer": "C"
+    },
+    {
+      "id": 36,
+      "prompt": "¿Qué herramienta de prueba hace un trabajo simple de hacer cumplir los estándares de manera uniforme en muchos programas?",
+      "options": {
+        "A": "Analizador estático",
+        "B": "inspector de código",
+        "C": "Enforcer estándar",
+        "D": "Ambos, el inspector de código y el ejecutor estándar"
+      },
+      "sourcePages": {
+        "question": 26
+      },
+      "answer": "D"
+    },
+    {
+      "id": 37,
+      "prompt": "Las pruebas de software con datos reales en un entorno real se conocen como:",
+      "options": {
+        "A": "prueba alfa",
+        "B": "pruebas beta",
+        "C": "pruebas de regresión",
+        "D": "ninguno de los mencionados"
+      },
+      "sourcePages": {
+        "question": 26
+      },
+      "answer": "B"
+    },
+    {
+      "id": 38,
+      "prompt": "¿Cuál de las siguientes herramientas de prueba examina el programa de forma sistemática y automática?",
+      "options": {
+        "A": "inspector de código",
+        "B": "analizador estático",
+        "C": "Enforcer estándar",
+        "D": "analizador de cobertura"
+      },
+      "sourcePages": {
+        "question": 26
+      },
+      "answer": "B"
+    },
+    {
+      "id": 39,
+      "prompt": "¿Qué herramienta de prueba es responsable de documentar los programas?",
+      "options": {
+        "A": "Generador de pruebas / archivos",
+        "B": "Sistema de prueba de arnés",
+        "C": "Sistemas de prueba de archivo",
+        "D": "analizador de cobertura"
+      },
+      "sourcePages": {
+        "question": 26
+      },
+      "answer": "C"
+    },
+    {
+      "id": 40,
+      "prompt": "La prueba beta se realiza por:",
+      "options": {
+        "A": "Desarrolladores",
+        "B": "probadores",
+        "C": "Usuarios",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 27
+      },
+      "answer": "C"
+    },
+    {
+      "id": 41,
+      "prompt": "La herramienta ejecutora estándar analiza todo el programa.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 27
+      },
+      "answer": "B"
+    },
+    {
+      "id": 42,
+      "prompt": "Programa de depuración es un programa que se ejecuta simultáneamente con el programa bajo prueba y proporciona comandos para:",
+      "options": {
+        "A": "examinar la memoria y los registros",
+        "B": "detener la ejecución en un punto particular",
+        "C": "búsqueda de referencias para variables particulares, constantes y registros",
+        "D": "todas las mencionadas"
+      },
+      "sourcePages": {
+        "question": 27
+      },
+      "answer": "D"
+    },
+    {
+      "id": 43,
+      "prompt": "Execution Verifier es una herramienta dinámica que también se conoce como:",
+      "options": {
+        "A": "Generador de archivos de prueba",
+        "B": "analizador de cobertura",
+        "C": "Comparador de salida",
+        "D": "Sistema de prueba de arnés"
+      },
+      "sourcePages": {
+        "question": 27
+      },
+      "answer": "B"
+    },
+    {
+      "id": 44,
+      "prompt": "¿Por qué es difícil construir el software?",
+      "options": {
+        "A": "Cambios controlados.",
+        "B": "Falta de reutilización",
+        "C": "Falta de seguimiento",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 28
+      },
+      "answer": "C"
+    },
+    {
+      "id": 45,
+      "prompt": "¿Cuál de los siguientes no es un conflicto en el equipo de desarrollo de software?",
+      "options": {
+        "A": "Actualizaciones simultáneas",
+        "B": "Código compartido y común.",
+        "C": "Versiones",
+        "D": "Problemas gráficos"
+      },
+      "sourcePages": {
+        "question": 28
+      },
+      "answer": "D"
+    },
+    {
+      "id": 46,
+      "prompt": "¿Cuál de los siguientes dura la duración del proyecto y cubre el proceso de desarrollo?",
+      "options": {
+        "A": "Monitoreo de todos los parámetros clave como costo, cronograma, riesgos",
+        "B": "Tomar acciones correctivas cuando sea necesario.",
+        "C": "Proporcionar información sobre el proceso de desarrollo en términos de métricas.",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 28
+      },
+      "answer": "A"
+    },
+    {
+      "id": 47,
+      "prompt": "¿Cuál de los siguientes no es un entorno típico en la facilitación de la comunicación?",
+      "options": {
+        "A": "equipos multiples",
+        "B": "Grupos de usuarios múltiples",
+        "C": "festivales múltiples",
+        "D": "Ubicaciones múltiples"
+      },
+      "sourcePages": {
+        "question": 28
+      },
+      "answer": "C"
+    },
+    {
+      "id": 48,
+      "prompt": "¿Cuál de los siguientes es un proceso de software?",
+      "options": {
+        "A": "Análisis y diseño.",
+        "B": "Configuración y gestión.",
+        "C": "modelado de negocios",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 29
+      },
+      "answer": "D"
+    },
+    {
+      "id": 49,
+      "prompt": "¿Cuál de los siguientes no está incluido en las Reuniones de Temas?",
+      "options": {
+        "A": "Temas recogidos el día anterior.",
+        "B": "Horario regular de reunión.",
+        "C": "Discusión con los negocios.",
+        "D": "Asistencia"
+      },
+      "sourcePages": {
+        "question": 29
+      },
+      "answer": "C"
+    },
+    {
+      "id": 50,
+      "prompt": "¿Cuál de los siguientes no forma parte de los conceptos básicos de la gestión de la configuración del software?",
+      "options": {
+        "A": "Identificación",
+        "B": "Versión",
+        "C": "Auditoría y revisión",
+        "D": "Contabilidad de estado (Status)"
+      },
+      "sourcePages": {
+        "question": 29
+      },
+      "answer": "B"
+    },
+    {
+      "id": 51,
+      "prompt": "¿Qué es una colección de elementos de software tratados como una unidad para los propósitos de SCM?",
+      "options": {
+        "A": "Elemento de configuración del software",
+        "B": "Línea de base",
+        "C": "Configuración",
+        "D": "Panel de control de configuración"
+      },
+      "sourcePages": {
+        "question": 29
+      },
+      "answer": "A"
+    },
+    {
+      "id": 52,
+      "prompt": "¿Cuál es uno o más elementos de configuración de software que se han revisado y acordado formalmente y que sirven como base para un mayor desarrollo?",
+      "options": {
+        "A": "Configuración",
+        "B": "Línea de base",
+        "C": "software",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 30
+      },
+      "answer": "B"
+    },
+    {
+      "id": 53,
+      "prompt": "¿Qué es validar la integridad de un producto?",
+      "options": {
+        "A": "Identificación",
+        "B": "software",
+        "C": "Auditoría y revisión",
+        "D": "Contabilidad de estado"
+      },
+      "sourcePages": {
+        "question": 30
+      },
+      "answer": "C"
+    },
+    {
+      "id": 54,
+      "prompt": "¿Cuál es el grupo con la responsabilidad de revisar y aprobar cambios a las líneas de base?",
+      "options": {
+        "A": "Elemento de configuración del software",
+        "B": "Línea de base",
+        "C": "Configuración",
+        "D": "Panel de control de configuración"
+      },
+      "sourcePages": {
+        "question": 30
+      },
+      "answer": "D"
+    },
+    {
+      "id": 55,
+      "prompt": "En muchas configuraciones, PM es un centro de comunicación.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 30
+      },
+      "answer": "A"
+    },
+    {
+      "id": 56,
+      "prompt": "¿Qué es una instancia específica de una línea de base o un elemento de configuración?",
+      "options": {
+        "A": "software",
+        "B": "Configuración",
+        "C": "Versión",
+        "D": "Contabilidad de estado"
+      },
+      "sourcePages": {
+        "question": 31
+      },
+      "answer": "C"
+    },
+    {
+      "id": 57,
+      "prompt": "SCM significa",
+      "options": {
+        "A": "Software Control Management",
+        "B": "Software Configuration Management",
+        "C": "Software Concept Management",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 31
+      },
+      "answer": "B"
+    },
+    {
+      "id": 58,
+      "prompt": "Cuando el código se pone a disposición de otros, va en un / a:",
+      "options": {
+        "A": "disco duro",
+        "B": "biblioteca de acceso controlado",
+        "C": "servidores",
+        "D": "control de acceso"
+      },
+      "sourcePages": {
+        "question": 31
+      },
+      "answer": "B"
+    },
+    {
+      "id": 59,
+      "prompt": "¿Cuál  de  las  siguientes  no  es  una  fase  principal  en  el  Proceso  de  administración de  la configuración (CM)?",
+      "options": {
+        "A": "Planificación de CM",
+        "B": "Ejecutando el proceso CM",
+        "C": "auditorias de MC",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 31
+      },
+      "answer": "D"
+    },
+    {
+      "id": 60,
+      "prompt": "CM se trata de administrar los diferentes artículos en el producto y los cambios en ellos.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 32
+      },
+      "answer": "A"
+    },
+    {
+      "id": 61,
+      "prompt": "¿Qué permite que diferentes proyectos utilicen los mismos archivos de origen al mismo tiempo?",
+      "options": {
+        "A": "Control de versiones",
+        "B": "control de acceso",
+        "C": "Proceso CM",
+        "D": "Control de versiones y control de acceso."
+      },
+      "sourcePages": {
+        "question": 32
+      },
+      "answer": "A"
+    },
+    {
+      "id": 62,
+      "prompt": "¿Cuál de los siguientes no es un proceso de gestión de cambios?",
+      "options": {
+        "A": "Registrar los cambios",
+        "B": "Estimar impacto en esfuerzo y cronograma.",
+        "C": "Revisar el impacto con los grupos de interés.",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 32
+      },
+      "answer": "D"
+    },
+    {
+      "id": 63,
+      "prompt": "La administración de la configuración (CM) es necesaria para entregar el producto al cliente:",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 32
+      },
+      "answer": "A"
+    },
+    {
+      "id": 64,
+      "prompt": "¿Cuál es uno o más elementos de configuración de software que se han revisado y acordado formalmente y que sirven como base para un mayor desarrollo?",
+      "options": {
+        "A": "Línea de base",
+        "B": "Cambios acumulativos.",
+        "C": "CM",
+        "D": "Control de cambio"
+      },
+      "sourcePages": {
+        "question": 33
+      },
+      "answer": "A"
+    },
+    {
+      "id": 65,
+      "prompt": "¿Cómo se verifican las líneas de base?",
+      "options": {
+        "A": "por opiniones",
+        "B": "Por inspecciones.",
+        "C": "A prueba de código",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 33
+      },
+      "answer": "C"
+    },
+    {
+      "id": 66,
+      "prompt": "¿Cuál de los siguientes es un ejemplo de elementos de configuración?",
+      "options": {
+        "A": "procedimientos de SCM",
+        "B": "código fuente",
+        "C": "Descripciones de diseño de software",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 33
+      },
+      "answer": "D"
+    },
+    {
+      "id": 67,
+      "prompt": "SCM controla solo los productos del proceso de desarrollo.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 33
+      },
+      "answer": "A"
+    },
+    {
+      "id": 68,
+      "prompt": "CCB significa",
+      "options": {
+        "A": "Cambio de tablero de control",
+        "B": "Cambio de línea base de control",
+        "C": "Cambios acumulados en la línea de base",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 33
+      },
+      "answer": "A"
+    },
+    {
+      "id": 69,
+      "prompt": "¿Qué información se requiere para procesar un cambio a una línea de base?",
+      "options": {
+        "A": "ambiguos",
+        "B": "no ambiguo",
+        "C": "regular",
+        "D": "ninguno de estos"
+      },
+      "sourcePages": {
+        "question": 34
+      },
+      "answer": "D"
+    },
+    {
+      "id": 108,
+      "prompt": "Dada una gramática G se llama una producción de G con un punto en alguna posición del lado derecho:",
+      "options": {
+        "A": "LR (0) item of G",
+        "B": "LR (1) item of G",
+        "C": "tanto (a) como (b)",
+        "D": "ninguno de estos"
+      },
+      "sourcePages": {
+        "question": 46
+      },
+      "answer": "A"
+    },
+    {
+      "id": 109,
+      "prompt": "Abrevia el término ILFs.",
+      "options": {
+        "A": "Interface logical files",
+        "B": "Internal logical files",
+        "C": "Input logical files",
+        "D": "Internal logical function"
+      },
+      "sourcePages": {
+        "question": 46
+      },
+      "answer": "B"
+    },
+    {
+      "id": 110,
+      "prompt": "En el subsistema de administración, ¿cuáles son los elementos funcionales y el flujo de trabajo asociado  que  admitirán  la  identificación  del  objeto  de  contenido,  el control  de  versio nes,  la administración de cambios, la auditoría de cambios y los informes?",
+      "options": {
+        "A": "Base de datos de contenido",
+        "B": "Capacidades de base de datos",
+        "C": "Función de gestión de configuración",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 47
+      },
+      "answer": "C"
+    },
+    {
+      "id": 111,
+      "prompt": "¿Cuál es la prueba para garantizar que la aplicación web se interconecte correctamente con otras aplicaciones o bases de datos?",
+      "options": {
+        "A": "Compatibilidad",
+        "B": "Interoperabilidad",
+        "C": "Actuación",
+        "D": "Seguridad"
+      },
+      "sourcePages": {
+        "question": 47
+      },
+      "answer": "B"
+    },
+    {
+      "id": 112,
+      "prompt": "Abrevia el término BSS.",
+      "options": {
+        "A": "Box Structure Specification",
+        "B": "Box Statistical Specification",
+        "C": "Box Statistical System",
+        "D": "Box Structure Sampling"
+      },
+      "sourcePages": {
+        "question": 47
+      },
+      "answer": "A"
+    },
+    {
+      "id": 113,
+      "prompt": "Qué subsistema implementa un repositorio que abarca los siguientes elementos, 1) Base de datos de contenido 2) Capacidades de la base de datos Funciones de gestión de configuración",
+      "options": {
+        "A": "El subsistema de publicación.",
+        "B": "El subsistema de gestión.",
+        "C": "El subsistema de recogida.",
+        "D": "ninguna de las anter"
+      },
+      "sourcePages": {
+        "question": 47
+      },
+      "answer": "B"
+    },
+    {
+      "id": 114,
+      "prompt": "¿Qué condición define las circunstancias para que una operación en particular sea válida?",
+      "options": {
+        "A": "Sí",
+        "B": "No",
+        "C": "Invariante",
+        "D": "Ninguna de las anteriores 115.Las herramientas CASE son conjuntos de programas de aplicación de software automatizados, que no se utilizan para apoyar, acelerar y suavizar las actividades de SDLC."
+      },
+      "sourcePages": {
+        "question": 48
+      },
+      "answer": "B"
+    },
+    {
+      "id": 116,
+      "prompt": "¿Qué herramientas se utilizan en la implementación, prueba y mantenimiento?",
+      "options": {
+        "A": "Herramientas de mayúsculas",
+        "B": "Herramientas de caja integradas",
+        "C": "Herramientas de minúsculas",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 48
+      },
+      "answer": "C"
+    },
+    {
+      "id": 117,
+      "prompt": "¿Qué caja especifica el comportamiento de un sistema o una parte de un sistema?",
+      "options": {
+        "A": "Caja de estado",
+        "B": "Caja clara",
+        "C": "Caja negra",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 49
+      },
+      "answer": "C"
+    },
+    {
+      "id": 118,
+      "prompt": "Dar las desventajas de la modularización.",
+      "options": {
+        "A": "Los componentes más pequeños son más fáciles de mantener",
+        "B": "El programa se puede dividir en función de aspectos funcionales.",
+        "C": "El nivel deseado de abstracción se puede traer en el programa",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 49
+      },
+      "answer": "D"
+    },
+    {
+      "id": 119,
+      "prompt": "¿Qué proyecto se emprende como consecuencia de una solicitud específica de un cliente?",
+      "options": {
+        "A": "Proyectos de desarrollo de conceptos",
+        "B": "Proyectos de mejora de aplicaciones",
+        "C": "Nuevos proyectos de desarrollo de aplicaciones.",
+        "D": "Proyectos de mantenimiento de aplicaciones"
+      },
+      "sourcePages": {
+        "question": 49
+      },
+      "answer": "C"
+    },
+    {
+      "id": 120,
+      "prompt": "Un conjunto de actividades que aseguran que el software implementa correctamente una función específica.",
+      "options": {
+        "A": "verificación",
+        "B": "pruebas",
+        "C": "implementación",
+        "D": "validación"
+      },
+      "sourcePages": {
+        "question": 49
+      },
+      "answer": "A"
+    },
+    {
+      "id": 121,
+      "prompt": "La validación está basada en computadora.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 50
+      },
+      "answer": "A"
+    },
+    {
+      "id": 122,
+      "prompt": "__________-se realiza en la fase de desarrollo por los depuradores.",
+      "options": {
+        "A": "Codificación",
+        "B": "pruebas",
+        "C": "depuración",
+        "D": "Implementación"
+      },
+      "sourcePages": {
+        "question": 50
+      },
+      "answer": "C"
+    },
+    {
+      "id": 123,
+      "prompt": "La localización o identificación de los errores se conoce como :",
+      "options": {
+        "A": "diseño",
+        "B": "pruebas",
+        "C": "depuración",
+        "D": "codificación"
+      },
+      "sourcePages": {
+        "question": 50
+      },
+      "answer": "C"
+    },
+    {
+      "id": 124,
+      "prompt": "¿Cuál define el rol del software?",
+      "options": {
+        "A": "diseño del Sistema",
+        "B": "diseño",
+        "C": "Ingeniería de sistemas",
+        "D": "Implementación"
+      },
+      "sourcePages": {
+        "question": 50
+      },
+      "answer": "C"
+    },
+    {
+      "id": 125,
+      "prompt": "¿A qué se llama prueba de componentes individuales?",
+      "options": {
+        "A": "prueba del Sistema",
+        "B": "pruebas unitarias",
+        "C": "pruebas de validación",
+        "D": "prueba de caja negra"
+      },
+      "sourcePages": {
+        "question": 50
+      },
+      "answer": "B"
+    },
+    {
+      "id": 126,
+      "prompt": "Una estrategia de prueba que prueba la aplicación en su conjunto.",
+      "options": {
+        "A": "Reunión de requisitos",
+        "B": "Pruebas de verificación",
+        "C": "Pruebas de validación.",
+        "D": "Pruebas del sistema"
+      },
+      "sourcePages": {
+        "question": 51
+      },
+      "answer": "D"
+    },
+    {
+      "id": 127,
+      "prompt": "Una estrategia de prueba que prueba la aplicación en el contexto de un sistema completo.",
+      "options": {
+        "A": "sistema",
+        "B": "Validación",
+        "C": "Unidad",
+        "D": "caja gris"
+      },
+      "sourcePages": {
+        "question": 51
+      },
+      "answer": "D"
+    },
+    {
+      "id": 128,
+      "prompt": "Se prueba un _________  para asegurar que la información fluye adecuadamente dentro y fuera del sistema.",
+      "options": {
+        "A": "interfaz del módulo",
+        "B": "estructura de datos local",
+        "C": "condiciones de contorno",
+        "D": "rutas de acceso"
+      },
+      "sourcePages": {
+        "question": 51
+      },
+      "answer": "D"
+    },
+    {
+      "id": 129,
+      "prompt": "Una prueba realizada en el sitio del desarrollador bajo pruebas de validación.",
+      "options": {
+        "A": "alfa",
+        "B": "gamma",
+        "C": "lambda",
+        "D": "unidad"
+      },
+      "sourcePages": {
+        "question": 51
+      },
+      "answer": "B"
+    },
+    {
+      "id": 130,
+      "prompt": "Amenaza es la probabilidad de que pueda atacar a un tipo específico y también ocurre dentro de un tiempo determinado.",
+      "options": {
+        "A": "Sí",
+        "B": "No"
+      },
+      "sourcePages": {
+        "question": 52
+      },
+      "answer": "A"
+    },
+    {
+      "id": 131,
+      "prompt": "¿Un plan de gestión de riesgos efectivo deberá abordar cuál de los siguientes problemas?",
+      "options": {
+        "A": "Evitación de riesgo",
+        "B": "Monitoreo de riesgos",
+        "C": "Planificación de contingencias",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 52
+      },
+      "answer": "C"
+    },
+    {
+      "id": 132,
+      "prompt": "¿Cuál de estas actividades no es una de las actividades recomendadas para ser realizadas por un grupo independiente de SQA?",
+      "options": {
+        "A": "Servir como el único equipo de prueba para cualquier software producido.",
+        "B": "Las herramientas y métodos que soportan las acciones y tareas de SQA.",
+        "C": "Procedimientos de gestión de la configuración del software.",
+        "D": "Roles organizacionales y responsabilidades relativas a la calidad del producto."
+      },
+      "sourcePages": {
+        "question": 52
+      },
+      "answer": "B"
+    },
+    {
+      "id": 133,
+      "prompt": "¿Cuáles son las características del riesgo del Software?",
+      "options": {
+        "A": "Incertidumbre",
+        "B": "Pérdida",
+        "C": "Ambos A y B",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 52
+      },
+      "answer": "B"
+    },
+    {
+      "id": 134,
+      "prompt": "¿Cuál es el grado en que el software realiza su función requerida?",
+      "options": {
+        "A": "Exactitud",
+        "B": "Claridad",
+        "C": "Lo completo (Integridad)",
+        "D": "Consistencia"
+      },
+      "sourcePages": {
+        "question": 53
+      },
+      "answer": "C"
+    },
+    {
+      "id": 135,
+      "prompt": "El análisis de peligros se enfoca en la identificación y evaluación de peligros potenciales que pueden causar_________.",
+      "options": {
+        "A": "Problemas externos",
+        "B": "Problemas internos",
+        "C": "Ambos A y B",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 53
+      },
+      "answer": "A"
+    },
+    {
+      "id": 136,
+      "prompt": "El número total de medidas distintas de ocurrencia de operadores y operandos se utiliza en:",
+      "options": {
+        "A": "Teoria de lawrence",
+        "B": "La teoria de halstead",
+        "C": "Kyburg, H. E.",
+        "D": "Jech, t."
+      },
+      "sourcePages": {
+        "question": 53
+      },
+      "answer": "C"
+    },
+    {
+      "id": 137,
+      "prompt": "El presupuesto no es una sección en los planes estándar de SQA que se recomiendan en IEEE.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 53
+      },
+      "answer": "A"
+    },
+    {
+      "id": 138,
+      "prompt": "Construir un producto o sistema excelente para que nadie realmente quiera un riesgo es un:",
+      "options": {
+        "A": "Riesgo tecnico",
+        "B": "Riesgo de programa",
+        "C": "Riesgo del negocio",
+        "D": "Riesgo de rendimiento"
+      },
+      "sourcePages": {
+        "question": 54
+      },
+      "answer": "D"
+    },
+    {
+      "id": 139,
+      "prompt": "¿Qué riesgos identifican los posibles problemas de diseño, implementación, interfaz, verificación y mantenimiento?",
+      "options": {
+        "A": "Riesgo del Proyecto",
+        "B": "Riesgo del negocio",
+        "C": "Riesgo tecnico",
+        "D": "Riesgo de programa"
+      },
+      "sourcePages": {
+        "question": 54
+      },
+      "answer": "D"
+    },
+    {
+      "id": 140,
+      "prompt": "¿Cuál es la secuencia detallada de pasos que describe la interacción entre el usuario y la aplicación?",
+      "options": {
+        "A": "Guiones de escenarios",
+        "B": "Clases de apoyo",
+        "C": "Clases claves",
+        "D": "Subsistemas"
+      },
+      "sourcePages": {
+        "question": 54
+      },
+      "answer": "C"
+    },
+    {
+      "id": 141,
+      "prompt": "Las métricas de cohesión y las métricas de acoplamiento son métricas en qué nivel de diseño?",
+      "options": {
+        "A": "Diseño de interfaz de usuario",
+        "B": "Diseño basado en patrones",
+        "C": "Diseño de la arquitectura",
+        "D": "Diseño a nivel de componente"
+      },
+      "sourcePages": {
+        "question": 54
+      },
+      "answer": "D"
+    },
+    {
+      "id": 142,
+      "prompt": "¿Cuál es el nivel de proyecto y proceso que proporciona el beneficio de Métrica de calidad?",
+      "options": {
+        "A": "Amplificación de defectos",
+        "B": "Eficacia de eliminación de defectos",
+        "C": "Calidad de medición",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 55
+      },
+      "answer": "B"
+    },
+    {
+      "id": 143,
+      "prompt": "De lo siguiente se dan tres categorías principales de riesgo, 1) programa (Schedule)  de riesgo 2) Riesgo de proyecto 3) riesgo técnico 4) Riesgo de negocio",
+      "options": {
+        "A": "1,2 y 3",
+        "B": "2,3 y 4",
+        "C": "1,2 y 4",
+        "D": "1,3 y 4"
+      },
+      "sourcePages": {
+        "question": 55
+      },
+      "answer": "B"
+    },
+    {
+      "id": 144,
+      "prompt": "¿Cuál es la medida más común para la corrección?",
+      "options": {
+        "A": "Defectos por KLOC",
+        "B": "Errores por KLOC",
+        "C": "$ por KLOC",
+        "D": "Páginas de documentación por KLOC."
+      },
+      "sourcePages": {
+        "question": 55
+      },
+      "answer": "A"
+    },
+    {
+      "id": 145,
+      "prompt": "¿Qué métricas se derivan al normalizar las medidas de calidad y / o productividad considerando el tamaño del software que se ha producido?",
+      "options": {
+        "A": "Tamaño orientado",
+        "B": "Orientado a funciones",
+        "C": "Orientado a objetos",
+        "D": "Uso-caso-orientado"
+      },
+      "sourcePages": {
+        "question": 56
+      },
+      "answer": "A"
+    },
+    {
+      "id": 146,
+      "prompt": "¿Qué modelo de amplificación de defectos se utiliza para ilustrar la generación y detección de errores durante los pasos preliminares de un proceso de ingeniería de software?",
+      "options": {
+        "A": "Diseño",
+        "B": "Diseño detallado",
+        "C": "Codificación",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 56
+      },
+      "answer": "D"
+    },
+    {
+      "id": 147,
+      "prompt": "Una de las técnicas de prueba de la base de falla es  ________ .",
+      "options": {
+        "A": "Examen de la unidad",
+        "B": "Prueba beta",
+        "C": "Pruebas de estrés",
+        "D": "Pruebas de mutación"
+      },
+      "sourcePages": {
+        "question": 56
+      },
+      "answer": "D"
+    },
+    {
+      "id": 148,
+      "prompt": "La modificación del software para que coincida con los cambios en el entorno siempre cambiante se denomina   ____________.",
+      "options": {
+        "A": "Mantenimiento adaptativo",
+        "B": "Mantenimiento correctivo",
+        "C": "Mantenimiento perfecto",
+        "D": "Mantenimiento preventivo"
+      },
+      "sourcePages": {
+        "question": 56
+      },
+      "answer": "A"
+    },
+    {
+      "id": 149,
+      "prompt": "Los cambios que se realizan en el sistema para reducir las futuras fallas de falla del sistema se llaman:",
+      "options": {
+        "A": "Mantenimiento preventivo",
+        "B": "Mantenimiento adaptativo",
+        "C": "Mantenimiento correctivo",
+        "D": "Mantenimiento perfecto"
+      },
+      "sourcePages": {
+        "question": 57
+      },
+      "answer": "A"
+    },
+    {
+      "id": 150,
+      "prompt": "El mantenimiento preventivo está implementando cambios en los requisitos nuevos o existentes del usuario.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 57
+      },
+      "answer": "B"
+    },
+    {
+      "id": 151,
+      "prompt": "El conocimiento del programa de software, diseño y estructura es esencial en . a. Prueba de caja negra",
+      "options": {
+        "B": "Especificar componentes",
+        "C": "Especificación de requerimiento",
+        "D": "Incorporar componentes",
+        "A": "Buscar componentes adecuados"
+      },
+      "sourcePages": {
+        "question": 57
+      },
+      "answer": "B"
+    },
+    {
+      "id": 153,
+      "prompt": "Si los cambios en los costos de mantenimiento a menudo se dejan sin documentar, lo que puede causar más conflictos en el software futuro.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 58
+      },
+      "answer": "A"
+    },
+    {
+      "id": 154,
+      "prompt": "El tamaño del sistema es una métrica para el modelo de análisis.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 58
+      },
+      "answer": "A"
+    },
+    {
+      "id": 155,
+      "prompt": "En el proceso de Reingeniería, ¿qué conceptos para obtener un software rediseñado?",
+      "options": {
+        "A": "Aplicar ingeniería avanzada",
+        "B": "Realizar",
+        "C": "Decidir",
+        "D": "Programa de reestructuracion"
+      },
+      "sourcePages": {
+        "question": 58
+      },
+      "answer": "A"
+    },
+    {
+      "id": 156,
+      "prompt": "En el mantenimiento del software, la eliminación de errores detectados  por los usuarios se conoce como :",
+      "options": {
+        "A": "Adaptado",
+        "B": "Correctivo",
+        "C": "Perfecto",
+        "D": "Preventivo"
+      },
+      "sourcePages": {
+        "question": 58
+      },
+      "answer": "B"
+    },
+    {
+      "id": 157,
+      "prompt": "Los nuevos módulos, que deben ser reemplazados o modificados, y también están diseñados contra las especificaciones de requisitos establecidas en la etapa anterior son:",
+      "options": {
+        "A": "Ya sea manteniendo los mismos requisitos y ajustando los componentes.",
+        "B": "Manteniendo los mismos componentes y modificando los requisitos.",
+        "C": "Ambos A y B",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 58
+      },
+      "answer": "D"
+    },
+    {
+      "id": 159,
+      "prompt": "¿Qué calidad se ocupa del mantenimiento de la calidad del producto de software?",
+      "options": {
+        "A": "Seguro de calidad",
+        "B": "Control de calidad",
+        "C": "Eficiencia de calidad",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 59
+      },
+      "answer": "B"
+    },
+    {
+      "id": 160,
+      "prompt": "La fuerza de explosión, el retroceso y la eliminación de causas son estrategias utilizadas en el arte de la depuración.",
+      "options": {
+        "A": "Sí",
+        "B": "No"
+      },
+      "sourcePages": {
+        "question": 59
+      },
+      "answer": "D"
+    },
+    {
+      "id": 161,
+      "prompt": "Los componentes de software proporcionan interfaces, que pueden utilizarse para establecer la comunicación entre diferentes componentes.",
+      "options": {
+        "A": "Sí",
+        "B": "No"
+      },
+      "sourcePages": {
+        "question": 59
+      },
+      "answer": "D"
+    },
+    {
+      "id": 162,
+      "prompt": "¿Qué nivel de subsistema se usa de una aplicación?",
+      "options": {
+        "A": "Nivel de aplicación",
+        "B": "Nivel de componente",
+        "C": "Nivel de modulos",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 59
+      },
+      "answer": "B"
+    },
+    {
+      "id": 163,
+      "prompt": "¿Qué incluye las modificaciones y actualizaciones realizadas para corregir o solucionar los problemas, que son descubiertos por el usuario o concluidos por los informes de errores del usuario?",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso",
+        "C": "Mantenimiento correctivo",
+        "D": "Mantenimiento preventivo 164.La gestión de la configuración es una parte esencial del mantenimiento del sistema. Se facilita con herramientas de control de versiones para controlar versiones, semi - versiones o administración de parches."
+      },
+      "sourcePages": {
+        "question": 60
+      },
+      "answer": "C"
+    },
+    {
+      "id": 165,
+      "prompt": "Cuando  el  cliente  puede  solicitar  nuevas  características  o  funciones  en  el software,  ¿qué significa en el mantenimiento del software?",
+      "options": {
+        "A": "Modificaciones de host",
+        "B": "Requerimientos del cliente",
+        "C": "Condiciones de mercado",
+        "D": "Cambios organizativos"
+      },
+      "sourcePages": {
+        "question": 60
+      },
+      "answer": "B"
+    },
+    {
+      "id": 166,
+      "prompt": "¿Qué factores finales del software afectan el costo de mantenimiento?",
+      "options": {
+        "A": "Estructura del programa de software",
+        "B": "Lenguaje de programación",
+        "C": "Dependencia del entorno externo.",
+        "D": "Todo lo mencionado anteriormente e. Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 61
+      },
+      "answer": "D"
+    },
+    {
+      "id": 167,
+      "prompt": "Dar los factores del mundo real que afectan el costo de mantenimiento.",
+      "options": {
+        "A": "Especificación de requisitos de software",
+        "B": "Diseño de software",
+        "C": "Pruebas",
+        "D": "Tanto a como B)"
+      },
+      "sourcePages": {
+        "question": 61
+      },
+      "answer": "D"
+    },
+    {
+      "id": 169,
+      "prompt": "¿Cuál no es un paso de Ingeniería de Requisitos?",
+      "options": {
+        "A": "elicitación de requisitos",
+        "B": "Análisis de requerimientos",
+        "C": "Diseño de requerimientos",
+        "D": "Documentación de requerimientos"
+      },
+      "sourcePages": {
+        "question": 61
+      },
+      "answer": "C"
+    },
+    {
+      "id": 170,
+      "prompt": "SRD significa:",
+      "options": {
+        "A": "Definición de requisitos de software",
+        "B": "Definición de requisitos estructurados",
+        "C": "Diagrama de requisitos de software",
+        "D": "Diagrama de Requerimientos Estructurados"
+      },
+      "sourcePages": {
+        "question": 62
+      },
+      "answer": "B"
+    },
+    {
+      "id": 171,
+      "prompt": "El modelado es una representación de las clases orientadas a objetos y las colaboraciones resultantes permitirán que un sistema funcione.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 62
+      },
+      "answer": "A"
+    },
+    {
+      "id": 172,
+      "prompt": "Los requisitos pueden ser verificados en las siguientes condiciones. 1) Si no se pueden implementar en la práctica. 2) Si no son válidos y según la funcionalidad y dominio del software. 3) Si no hay ambigüedades.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 62
+      },
+      "answer": "B"
+    },
+    {
+      "id": 173,
+      "prompt": "En  el  análisis  de  requisitos,  ¿qué  modelo  representa  el  dominio  de  información para  el problema?",
+      "options": {
+        "A": "Modelos de datos",
+        "B": "Modelos orientados a la clase",
+        "C": "Modelos basados en escenarios",
+        "D": "Modelos orientados al flujo"
+      },
+      "sourcePages": {
+        "question": 62
+      },
+      "answer": "A"
+    },
+    {
+      "id": 174,
+      "prompt": "En  el  análisis  de  requisitos,  ¿qué  modelo  describe  cómo  se  comporta  el software  como consecuencia de eventos externos?",
+      "options": {
+        "A": "Modelos orientados a la clase",
+        "B": "Modelos basados en escenarios",
+        "C": "Modelos orientados al flujo",
+        "D": "Modelos de comportamiento"
+      },
+      "sourcePages": {
+        "question": 63
+      },
+      "answer": "D"
+    },
+    {
+      "id": 175,
+      "prompt": "Los requisitos pueden recopilarse de los usuarios a través de entrevistas, encuestas, análisis de tareas, lluvia de ideas, análisis de dominios, creación de prototipos, estudio de la versión de software utilizable existente y por observación.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 63
+      },
+      "answer": "A"
+    },
+    {
+      "id": 176,
+      "prompt": "El proceso para reunir los requisitos de software del Cliente, Analizar y Documentar se conoce como:",
+      "options": {
+        "A": "Proceso de ingeniería de requerimientos",
+        "B": "Proceso de elicitación de requisitos.",
+        "C": "Requisitos de interfaz de usuario",
+        "D": "Analista de sistemas de software"
+      },
+      "sourcePages": {
+        "question": 63
+      },
+      "answer": "A"
+    },
+    {
+      "id": 177,
+      "prompt": "Abrevia el término SRS.",
+      "options": {
+        "A": "Describir lo que requiere el cliente.",
+        "B": "Establecer una base para la creación de un diseño de software.",
+        "C": "Para definir un conjunto de requisitos que pueden ser validados una vez que el software",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 63
+      },
+      "answer": "A"
+    },
+    {
+      "id": 179,
+      "prompt": "Las entrevistas, que se llevan a cabo entre dos personas en la mesa son :",
+      "options": {
+        "A": "Escrito",
+        "B": "No estructurado",
+        "C": "Grupo",
+        "D": "Uno a uno"
+      },
+      "sourcePages": {
+        "question": 64
+      },
+      "answer": "D"
+    },
+    {
+      "id": 180,
+      "prompt": "¿Los analistas del sistema tienen cuáles de estas responsabilidades siguientes?",
+      "options": {
+        "A": "Análisis y comprensión de los requisitos del software previsto.",
+        "B": "Entendiendo cómo el proyecto contribuirá en los objetivos de la organización.",
+        "C": "Identificar fuentes de requerimiento",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 64
+      },
+      "answer": "D"
+    },
+    {
+      "id": 181,
+      "prompt": "La especificación de requisitos de software debe tener las siguientes características: 1) Los requisitos del usuario se expresan en lenguaje natural. 2)  Los  requisitos  técnicos  se  expresan  en  lenguaje  estructurado,  que  se  utiliza dentro  de  la organización. 3) La descripción del diseño debe estar escrita en pseudo código.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 64
+      },
+      "answer": "A"
+    },
+    {
+      "id": 182,
+      "prompt": "El proceso para reunir los requisitos de software del Cliente, Analizar y Documentar se conoce como:",
+      "options": {
+        "A": "Cierto",
+        "B": "falso",
+        "C": "Requisitos de interfaz de usuario",
+        "D": "Analista de sistemas de software 183.En la validación de software, los requisitos pueden verificarse en las siguientes condiciones: 1) Si se pueden implementar en la práctica. 2) Si son válidos y según la funcionalidad y dominio del software. 3) Si hay alguna ambigüedad. 4) Si están completos"
+      },
+      "sourcePages": {
+        "question": 65
+      },
+      "answer": "A"
+    },
+    {
+      "id": 184,
+      "prompt": "SRS es un documento creado por un analista del sistema después de que se recopilan los requisitos de varias partes interesadas.",
+      "options": {
+        "A": "Elementos basados en escenarios",
+        "B": "Elementos basados en la clase",
+        "C": "Elementos de comportamiento",
+        "D": "Elementos orientados al flujo."
+      },
+      "sourcePages": {
+        "question": 65
+      },
+      "answer": "A"
+    },
+    {
+      "id": 186,
+      "prompt": "¿Cuál está enfocado hacia el objetivo de la organización?",
+      "options": {
+        "A": "Estudio de factibilidad",
+        "B": "Recolección de requisitos",
+        "C": "Especificación de requisitos de software",
+        "D": "Validación de requisitos de software"
+      },
+      "sourcePages": {
+        "question": 66
+      },
+      "answer": "A"
+    },
+    {
+      "id": 187,
+      "prompt": "¿Qué  documento  es  creado  por  el  analista  del  sistema  después  de  que  se recopilan  los requisitos de Varios interesados?",
+      "options": {
+        "A": "Especificación de requisitos de software",
+        "B": "Validación de requisitos de software",
+        "C": "Estudio de factibilidad",
+        "D": "Recolección de requisitos"
+      },
+      "sourcePages": {
+        "question": 66
+      },
+      "answer": "A"
+    },
+    {
+      "id": 188,
+      "prompt": "¿En qué proceso de obtención los desarrolladores discuten con el cliente y los usuarios finales y conocen sus expectativas del software?",
+      "options": {
+        "A": "Recolección de requisitos",
+        "B": "Requisitos de organizacion",
+        "C": "Negociación y discusión",
+        "D": "Documentación"
+      },
+      "sourcePages": {
+        "question": 66
+      },
+      "answer": "A"
+    },
+    {
+      "id": 189,
+      "prompt": "¿El proceso de ingeniería de requisitos incluye cuál de estos pasos?",
+      "options": {
+        "A": "Estudio de factibilidad",
+        "B": "Recolección de requisitos",
+        "C": "Requisitos de software especificación y validación",
+        "D": "Todo lo mencionado anteriormente"
+      },
+      "sourcePages": {
+        "question": 67
+      },
+      "answer": "D"
+    },
+    {
+      "id": 190,
+      "prompt": "¿Cuál de los siguientes términos describe las pruebas?",
+      "options": {
+        "A": "Encontrando código roto",
+        "B": "Evaluar entregable para encontrar errores.",
+        "C": "Una etapa de todos los proyectos.",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 67
+      },
+      "answer": "B"
+    },
+    {
+      "id": 191,
+      "prompt": "¿Qué es la complejidad ciclomática?",
+      "options": {
+        "A": "Prueba de caja negra",
+        "B": "Prueba de caja blanca",
+        "C": "Prueba de caja amarilla",
+        "D": "Prueba de caja verde"
+      },
+      "sourcePages": {
+        "question": 67
+      },
+      "answer": "B"
+    },
+    {
+      "id": 192,
+      "prompt": "¿Límites inferior y superior están presentes en qué gráfico?",
+      "options": {
+        "A": "Ejecutar gráfico",
+        "B": "gráfico de barras",
+        "C": "gráfico de control",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 67
+      },
+      "answer": "A"
+    },
+    {
+      "id": 193,
+      "prompt": "¿Las pruebas de mantenimiento se realizan usando la metodología?",
+      "options": {
+        "A": "Repetir",
+        "B": "Pruebas de cordura",
+        "C": "Ensayo de amplitud y ensayo de profundidad.",
+        "D": "Pruebas de confirmación"
+      },
+      "sourcePages": {
+        "question": 68
+      },
+      "answer": "C"
+    },
+    {
+      "id": 194,
+      "prompt": "Las técnicas de caja blanca también se clasifican como:",
+      "options": {
+        "A": "Pruebas basadas en diseño",
+        "B": "Ensayos estructurales.",
+        "C": "Error al suponer la técnica.",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 68
+      },
+      "answer": "B"
+    },
+    {
+      "id": 195,
+      "prompt": "Las pruebas exhaustivas son:",
+      "options": {
+        "A": "siempre posible",
+        "B": "prácticamente posible",
+        "C": "poco práctico pero posible",
+        "D": "impracticable e imposible"
+      },
+      "sourcePages": {
+        "question": 68
+      },
+      "answer": "C"
+    },
+    {
+      "id": 196,
+      "prompt": "¿Cuál de las siguientes es / son la técnica de la caja blanca?",
+      "options": {
+        "A": "Prueba de declaración",
+        "B": "Prueba de decisión",
+        "C": "cobertura de la condición",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 68
+      },
+      "answer": "D"
+    },
+    {
+      "id": 197,
+      "prompt": "¿Cuáles son los diferentes niveles de prueba?",
+      "options": {
+        "A": "Pruebas unitarias",
+        "B": "Pruebas del sistema",
+        "C": "Pruebas de integración",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 69
+      },
+      "answer": "D"
+    },
+    {
+      "id": 198,
+      "prompt": "¿El análisis del valor de la frontera pertenece a?",
+      "options": {
+        "A": "Prueba de caja blanca",
+        "B": "Prueba de caja negra",
+        "C": "Prueba de caja blanca y caja negra",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 69
+      },
+      "answer": "B"
+    },
+    {
+      "id": 199,
+      "prompt": "La prueba alfa se realiza en",
+      "options": {
+        "A": "Fin del desarrollador.",
+        "B": "Fin del usuario.",
+        "C": "Fin del desarrollador y usuario",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 69
+      },
+      "answer": "A"
+    },
+    {
+      "id": 200,
+      "prompt": "Las pruebas en las que se verifica el código.",
+      "options": {
+        "A": "Prueba de caja negra",
+        "B": "Prueba de caja blanca",
+        "C": "Prueba de caja roja",
+        "D": "Prueba de caja verde"
+      },
+      "sourcePages": {
+        "question": 69
+      },
+      "answer": "B"
+    },
+    {
+      "id": 201,
+      "prompt": "Pruebas realizadas sin planificación y documentación.",
+      "options": {
+        "A": "Pruebas unitarias",
+        "B": "Pruebas de regression",
+        "C": "Pruebas Adhoc",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 70
+      },
+      "answer": "C"
+    },
+    {
+      "id": 202,
+      "prompt": "Las pruebas de aceptación también se conocen como:",
+      "options": {
+        "A": "Prueba de caja gris",
+        "B": "Prueba de caja blanca",
+        "C": "Prueba alfa",
+        "D": "prueba beta"
+      },
+      "sourcePages": {
+        "question": 70
+      },
+      "answer": "D"
+    },
+    {
+      "id": 203,
+      "prompt": "¿Cuál de las siguientes es una prueba no funcional?",
+      "options": {
+        "A": "Prueba de caja negra",
+        "B": "pruebas de rendimiento",
+        "C": "Pruebas unitarias",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 70
+      },
+      "answer": "B"
+    },
+    {
+      "id": 204,
+      "prompt": "La prueba beta se realiza en:",
+      "options": {
+        "A": "Fin del usuario.",
+        "B": "Fin del desarrollador.",
+        "C": "Fin de usuario y desarrollador.",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 70
+      },
+      "answer": "A"
+    },
+    {
+      "id": 205,
+      "prompt": "SPICE significa",
+      "options": {
+        "A": "Mejora de procesos de software y determinación de compatibilidad",
+        "B": "Mejora de procesos de software y determinación de control",
+        "C": "Mejora de procesos de software y determinación de capacidad",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 71
+      },
+      "answer": "C"
+    },
+    {
+      "id": 206,
+      "prompt": "La prueba unitaria se realiza por:",
+      "options": {
+        "A": "Usuarios",
+        "B": "Desarrolladores",
+        "C": "clientes",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 71
+      },
+      "answer": "B"
+    },
+    {
+      "id": 207,
+      "prompt": "La prueba de comportamiento es:",
+      "options": {
+        "A": "Prueba de caja blanca",
+        "B": "Prueba de caja negra",
+        "C": "Prueba de caja gris",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 71
+      },
+      "answer": "B"
+    },
+    {
+      "id": 208,
+      "prompt": "¿Cuál de las siguientes es la prueba de caja negra:",
+      "options": {
+        "A": "Prueba de ruta básica",
+        "B": "Análisis del valor límite",
+        "C": "Análisis de ruta de código",
+        "D": "Ninguna de las mencionadas"
+      },
+      "sourcePages": {
+        "question": 71
+      },
+      "answer": "B"
+    },
+    {
+      "id": 209,
+      "prompt": "¿Cuál de los siguientes no se usa para medir el tamaño del software?",
+      "options": {
+        "A": "KLOC",
+        "B": "Puntos de función",
+        "C": "sTtaamgauñiao",
+        "D": "fueel mvóednudloida"
+      },
+      "sourcePages": {
+        "question": 72
+      },
+      "answer": "C"
+    },
+    {
+      "id": 210,
+      "prompt": "………. tiene una limitación inherente al hecho de que el analista nunca podrá observar las complejidades del sistema.",
+      "options": {
+        "A": "Revisión de la documentación",
+        "B": "Observación de la situación.",
+        "C": "Realización de entrevistas",
+        "D": "Cuestionario de Administración"
+      },
+      "sourcePages": {
+        "question": 72
+      },
+      "answer": "B"
+    },
+    {
+      "id": 211,
+      "prompt": "Un modelo modificable construido antes de que se instale el sistema real se llama a (n) A. muestra (sample)",
+      "options": {
+        "B": "Observación de la situación.",
+        "C": "Realización de entrevistas",
+        "D": "Cuestionario de Administración",
+        "A": "Revisión de la documentación"
+      },
+      "sourcePages": {
+        "question": 72
+      },
+      "answer": "D"
+    },
+    {
+      "id": 214,
+      "prompt": "Indique si las siguientes afirmaciones son verdaderas o falsas. i) Los problemas o necesidades de información se discuten durante la fase de diseño de sistemas del SDLC. ii) El primer paso de la fase de diseño de sistemas del SDLC es seleccionar la mejor alternativa.",
+      "options": {
+        "A": "i-True, ii-True",
+        "B": "i-True, ii-False",
+        "C": "i-falso, ii-verdadero",
+        "D": "I falso- ii falso"
+      },
+      "sourcePages": {
+        "question": 73
+      },
+      "answer": "D"
+    },
+    {
+      "id": 215,
+      "prompt": "Definir las interfaces entre varios programas y diseñar pruebas para verificar sus interfaces es la actividad básica involucrada en ...",
+      "options": {
+        "A": "organigrama",
+        "B": "mesa de decisiones",
+        "C": "diagrama piramidal",
+        "D": "cuadro de cuadrícula"
+      },
+      "sourcePages": {
+        "question": 73
+      },
+      "answer": "C"
+    },
+    {
+      "id": 217,
+      "prompt": "Las entidades externas pueden ser un:",
+      "options": {
+        "A": "fuente de datos de entrada solamente",
+        "B": "Fuente de los datos de entrada o destino de los resultados.",
+        "C": "destino de los resultados solamente",
+        "D": "repositorio de datos"
+      },
+      "sourcePages": {
+        "question": 74
+      },
+      "answer": "B"
+    },
+    {
+      "id": 218,
+      "prompt": "Ventajas de los diagramas de flujo del sistema ...",
+      "options": {
+        "A": "organigrama",
+        "B": "guía de entrevista",
+        "C": "tabla de cuadrícula",
+        "D": "lista de verificación"
+      },
+      "sourcePages": {
+        "question": 74
+      },
+      "answer": "D"
+    },
+    {
+      "id": 220,
+      "prompt": "Por una entidad externa, queremos decir una:",
+      "options": {
+        "A": "La unidad fuera del sistema que se está diseñando y que puede ser controlada por un analista.",
+        "B": "La unidad fuera del sistema cuyo comportamiento es independiente del sistema está diseñado",
+        "C": "Una unidad externa al sistema está diseñada.",
+        "D": "Una unidad que no es parte de un DFD"
+      },
+      "sourcePages": {
+        "question": 75
+      },
+      "answer": "C"
+    },
+    {
+      "id": 221,
+      "prompt": "Se utiliza un diagrama de contexto.",
+      "options": {
+        "A": "como el primer paso para desarrollar un DFD detallado de un sistema",
+        "B": "En el análisis de sistemas de sistemas muy complejos.",
+        "C": "como ayuda al diseño del sistema.",
+        "D": "como ayuda al programador."
+      },
+      "sourcePages": {
+        "question": 75
+      },
+      "answer": "A"
+    },
+    {
+      "id": 222,
+      "prompt": "¿Qué tipo de análisis comienza con el \"panorama general\" y luego lo divide en partes más pequeñas?",
+      "options": {
+        "A": "financiero",
+        "B": "revertir",
+        "C": "de arriba a abajo",
+        "D": "ejecutivo"
+      },
+      "sourcePages": {
+        "question": 75
+      },
+      "answer": null
+    },
+    {
+      "id": 223,
+      "prompt": "Un flujo de datos puede",
+      "options": {
+        "A": "Sólo un almacén de datos",
+        "B": "Solo dejar un almacén de datos.",
+        "C": "Entrar o salir de un almacén de datos.",
+        "D": "Entrar o salir de un almacén de datos pero no ambos"
+      },
+      "sourcePages": {
+        "question": 75
+      },
+      "answer": null
+    },
+    {
+      "id": 224,
+      "prompt": "DDS significa",
+      "options": {
+        "A": "Data Data Systems",
+        "B": "Data Digital System",
+        "C": "Data Dictionary Systems",
+        "D": "Digital Data Service"
+      },
+      "sourcePages": {
+        "question": 76
+      },
+      "answer": null
+    },
+    {
+      "id": 225,
+      "prompt": "¿Cuál de los siguientes se usa para mostrar las reglas que se aplican a una decisión cuando se aplican una o más condiciones?",
+      "options": {
+        "A": "diagrama de flujo del sistema",
+        "B": "mesa de decisiones",
+        "C": "gráfico de cuadrícula",
+        "D": "lista de verificación"
+      },
+      "sourcePages": {
+        "question": 76
+      },
+      "answer": null
+    },
+    {
+      "id": 226,
+      "prompt": "Los datos no pueden fluir entre dos almacenes de datos porque",
+      "options": {
+        "A": "no está permitido en DFD",
+        "B": "un almacén de datos es un repositorio pasivo de datos",
+        "C": "los datos pueden corromperse",
+        "D": "se fusionarán"
+      },
+      "sourcePages": {
+        "question": 76
+      },
+      "answer": null
+    },
+    {
+      "id": 227,
+      "prompt": "Un DFD se nivela normalmente como:",
+      "options": {
+        "A": "Es una buena idea en diseño.",
+        "B": "Es recomendado por muchos expertos.",
+        "C": "Es fácil hacerlo.",
+        "D": "Es más fácil leer y comprender un número de DFD más pequeños que un DFD grande"
+      },
+      "sourcePages": {
+        "question": 76
+      },
+      "answer": null
+    },
+    {
+      "id": 228,
+      "prompt": "¿Cuál de las siguientes herramientas muestra los datos o el flujo de información dentro de un sistema de información?",
+      "options": {
+        "A": "gráfico de cuadrícula",
+        "B": "mesa de decisiones",
+        "C": "diagrama de flujo del sistema",
+        "D": "diagrama de flujo de datos"
+      },
+      "sourcePages": {
+        "question": 77
+      },
+      "answer": null
+    },
+    {
+      "id": 229,
+      "prompt": "………. permite definir el flujo de datos a través de una organización o una empresa o una serie de tareas que pueden o no representar un procesamiento computarizado.",
+      "options": {
+        "A": "tablas de decisión",
+        "B": "árbol de decisión",
+        "C": "Método de decisión",
+        "D": "Datos de decisión"
+      },
+      "sourcePages": {
+        "question": 77
+      },
+      "answer": null
+    },
+    {
+      "id": 231,
+      "prompt": "¿Cuál de los siguientes no se encuentra en un diagrama de flujo de datos?",
+      "options": {
+        "A": "entidades",
+        "B": "proceso",
+        "C": "almacenamiento fuera de línea",
+        "D": "archivo"
+      },
+      "sourcePages": {
+        "question": 77
+      },
+      "answer": null
+    },
+    {
+      "id": 232,
+      "prompt": "Un diagrama de context:",
+      "options": {
+        "A": "Describe el contexto de un sistema",
+        "B": "es un DFD que ofrece una visión general del sistema",
+        "C": "es una descripción detallada de un sistema",
+        "D": "no se usa para dibujar un DFD detallado"
+      },
+      "sourcePages": {
+        "question": 78
+      },
+      "answer": null
+    },
+    {
+      "id": 233,
+      "prompt": "CASE significa:",
+      "options": {
+        "A": "Computer analysis and system engineering",
+        "B": "Computer-aided software engineering",
+        "C": "Computer-aided system engineering",
+        "D": "The computer analyzed system engineering"
+      },
+      "sourcePages": {
+        "question": 78
+      },
+      "answer": null
+    },
+    {
+      "id": 234,
+      "prompt": "Un rectángulo en un DFD representa",
+      "options": {
+        "A": "un proceso",
+        "B": "un almacén de datos",
+        "C": "una entidad externa",
+        "D": "una unidad de entrada"
+      },
+      "sourcePages": {
+        "question": 78
+      },
+      "answer": null
+    },
+    {
+      "id": 235,
+      "prompt": "HIPO significa:",
+      "options": {
+        "A": "Hierarchy input process output",
+        "B": "Hierarchy input plus output",
+        "C": "Hierarchy plus input process output",
+        "D": "Hierarchy input-output process"
+      },
+      "sourcePages": {
+        "question": 78
+      },
+      "answer": null
+    },
+    {
+      "id": 236,
+      "prompt": "¿Cuál del diagrama muestra interacciones entre objetos?",
+      "options": {
+        "A": "diagrama de actividad",
+        "B": "diagrama de clase",
+        "C": "diagrama de secuencia",
+        "D": "diagramas de componentes"
+      },
+      "sourcePages": {
+        "question": 78
+      },
+      "answer": null
+    },
+    {
+      "id": 237,
+      "prompt": "El diseño del sistema consiste en una investigación preliminar y un estudio de factibilidad, una investigación detallada que consiste en ... i) búsqueda de hechos ii) análisis y evaluación de datos iii) estimando los costos y beneficios iv) Elaboración de propuesta de sistema.",
+      "options": {
+        "A": "la comunicación",
+        "B": "Grupo de queasier o relaciones",
+        "C": "análisis efectivo",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 79
+      },
+      "answer": null
+    },
+    {
+      "id": 239,
+      "prompt": "Un diagrama de gráfico de estado describe ...",
+      "options": {
+        "A": "atributos de los objetos",
+        "B": "nodos del sistema",
+        "C": "operaciones ejecutadas en un hilo",
+        "D": "Eventos desencadenados por un objeto."
+      },
+      "sourcePages": {
+        "question": 79
+      },
+      "answer": null
+    },
+    {
+      "id": 240,
+      "prompt": "¿Cuál de las siguientes herramientas no se utiliza para organizar los proyectos del sistema?",
+      "options": {
+        "A": "diagrama de flujo del sistema",
+        "B": "Tablas de decisión",
+        "C": "Árboles del sistema",
+        "D": "organigrama"
+      },
+      "sourcePages": {
+        "question": 80
+      },
+      "answer": null
+    },
+    {
+      "id": 244,
+      "prompt": "Las cuatro partes de las tablas de decisión son ... i) condición del talón ii) talón de decisión iii) condición de entrada iv) talón de acción v) entrada de acción",
+      "options": {
+        "A": "i, ii, iii y iv solamente",
+        "B": "ii, iii, iv yv solamente",
+        "C": "i, iii, iv y v solamente",
+        "D": "Sólo i, ii, iv y v"
+      },
+      "sourcePages": {
+        "question": 81
+      },
+      "answer": "C"
+    },
+    {
+      "id": 245,
+      "prompt": "El diagrama de actividad ...",
+      "options": {
+        "A": "se centra en los flujos impulsados por el procesamiento interno",
+        "B": "modela los eventos externos simulando un objeto",
+        "C": "se enfoca en las transiciones entre estados de un objeto particular",
+        "D": "modela la interacción entre objetos"
+      },
+      "sourcePages": {
+        "question": 81
+      },
+      "answer": "A"
+    },
+    {
+      "id": 246,
+      "prompt": "……….  El  símbolo  en  el  diagrama  de  flujo  del  sistema  representa  una  de  las principales funciones de procesamiento.",
+      "options": {
+        "A": "caso de uso impulsado",
+        "B": "componente impulsado",
+        "C": "relacionado con la programación extrema",
+        "D": "ninguno en una sola iteración"
+      },
+      "sourcePages": {
+        "question": 81
+      },
+      "answer": "A"
+    },
+    {
+      "id": 252,
+      "prompt": "El diagrama de flujo del sistema consiste principalmente en ... i) la fuente a partir de la cual se preparan los datos de entrada y el medio o los dispositivos utilizados. ii) Los pasos de procesamiento o secuencia de operaciones involucradas.",
+      "options": {
+        "A": "diagrama de flujo del sistema",
+        "B": "Tablas de decisión",
+        "C": "Árboles de decisión",
+        "D": "organigrama"
+      },
+      "sourcePages": {
+        "question": 83
+      },
+      "answer": "C"
+    },
+    {
+      "id": 256,
+      "prompt": "El Lenguaje de modelado unificado (UML) se ha convertido en un estándar efectivo para el modelado de softwad. ¿Cuántas notaciones diferentes tiene?",
+      "options": {
+        "A": "tres",
+        "B": "cuatro",
+        "C": "Seis",
+        "D": "nueve"
+      },
+      "sourcePages": {
+        "question": 84
+      },
+      "answer": "D"
+    },
+    {
+      "id": 257,
+      "prompt": "¿Qué modelo en el modelado de sistemas describe el comportamiento dinámico del sistema?",
+      "options": {
+        "A": "Modelo de contexto",
+        "B": "Modelo de comportamiento",
+        "C": "Modelo de datos",
+        "D": "Modelo de objeto"
+      },
+      "sourcePages": {
+        "question": 84
+      },
+      "answer": "B"
+    },
+    {
+      "id": 258,
+      "prompt": "¿Qué modelo en el modelado de sistemas describe la naturaleza estática del sistema?",
+      "options": {
+        "A": "Modelo de comportamiento",
+        "B": "Modelo de contexto",
+        "C": "Modelo de datos",
+        "D": "Modelo estructural"
+      },
+      "sourcePages": {
+        "question": 85
+      },
+      "answer": "D"
+    },
+    {
+      "id": 259,
+      "prompt": "Qué perspectiva en el modelado de sistemas muestra el sistema o la arquitectura de datos.",
+      "options": {
+        "A": "Perspectiva estructural.",
+        "B": "Perspectiva de comportamiento.",
+        "C": "perspectiva externa",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 85
+      },
+      "answer": "A"
+    },
+    {
+      "id": 260,
+      "prompt": "¿Qué modelo de sistema se muestra en las operaciones de cajero automático que se muestran a continuación?",
+      "options": {
+        "A": "Modelo estructural",
+        "B": "modelo de contexto",
+        "C": "Modelo de comportamiento.",
+        "D": "Modelo de interacción."
+      },
+      "sourcePages": {
+        "question": 85
+      },
+      "answer": "B"
+    },
+    {
+      "id": 261,
+      "prompt": "Los diagramas de actividad se utilizan para modelar el procesamiento de datos.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 86
+      },
+      "answer": "A"
+    },
+    {
+      "id": 262,
+      "prompt": "La ingeniería dirigida por modelos es solo un concepto teórico. No se puede convertir en un código de trabajo / ejecutable.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 86
+      },
+      "answer": "B"
+    },
+    {
+      "id": 263,
+      "prompt": "El UML admite el modelado basado en eventos utilizando diagramas: . a) Despliegue",
+      "options": {
+        "B": "Colaboración",
+        "C": "gráfico de estado",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 86
+      },
+      "answer": "C"
+    },
+    {
+      "id": 264,
+      "prompt": "¿Cuál de los siguientes diagramas no es compatible con UML considerando el modelado basado en datos?",
+      "options": {
+        "A": "Actividad",
+        "B": "Diagrama de flujo de datos (DFD)",
+        "C": "carta del estado",
+        "D": "componente"
+      },
+      "sourcePages": {
+        "question": 86
+      },
+      "answer": "B"
+    },
+    {
+      "id": 265,
+      "prompt": "nos  permite inferir  que diferentes  miembros  de  clases tienen  algunas características comunes.",
+      "options": {
+        "A": "Realización",
+        "B": "Agregación",
+        "C": "Generalización",
+        "D": "dependencia"
+      },
+      "sourcePages": {
+        "question": 87
+      },
+      "answer": "C"
+    },
+    {
+      "id": 266,
+      "prompt": "Uno crea modelos de comportamiento de un sistema cuando está discutiendo y diseñando la arquitectura del sistema.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 87
+      },
+      "answer": "B"
+    },
+    {
+      "id": 267,
+      "prompt": "Los  diagramas  de  _______-y  ______  de UML representan el modelo de interacción.",
+      "options": {
+        "A": "Caso de uso, secuencia",
+        "B": "Clase, Objeto",
+        "C": "Actividad, gráfico de estado",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 87
+      },
+      "answer": "A"
+    },
+    {
+      "id": 268,
+      "prompt": "¿Qué nivel de Diagrama de relaciones entre entidades (ERD) modela todas las entidades y relaciones?",
+      "options": {
+        "A": "Nivel 1",
+        "B": "Nivel 2",
+        "C": "Nivel 3",
+        "D": "Nivel 4"
+      },
+      "sourcePages": {
+        "question": 88
+      },
+      "answer": "B"
+    },
+    {
+      "id": 269,
+      "prompt": "_________las clases se usan para crear la interfaz que el usuario ve e interactúa a medida que se usa el software.",
+      "options": {
+        "A": "controlador",
+        "B": "entidad",
+        "C": "Límite",
+        "D": "negocios"
+      },
+      "sourcePages": {
+        "question": 88
+      },
+      "answer": "C"
+    },
+    {
+      "id": 270,
+      "prompt": "¿Cuál de las siguientes afirmaciones es incorrecta con respecto al modelo de Colaborador de responsabilidad de la clase (CRC)?",
+      "options": {
+        "A": "Todos los escenarios de casos de uso (y los correspondientes diagramas de casos de uso) están organizados en categorías en el modelo CRC",
+        "B": "El líder de revisión lee el caso de uso deliberadamente",
+        "C": "Solo los desarrolladores en la revisión (del modelo CRC) reciben un subconjunto de las tarjetas de índice del modelo CRC",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 88
+      },
+      "answer": "C"
+    },
+    {
+      "id": 271,
+      "prompt": "Un objeto de datos también puede encapsular procesos y operaciones.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 88
+      },
+      "answer": "B"
+    },
+    {
+      "id": 272,
+      "prompt": "Las dos dimensiones del modelo espiral son:",
+      "options": {
+        "A": "diagonal, angular",
+        "B": "radial, perpendicular",
+        "C": "radial, angular",
+        "D": "diagonal, perpendicular"
+      },
+      "sourcePages": {
+        "question": 89
+      },
+      "answer": "C"
+    },
+    {
+      "id": 273,
+      "prompt": "El Modelo Incremental es una combinación de elementos de:",
+      "options": {
+        "A": "Modelo construir y arreglar (Build & FIX) y modelo de cascada",
+        "B": "Modelo lineal y modelo RAD",
+        "C": "Modelo lineal y modelo de prototipos.",
+        "D": "Modelo de cascada y modelo de RAD"
+      },
+      "sourcePages": {
+        "question": 89
+      },
+      "answer": "C"
+    },
+    {
+      "id": 274,
+      "prompt": "El modelo preferido para crear aplicaciones cliente / servidor es:",
+      "options": {
+        "A": "Modelo Espiral WINWIN",
+        "B": "Modelo en espiral",
+        "C": "Modelo concurrente",
+        "D": "Modelo incremental"
+      },
+      "sourcePages": {
+        "question": 89
+      },
+      "answer": "C"
+    },
+    {
+      "id": 275,
+      "prompt": "Identifique la afirmación correcta con respecto al desarrollo evolutivo:",
+      "options": {
+        "A": "El desarrollo evolutivo suele tener dos sabores; Desarrollo exploratorio y prototipado : desechable.",
+        "B": "Los  proyectos  muy  grandes  se  realizan  generalmente  utilizando  un  enfoque basado  en  el desarrollo evolutivo",
+        "C": "Facilita la gestión fácil de proyectos, a través del alto volumen de documentación que genera.",
+        "D": "A veces, la construcción de un prototipo desechable no es seguida por una reimplementación del sistema de software utilizando un enfoque más estructurado"
+      },
+      "sourcePages": {
+        "question": 89
+      },
+      "answer": "A"
+    },
+    {
+      "id": 276,
+      "prompt": "El modelo espiral fue desarrollado por :",
+      "options": {
+        "A": "Victor Bisili",
+        "B": "Berry Boehm",
+        "C": "Bev Littlewood",
+        "D": "Roger Pressman"
+      },
+      "sourcePages": {
+        "question": 90
+      },
+      "answer": "B"
+    },
+    {
+      "id": 277,
+      "prompt": "La evolución del software no comprende:",
+      "options": {
+        "A": "Actividades de desarrollo.",
+        "B": "Negociación con el cliente.",
+        "C": "Actividades de mantenimiento.",
+        "D": "Actividades de reingeniería."
+      },
+      "sourcePages": {
+        "question": 90
+      },
+      "answer": "B"
+    },
+    {
+      "id": 278,
+      "prompt": "Los procesos para la evolución de un producto de software dependen de:",
+      "options": {
+        "A": "Tipo de software a mantener",
+        "B": "Procesos de desarrollo utilizados.",
+        "C": "Habilidades y experiencia de las personas involucradas.",
+        "D": "Todas las mencionadas."
+      },
+      "sourcePages": {
+        "question": 90
+      },
+      "answer": null
+    },
+    {
+      "id": 279,
+      "prompt": "¿Qué técnica se aplica para garantizar la evolución continua de los sistemas heredados?",
+      "options": {
+        "A": "ingeniería avanzada",
+        "B": "Ingeniería inversa",
+        "C": "Reingeniería",
+        "D": "Ingeniería inversa y reingeniería"
+      },
+      "sourcePages": {
+        "question": 90
+      },
+      "answer": "D"
+    },
+    {
+      "id": 280,
+      "prompt": "La   modularización   del   programa   y   la   traducción   del   código   fuente   son actividades de :",
+      "options": {
+        "A": "ingeniería avanzada",
+        "B": "Ingeniería inversa",
+        "C": "Reingeniería",
+        "D": "Ingeniería inversa y reingeniería"
+      },
+      "sourcePages": {
+        "question": 91
+      },
+      "answer": "C"
+    },
+    {
+      "id": 281,
+      "prompt": "La ingeniería inversa es la última actividad en un proyecto de reingeniería.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 91
+      },
+      "answer": "B"
+    },
+    {
+      "id": 282,
+      "prompt": "El costo de la reingeniería a menudo es significativamente menor que el costo de desarrollar un nuevo software.",
+      "options": {
+        "A": "verdad",
+        "B": "falso"
+      },
+      "sourcePages": {
+        "question": 91
+      },
+      "answer": "A"
+    },
+    {
+      "id": 283,
+      "prompt": "¿Cuál es la característica más importante del modelo en espiral?",
+      "options": {
+        "A": "Gestión de la calidad",
+        "B": "Gestión de riesgos",
+        "C": "Gestión del rendimiento",
+        "D": "Gestión de la eficiencia"
+      },
+      "sourcePages": {
+        "question": 91
+      },
+      "answer": "B"
+    },
+    {
+      "id": 284,
+      "prompt": "El modelo en el que los requisitos se implementan según su categoría es :",
+      "options": {
+        "A": "Modelo de desarrollo evolutivo",
+        "B": "Modelo de cascada",
+        "C": "Prototipado",
+        "D": "Modelo de mejora iterativa"
+      },
+      "sourcePages": {
+        "question": 91
+      },
+      "answer": "A"
+    },
+    {
+      "id": 285,
+      "prompt": "¿Qué  software  funciona  estrictamente  de  acuerdo  con  las  especificaciones  y soluciones definidas?",
+      "options": {
+        "A": "Tipo estático",
+        "B": "Tipo practico",
+        "C": "Tipo incrustado",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 92
+      },
+      "answer": "A"
+    },
+    {
+      "id": 286,
+      "prompt": "El paradigma de diseño de software es una parte del desarrollo de software e incluye : a. Diseño, Mantenimiento, Programación.",
+      "options": {
+        "B": "Falso",
+        "C": "Recolección de requerimientos, Diseño de software, Programación.",
+        "D": "Ninguna de las anteriores 287 Si el proceso del software se basara en conceptos científicos y de ingeniería, sería más fácil recrear un nuevo software que escalar uno existente.",
+        "A": "Cierto"
+      },
+      "sourcePages": {
+        "question": 92
+      },
+      "answer": "A"
+    },
+    {
+      "id": 288,
+      "prompt": "¿Qué aspecto es importante cuando el software se mueve de una plataforma a otra?",
+      "options": {
+        "A": "Mantenimiento",
+        "B": "Operacional",
+        "C": "Transicional",
+        "D": "Todas las anteriores"
+      },
+      "sourcePages": {
+        "question": 92
+      },
+      "answer": "C"
+    },
+    {
+      "id": 289,
+      "prompt": "El  software  no  se  considera  como  una  colección  de  código  de  programación ejecutable, bibliotecas asociadas y documentación.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 93
+      },
+      "answer": "B"
+    },
+    {
+      "id": 290,
+      "prompt": "Las clases se comunican entre sí a través de :",
+      "options": {
+        "A": "Leer sensores",
+        "B": "Marcar telefonos",
+        "C": "Mensajes",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 93
+      },
+      "answer": "C"
+    },
+    {
+      "id": 291,
+      "prompt": "Para  el  mejor  modelo  de  software  adecuado  para  el  proyecto,  ¿en  cuál  de  la fase  los desarrolladores deciden una hoja de ruta para el plan del proyecto?",
+      "options": {
+        "A": "Diseño de software",
+        "B": "Análisis del Sistema",
+        "C": "Codificación",
+        "D": "Pruebas"
+      },
+      "sourcePages": {
+        "question": 93
+      },
+      "answer": "B"
+    },
+    {
+      "id": 292,
+      "prompt": "¿Qué actividad SDLC inicia el usuario para solicitar un producto de software deseado?",
+      "options": {
+        "A": "Recolección de requisitos",
+        "B": "Implementación",
+        "C": "Disposición",
+        "D": "Comunicación"
+      },
+      "sourcePages": {
+        "question": 93
+      },
+      "answer": "D"
+    },
+    {
+      "id": 293,
+      "prompt": "SDLC no es una secuencia estructurada y bien definida de etapas en ingeniería de software para desarrollar el producto de software previsto.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 94
+      },
+      "answer": "B"
+    },
+    {
+      "id": 294,
+      "prompt": "¿Cuál es la tasa de actividad global efectiva promedio en un sistema de tipo E en evolución que es invariante durante la vida útil del producto?",
+      "options": {
+        "A": "Autorregulación",
+        "B": "Reduciendo la calidad",
+        "C": "Sistemas de retroalimentación",
+        "D": "Estabilidad organizacional"
+      },
+      "sourcePages": {
+        "question": 94
+      },
+      "answer": "D"
+    },
+    {
+      "id": 295,
+      "prompt": "¿Qué modelo no es adecuado para grandes proyectos de software pero es bueno para aprender y experimentar?",
+      "options": {
+        "A": "Modelo de Big Bang",
+        "B": "Modelo espiral",
+        "C": "Modelo iterativo",
+        "D": "Modelo de cascada"
+      },
+      "sourcePages": {
+        "question": 94
+      },
+      "answer": "A"
+    },
+    {
+      "id": 296,
+      "prompt": "¿Qué modelo también se conoce como modelo de verificación y validación?",
+      "options": {
+        "A": "Modelo de cascada",
+        "B": "Modelo de Big Bang",
+        "C": "Modelo V",
+        "D": "Modelo espiral"
+      },
+      "sourcePages": {
+        "question": 94
+      },
+      "answer": "C"
+    },
+    {
+      "id": 297,
+      "prompt": "La naturaleza siempre creciente y adaptable del software depende en gran medida del entorno en el que el usuario trabaja en :",
+      "options": {
+        "A": "Costo",
+        "B": "Naturaleza dinámica",
+        "C": "Gestión de la calidad",
+        "D": "Escalabilidad"
+      },
+      "sourcePages": {
+        "question": 95
+      },
+      "answer": "B"
+    },
+    {
+      "id": 298,
+      "prompt": "Los modelos SDLC se adoptan según los requisitos del proceso de desarrollo. Puede variar de software a software para garantizar qué modelo es el adecuado.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 95
+      },
+      "answer": "B"
+    },
+    {
+      "id": 299,
+      "prompt": "¿Cuál de las siguientes es la comprensión previa de las limitaciones del producto de software, los problemas relacionados con el sistema de aprendizaje o los cambios que se deben realizar en los sistemas existentes de antemano, identificando y abordando el impacto del proyecto en la organización y el personal, etc.?",
+      "options": {
+        "A": "Modelo espiral",
+        "B": "Modelo de Big Bang",
+        "C": "Modelo V",
+        "D": "Modelo de cascada"
+      },
+      "sourcePages": {
+        "question": 95
+      },
+      "answer": "D"
+    },
+    {
+      "id": 301,
+      "prompt": "Las fases del proceso de revisión formal se mencionan a continuación. Colóquelos en el orden correcto. i. Planificación ii. Reunión de revisión iii. Rehacer iv. Preparaciones individuales v. patada vi. Seguir",
+      "options": {
+        "A": "i, ii, iii, iv, v, vi",
+        "B": "vi, i, ii, iii, iv, v",
+        "C": "i, v, iv, ii, iii, vi",
+        "D": "i, ii, iii, v, iv, vi"
+      },
+      "sourcePages": {
+        "question": 96
+      },
+      "answer": "C"
+    },
+    {
+      "id": 302,
+      "prompt": "Cada métrica debe validarse empíricamente en una amplia variedad de contextos antes de publicarse y que se utilizan para tomar decisiones.",
+      "options": {
+        "A": "Cierto",
+        "B": "Falso"
+      },
+      "sourcePages": {
+        "question": 96
+      },
+      "answer": "B"
+    },
+    {
+      "id": 303,
+      "prompt": "¿Qué se ha probado para descubrir errores que indiquen una falta de conformidad con los requisitos del cliente en las dimensiones de la calidad?",
+      "options": {
+        "A": "Estructura",
+        "B": "Función",
+        "C": "Usabilidad",
+        "D": "Navegación"
+      },
+      "sourcePages": {
+        "question": 96
+      },
+      "answer": "B"
+    },
+    {
+      "id": 304,
+      "prompt": "La  evaluación  de  las  métricas  que  dan  como  resultado  la  percepción  y  la calidad  de  la representación es:",
+      "options": {
+        "A": "Análisis",
+        "B": "Formulación",
+        "C": "Interpretación",
+        "D": "Realimentación"
+      },
+      "sourcePages": {
+        "question": 97
+      },
+      "answer": "C"
+    },
+    {
+      "id": 305,
+      "prompt": "¿Cuál es una agrupación lógica de datos que reside dentro del límite de la aplicación y se mantiene a través de entradas externas?",
+      "options": {
+        "A": "Número de archivos de interfaz externos",
+        "B": "Número de archivos lógicos internos",
+        "C": "Número de consultas externas.",
+        "D": "Número de entradas externas"
+      },
+      "sourcePages": {
+        "question": 97
+      },
+      "answer": "B"
+    },
+    {
+      "id": 306,
+      "prompt": "¿Cuál es el subsistema de publicación que no requiere ningún procesamiento adicional y se transmite directamente al lado del cliente?",
+      "options": {
+        "A": "Elementos estáticos",
+        "B": "Servicios de publicacion",
+        "C": "Servicios externos",
+        "D": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 97
+      },
+      "answer": "A"
+    },
+    {
+      "id": 307,
+      "prompt": "Object Constraint Language (OCL) es una notación formal desarrollada para que los usu arios de UML puedan agregar más precisión a sus especificaciones.",
+      "options": {
+        "A": "Clase 1",
+        "B": "Clase 2",
+        "C": "Clase 3",
+        "D": "Clase 4"
+      },
+      "sourcePages": {
+        "question": 97
+      },
+      "answer": "A"
+    },
+    {
+      "id": 309,
+      "prompt": "¿Qué modelo proporciona la confiabilidad general del sistema que se proyecta y certifica?",
+      "options": {
+        "A": "Modelo de muestreo",
+        "B": "Modelo de componente",
+        "C": "Modelo de certificación",
+        "D": "Ambos A y B"
+      },
+      "sourcePages": {
+        "question": 98
+      },
+      "answer": "C"
+    },
+    {
+      "id": 310,
+      "prompt": "¿Cuál de los siguientes es un conjunto integrado de datos con una redundancia mínima, de modo que diferentes aplicaciones puedan usar los datos requeridos?",
+      "options": {
+        "A": "registros",
+        "B": "Archivo",
+        "C": "DBMS",
+        "D": "esquema",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 98
+      },
+      "answer": "C"
+    },
+    {
+      "id": 311,
+      "prompt": "Cuando uno tiene que procesar todos los registros de datos en un archivo, la mejor org anización de teselas es:",
+      "options": {
+        "A": "indexado",
+        "B": "secuencial",
+        "C": "acceso directo",
+        "D": "acceso aleatorio",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 99
+      },
+      "answer": "B"
+    },
+    {
+      "id": 312,
+      "prompt": "Un rectángulo abierto.",
+      "options": {
+        "A": "define una fuente o destino de datos del sistema",
+        "B": "identifica el flujo de datos",
+        "C": "representa un proceso que transforma los flujos de datos entrantes en flujos de datos salientes",
+        "D": "es un almacén de datos de datos en reposo, o un repositorio temporal de datos",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 99
+      },
+      "answer": "D"
+    },
+    {
+      "id": 313,
+      "prompt": "Las factibilidades estudiadas en la investigación preliminar son (son):",
+      "options": {
+        "A": "viabilidad técnica",
+        "B": "viabilidad económica",
+        "C": "viabilidad operacional",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 99
+      },
+      "answer": "D"
+    },
+    {
+      "id": 314,
+      "prompt": "Los programas de marcas de ramas se caracterizan mejor como",
+      "options": {
+        "A": "programas de simulador",
+        "B": "características (Hallmarking)",
+        "C": "Programas actuales del sistema.",
+        "D": "Software de proveedor para aplicaciones."
+      },
+      "sourcePages": {
+        "question": 99
+      },
+      "answer": "B"
+    },
+    {
+      "id": 315,
+      "prompt": "El método de conversión en el que los usuarios, al estar acostumbrados a un sistema antiguo, siguen utilizando el sistema antiguo, junto con el nuevo sistema, es:",
+      "options": {
+        "A": "multiprocesamiento",
+        "B": "multitarea",
+        "C": "carrera paralela",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 100
+      },
+      "answer": "C"
+    },
+    {
+      "id": 316,
+      "prompt": "Un programador revisa la precisión de un algoritmo por : . A. analizando",
+      "options": {
+        "B": "Codificación",
+        "C": "Control de escritorio",
+        "D": "planificación",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 100
+      },
+      "answer": "C"
+    },
+    {
+      "id": 317,
+      "prompt": "Organización secuencial",
+      "options": {
+        "A": "significa almacenar registros en bloques contiguos de acuerdo con una clave.",
+        "B": "Almacena los registros de forma secuencial, pero utiliza un índice para localizar los registros.",
+        "C": "utiliza un índice para cada tipo de clave",
+        "D": "tiene registros colocados al azar en todo el archivo",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 100
+      },
+      "answer": "A"
+    },
+    {
+      "id": 318,
+      "prompt": "¿Cuál de los siguientes enfoques de implementación de sistemas debería usarse si desea ejecutar el sistema antiguo y el nuevo al mismo tiempo durante un período específico?",
+      "options": {
+        "A": "Directo",
+        "B": "piloto",
+        "C": "en fase",
+        "D": "paralelo",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 101
+      },
+      "answer": null
+    },
+    {
+      "id": 319,
+      "prompt": "Un _________- es un software diseñado para dibujar diagramas de sistemas de información, escribir especificaciones de procesos y mantener diccionarios de datos.",
+      "options": {
+        "A": "Ciclo de vida del desarrollo",
+        "B": "Herramienta CASE",
+        "C": "Conversión por fases",
+        "D": "factores de éxito",
+        "E": "Movimiento de los anteriores."
+      },
+      "sourcePages": {
+        "question": 101
+      },
+      "answer": "B"
+    },
+    {
+      "id": 320,
+      "prompt": "Los requisitos también sirven como una lista de verificación de evaluación al final del proyecto de desarrollo, por lo que a veces se les llama :",
+      "options": {
+        "A": "Ciclo de vida del desarrollo del sistema",
+        "B": "Herramienta CASE",
+        "C": "Conversión por fases",
+        "D": "factores de éxito",
+        "E": "Movimiento de los anteriores."
+      },
+      "sourcePages": {
+        "question": 101
+      },
+      "answer": "D"
+    },
+    {
+      "id": 321,
+      "prompt": "Una pareja:",
+      "options": {
+        "A": "es un elemento de datos que se mueve de un módulo a otro",
+        "B": "está representado por una línea que une dos módulos.",
+        "C": "significa que el módulo superior tiene la capacidad de llamar al módulo inferior",
+        "D": "Ninguna de las anteriores",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 102
+      },
+      "answer": "A"
+    },
+    {
+      "id": 322,
+      "prompt": "¿Cuál de las siguientes no es una característica del desarrollo de sistemas estructurados?",
+      "options": {
+        "A": "partición de sistemas en niveles manejables de detalle",
+        "B": "Especificación de las interfaces entre módulos.",
+        "C": "el uso de herramientas gráficas, como los diagramas de flujo de datos, para modelar el sistema",
+        "D": "Todas las anteriores son características.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 102
+      },
+      "answer": "D"
+    },
+    {
+      "id": 323,
+      "prompt": "Una prueba de auditoría es:",
+      "options": {
+        "A": "diseñado para permitir el rastreo de cualquier registro de entrada o proceso realizado en un sistema, de vuelta a sus fuentes originales",
+        "B": "Post-auditoría del sistema después de su implementación.",
+        "C": "Datos de prueba utilizados por el auditor del sistema.",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 102
+      },
+      "answer": "A"
+    },
+    {
+      "id": 324,
+      "prompt": "¿Cuál de los siguientes no ocurre en la fase 4 del ciclo de vida del desarrollo del Sistema (SDLC)?",
+      "options": {
+        "A": "conducir entrevistas",
+        "B": "entrenar a los usuarios",
+        "C": "adquirir hardware y software",
+        "D": "probar el nuevo sistema"
+      },
+      "sourcePages": {
+        "question": 102
+      },
+      "answer": "A"
+    },
+    {
+      "id": 325,
+      "prompt": "El procedimiento para evaluar el rendimiento relativo de diferentes computadoras se realiza mediante el proceso denominado:",
+      "options": {
+        "A": "procesamiento por lotes",
+        "B": "procesamiento secuencial",
+        "C": "benchmarking",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 103
+      },
+      "answer": "C"
+    },
+    {
+      "id": 326,
+      "prompt": "El concepto de caja negra se basa en la suposición (es) de que;",
+      "options": {
+        "A": "El suprasistema es estable.",
+        "B": "Las cajas negras son dependientes o ambientes.",
+        "C": "La relación entre las entradas y la salida es estable.",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 103
+      },
+      "answer": "C"
+    },
+    {
+      "id": 327,
+      "prompt": "¿Cuál de las siguientes opciones se puede generar como resultado del uso de una herramienta CASE?",
+      "options": {
+        "A": "código de programación",
+        "B": "diagramas de flujo y diagramas de flujo de datos",
+        "C": "prototipos y análisis costo / beneficio.",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 103
+      },
+      "answer": "D"
+    },
+    {
+      "id": 328,
+      "prompt": "Los programadores se refieren a los elementos necesarios para alcanzar la meta de un problema como :",
+      "options": {
+        "A": "entrada",
+        "B": "salida",
+        "C": "Procesamiento",
+        "D": "Propósito",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 104
+      },
+      "answer": "A"
+    },
+    {
+      "id": 329,
+      "prompt": "¿Cuál de los siguientes no es una ventaja del enfoque estructurado para el  desarrollo del sistema?",
+      "options": {
+        "A": "Se centra en los aspectos",
+        "B": "La especificación del sistema es muy gráfica.",
+        "C": "se estudia a fondo el área de usuario.",
+        "D": "La documentación es acumulativa.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 104
+      },
+      "answer": "A"
+    },
+    {
+      "id": 330,
+      "prompt": "Se utiliza el benchmarking.",
+      "options": {
+        "A": "para seleccionar sistemas informaticos",
+        "B": "para mantener los archivos en condiciones de datos",
+        "C": "para la aplicación de proto-mecanografía",
+        "D": "para la aceptación del sistema",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 104
+      },
+      "answer": "A"
+    },
+    {
+      "id": 331,
+      "prompt": "Los primeros elementos definidos para un nuevo sistema son sus:",
+      "options": {
+        "A": "entradas",
+        "B": "salidas",
+        "C": "almacenamiento",
+        "D": "procesamiento"
+      },
+      "sourcePages": {
+        "question": 104
+      },
+      "answer": "B"
+    },
+    {
+      "id": 332,
+      "prompt": "El diagrama de estructura es:",
+      "options": {
+        "A": "un documento de lo que hay que realizar",
+        "B": "una declaración de requisito de procesamiento de información",
+        "C": "una partición jerárquica del programa",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 105
+      },
+      "answer": "C"
+    },
+    {
+      "id": 333,
+      "prompt": "¿Cuál de las siguientes opciones afecta la medida en que está involucrado con el ciclo de vida del desarrollo del sistema en su empresa?",
+      "options": {
+        "A": "la descripción de su trabajo",
+        "B": "tamaño de la organización",
+        "C": "tu experiencia relevante",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 105
+      },
+      "answer": "E"
+    },
+    {
+      "id": 334,
+      "prompt": "El sistema de reservas de los ferrocarriles indios es un ejemplo de",
+      "options": {
+        "A": "sistema de procesamiento de transacciones",
+        "B": "Sistema de apoyo de decisión interactivo",
+        "C": "Sistema de control de gestión.",
+        "D": "sistema experto",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 105
+      },
+      "answer": "A"
+    },
+    {
+      "id": 335,
+      "prompt": "La instrucción \"Si está lloviendo afuera, entonces toma un paraguas para trabajar\" es un ejemplo de la estructura:",
+      "options": {
+        "A": "control",
+        "B": "Repetición",
+        "C": "selección",
+        "D": "secuencia",
+        "E": "cambio"
+      },
+      "sourcePages": {
+        "question": 106
+      },
+      "answer": "C"
+    },
+    {
+      "id": 336,
+      "prompt": "Al momento del estudio del sistema, los diagramas de flujo se dibujan usando:",
+      "options": {
+        "A": "símbolos no estándar",
+        "B": "simbolos generals",
+        "C": "símbolos abreviados",
+        "D": "símbolos específicos",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 106
+      },
+      "answer": "B"
+    },
+    {
+      "id": 337,
+      "prompt": "Los programadores usan para organizar y resumir los resultados de su análisis de Problemas.",
+      "options": {
+        "A": "Diagramas de flujo",
+        "B": "Gráficos de entrada",
+        "C": "Gráficos IPO",
+        "D": "Gráficos de salida",
+        "E": "Gráficos de proceso"
+      },
+      "sourcePages": {
+        "question": 106
+      },
+      "answer": "C"
+    },
+    {
+      "id": 338,
+      "prompt": "¿Cuál de las siguientes funciones es / son realizadas por el cargador?",
+      "options": {
+        "A": "Asigne espacio en la memoria para los programas y resuelva las referencias simbólicas entre las cubiertas de objetos",
+        "B": "Coloque físicamente las instrucciones y los datos de la máquina en la memoria",
+        "C": "Ajuste todas las ubicaciones dependientes de la dirección, como las constantes de dirección, para que correspondan con el espacio asignado",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 107
+      },
+      "answer": "D"
+    },
+    {
+      "id": 339,
+      "prompt": "Convierta  las  instrucciones  del  lenguaje  de  máquina  11014B  en  lenguaje ensamblador, asumiendo que no fueron generadas por pseudo-operaciones:",
+      "options": {
+        "A": "ASRA",
+        "B": "LOADA h#OD4E, i",
+        "C": "STOREA h#014B, d",
+        "D": "ADDA h#01FE, i"
+      },
+      "sourcePages": {
+        "question": 107
+      },
+      "answer": "C"
+    },
+    {
+      "id": 340,
+      "prompt": "La (s) ventaja (es) de incorporar el procesador de macros en el paso 1 es / son:",
+      "options": {
+        "A": "Muchas funciones no tienen que ser implementadas dos veces",
+        "B": "Las  funciones  se  combinan  y  no  es  necesario  crear  archivos  intermedios  como salida  del procesador de macros y entrada al ensamblador",
+        "C": "El  programador  dispone  de  más  flexibilidad,  ya  que  puede  utilizar  todas  las funciones  del ensamblador junto con las macros.",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 107
+      },
+      "answer": "D"
+    },
+    {
+      "id": 341,
+      "prompt": "¿En qué modo de direccionamiento, la dirección efectiva del operando se genera al agregar un valor constante al contenido del registro?",
+      "options": {
+        "A": "modo absoluto",
+        "B": "modo indirecto",
+        "C": "modo inmediato",
+        "D": "modo de índice"
+      },
+      "sourcePages": {
+        "question": 108
+      },
+      "answer": "D"
+    },
+    {
+      "id": 342,
+      "prompt": "Un programa de auto-reubicación es aquel que",
+      "options": {
+        "A": "No se puede hacer que se ejecute en ningún área de almacenamiento que no sea la designada para él en el momento de su codificación o traducción.",
+        "B": "consiste en un programa e información relevante para su reubicación.",
+        "C": "puede realizar la reubicación de sus partes sensibles a la dirección",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 108
+      },
+      "answer": "C"
+    },
+    {
+      "id": 343,
+      "prompt": "Si se necesitan formularios especiales para imprimir la salida, el programador especifica estos formularios a través de:",
+      "options": {
+        "A": "JCL",
+        "B": "IPL",
+        "C": "programas de utilidad",
+        "D": "cargar modulos"
+      },
+      "sourcePages": {
+        "question": 108
+      },
+      "answer": "A"
+    },
+    {
+      "id": 344,
+      "prompt": "¿Cuál de los siguientes sistemas de software hace el trabajo de fusionar los registros de dos vuelos en uno?",
+      "options": {
+        "A": "Sistema de documentación.",
+        "B": "Programa de utilidad",
+        "C": "software de red",
+        "D": "software de seguridad"
+      },
+      "sourcePages": {
+        "question": 109
+      },
+      "answer": "B"
+    },
+    {
+      "id": 345,
+      "prompt": "Las declaraciones del lenguaje de control de trabajo (JCL) se utilizan para:",
+      "options": {
+        "A": "Lea la entrada del lector de tarjetas de baja velocidad al disco magnético de alta velocidad",
+        "B": "Especifique, para el sistema operativo, el principio y el final de un trabajo en un lote",
+        "C": "Asignar la CPU a un trabajo",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 109
+      },
+      "answer": "B"
+    },
+    {
+      "id": 346,
+      "prompt": "Al analizar la compilación del programa PL / I, el término \"Análisis de sintaxis\" se asocia con:",
+      "options": {
+        "A": "Reconocimiento de construcciones sintácticas básicas mediante reducciones.",
+        "B": "Reconocimiento de elementos básicos y creación de símbolos uniformes.",
+        "C": "creación de matriz más opcional",
+        "D": "uso del procesador de macros para producir un código de ensamblaje más óptimo"
+      },
+      "sourcePages": {
+        "question": 109
+      },
+      "answer": "A"
+    },
+    {
+      "id": 347,
+      "prompt": "Al analizar la compilación del programa PL/I, el término \"análisis léxico\" se asocia con:",
+      "options": {
+        "A": "Reconocimiento de construcciones sintácticas básicas mediante reducciones.",
+        "B": "Reconocimiento de elementos básicos y creación de símbolos uniformes.",
+        "C": "creación de matriz más opcional",
+        "D": "uso del procesador de macros para producir un código de ensamblaje más óptimo"
+      },
+      "sourcePages": {
+        "question": 109
+      },
+      "answer": "B"
+    },
+    {
+      "id": 348,
+      "prompt": "Mesa de terminales (Terminal Table)",
+      "options": {
+        "A": "una tabla permanente que enumera todas las palabras clave y símbolos especiales del lenguaje en forma simbólica",
+        "B": "una tabla permanente de reglas de decisión en forma de patrones para hacer coincidir con la tabla de símbolos uniforme para descubrir la estructura sintáctica",
+        "C": "consiste en una lista completa o parcial de los tokens que aparecen en el programa.",
+        "D": "contiene todas las constantes en el programa"
+      },
+      "sourcePages": {
+        "question": 110
+      },
+      "answer": "A"
+    },
+    {
+      "id": 349,
+      "prompt": "Un compilador para un lenguaje de alto nivel que se ejecuta en una máquina y produce código para una máquina diferente se llama:",
+      "options": {
+        "A": "optimizando compilador",
+        "B": "compilador de una pasada",
+        "C": "compilador cruz",
+        "D": "compilador multipases"
+      },
+      "sourcePages": {
+        "question": 110
+      },
+      "answer": "C"
+    },
+    {
+      "id": 350,
+      "prompt": "Base de datos de código de montaje está asociada con:",
+      "options": {
+        "A": "una tabla permanente que enumera todas las palabras clave y símbolos especiales del lenguaje en forma simbólica",
+        "B": "una tabla permanente de reglas de decisión en forma de patrones para hacer coincidir con la table de símbolos uniforme para descubrir la estructura sintáctica",
+        "C": "consiste en una lista completa o parcial o los tokens que aparecen en el programa.",
+        "D": "versión en lenguaje ensamblador del programa que se crea en la fase de generación de código y se ingresa a la fase de ensamblaje"
+      },
+      "sourcePages": {
+        "question": 110
+      },
+      "answer": "D"
+    },
+    {
+      "id": 351,
+      "prompt": "Indica cuál de las siguientes afirmaciones no es cierta acerca de 4GL?",
+      "options": {
+        "A": "4GL no admite un alto nivel de interacción de pantalla",
+        "B": "Muchos paquetes de sistemas de gestión de bases de datos soportan 4GLs",
+        "C": "Un 4GL es una herramienta de software que está escrita, posiblemente, en algún lenguaje de tercera generación.",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 111
+      },
+      "answer": "A"
+    },
+    {
+      "id": 352,
+      "prompt": "Una estrategia de desarrollo mediante la cual los módulos de control ejecutivo de un sistema se codifican y prueban primero, se conoce como:",
+      "options": {
+        "A": "Desarrollo de abajo hacia arriba",
+        "B": "Desarrollo de arriba hacia abajo.",
+        "C": "Desarrollo de izquierda-derecha",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 111
+      },
+      "answer": "B"
+    },
+    {
+      "id": 353,
+      "prompt": "Un programa no reubicable es aquel que:",
+      "options": {
+        "A": "No se puede hacer que se ejecute en ningún área de almacenamiento que no sea la designada para él en el momento de su codificación o traducción.",
+        "B": "consiste en un programa e información relevante para su reubicación.",
+        "C": "puede realizar la reubicación de sus partes sensibles a la dirección",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 111
+      },
+      "answer": "A"
+    },
+    {
+      "id": 354,
+      "prompt": "La multiprogramación fue posible por:",
+      "options": {
+        "A": "unidades de entrada / salida que operan independientemente de la CPU",
+        "B": "sistemas operativos",
+        "C": "tanto (a) como (b)",
+        "D": "ni (a) ni (b)"
+      },
+      "sourcePages": {
+        "question": 112
+      },
+      "answer": "C"
+    },
+    {
+      "id": 355,
+      "prompt": "Un intérprete es:",
+      "options": {
+        "A": "es un programa que parece ejecutar un programa fuente como si fuera un lenguaje de máquina.",
+        "B": "un programa que automatiza la traducción del lenguaje ensamblador al lenguaje de máquina",
+        "C": "programa que acepta un programa escrito en un lenguaje de alto nivel y produce un programa objeto",
+        "D": "un programa que coloca los programas en la memoria y los prepara para la ejecución"
+      },
+      "sourcePages": {
+        "question": 112
+      },
+      "answer": "A"
+    },
+    {
+      "id": 356,
+      "prompt": "El software de sistemas es un programa que dirige el funcionamiento general de la computadora, facilita su uso e interactúa con los usuarios. ¿Cuáles son los diferentes tipos de este software?",
+      "options": {
+        "A": "sistema operativo",
+        "B": "lenguajes",
+        "C": "Utilidades",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 112
+      },
+      "answer": "D"
+    },
+    {
+      "id": 357,
+      "prompt": "Convierta CHARI h#000F, de instrucciones en lenguaje ensamblador en lenguaje de máquina hexadecimal:",
+      "options": {
+        "A": "0111EF",
+        "B": "9001E6",
+        "C": "DA000F",
+        "D": "40"
+      },
+      "sourcePages": {
+        "question": 113
+      },
+      "answer": "C"
+    },
+    {
+      "id": 358,
+      "prompt": "La tabla creada por análisis léxico para describir todos los literales utilizados en el programa fuente es:",
+      "options": {
+        "A": "mesa de terminales",
+        "B": "mesa literal",
+        "C": "tabla de identificadores",
+        "D": "Reducciones"
+      },
+      "sourcePages": {
+        "question": 113
+      },
+      "answer": "B"
+    },
+    {
+      "id": 359,
+      "prompt": "Las ventajas de usar lenguaje ensamblador en lugar de lenguaje de máquina son / son:",
+      "options": {
+        "A": "Es mnemotécnico y fácil de leer.",
+        "B": "Aborda cualquier simbólico, no absoluto.",
+        "C": "La introducción de datos al programa es más fácil.",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 113
+      },
+      "answer": "D"
+    },
+    {
+      "id": 360,
+      "prompt": "La acción de analizar el programa fuente en las clases sintácticas adecuadas se conoce como:",
+      "options": {
+        "A": "análisis de sintaxis",
+        "B": "análisis léxico",
+        "C": "análisis de interpretación",
+        "D": "análisis de sintaxis general"
+      },
+      "sourcePages": {
+        "question": 114
+      },
+      "answer": "B"
+    },
+    {
+      "id": 361,
+      "prompt": "Las tareas de la fase de análisis de Lexial son / son:",
+      "options": {
+        "A": "para analizar el programa fuente en los elementos básicos o tokens del lenguaje",
+        "B": "para construir una tabla literal y una tabla de identificadores",
+        "C": "para construir una tabla de símbolos uniforme",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 114
+      },
+      "answer": "D"
+    },
+    {
+      "id": 362,
+      "prompt": "Un formulario de programa de reubicación es el que:",
+      "options": {
+        "A": "No se puede hacer que se ejecute en ningún área de almacenamiento que no sea la designada para él en el momento de su codificación o traducción.",
+        "B": "consiste en un programa e información relevante para su reubicación.",
+        "C": "puede realizar la reubicación de sus partes sensibles a la dirección",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 114
+      },
+      "answer": "B"
+    },
+    {
+      "id": 363,
+      "prompt": "¿De  qué  manera  (s)  se  puede  implementar  un  procesador  de  macros  para lenguaje ensamblador?",
+      "options": {
+        "A": "procesador de dos pasos independiente",
+        "B": "procesador de una pasada independiente",
+        "C": "procesador incorporado en el paso de un ensamblador estándar de dos pasos",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 114
+      },
+      "answer": "D"
+    },
+    {
+      "id": 364,
+      "prompt": "Un programa de sistema que combina los módulos compilados por separado de un:",
+      "options": {
+        "A": "programa en una forma adecuada para la ejecución.",
+        "B": "cargador de enlace",
+        "C": "compilador cruz",
+        "D": "cargar y listo"
+      },
+      "sourcePages": {
+        "question": 115
+      },
+      "answer": "B"
+    },
+    {
+      "id": 365,
+      "prompt": "Un compilador es:",
+      "options": {
+        "A": "un programa que coloca los programas en la memoria y los prepara para la ejecución",
+        "B": "un programa que automatiza la traducción del lenguaje ensamblador al lenguaje de máquina",
+        "C": "programa que acepta un programa escrito en un lenguaje de alto nivel y produce un programa objeto",
+        "D": "es un programa que parece ejecutar un programa fuente como si fuera un lenguaje de máquina."
+      },
+      "sourcePages": {
+        "question": 115
+      },
+      "answer": "C"
+    },
+    {
+      "id": 366,
+      "prompt": "En un esquema de carga absoluta, ¿qué función del cargador realiza el cargador?",
+      "options": {
+        "A": "reasignación",
+        "B": "Asignación",
+        "C": "vinculación",
+        "D": "cargando"
+      },
+      "sourcePages": {
+        "question": 115
+      },
+      "answer": "D"
+    },
+    {
+      "id": 367,
+      "prompt": "El administrador de procesos debe realizar un seguimiento de:",
+      "options": {
+        "A": "el estado de cada programa",
+        "B": "La prioridad de cada programa.",
+        "C": "El soporte de gestión de información a un programador que utiliza el sistema.",
+        "D": "tanto (a) como (b)"
+      },
+      "sourcePages": {
+        "question": 116
+      },
+      "answer": "D"
+    },
+    {
+      "id": 368,
+      "prompt": "Convierte  las  instrucciones  del  lenguaje  de  máquina  080D4E  en  lenguaje ensamblador, asumiendo que no fueron generadas por pseudo-operaciones:",
+      "options": {
+        "A": "ASRA",
+        "B": "B. LOADA",
+        "C": "STOREA h#014B, d",
+        "D": "ADDA h#01FE, i"
+      },
+      "sourcePages": {
+        "question": 116
+      },
+      "answer": "B"
+    },
+    {
+      "id": 369,
+      "prompt": "¿Cuál de los siguientes programas del sistema renuncia a la producción de código objeto para generar un código de máquina absoluto y cargarlo en la ubicación de almacenamiento principal física desde la cual se ejecutará inmediatamente después de completar el ensamblaje?",
+      "options": {
+        "A": "ensamblador de dos pasadas",
+        "B": "ensamblador load-and-go",
+        "C": "macroprocesador",
+        "D": "compilador"
+      },
+      "sourcePages": {
+        "question": 116
+      },
+      "answer": "B"
+    },
+    {
+      "id": 370,
+      "prompt": "Convierte las 48 instrucciones de lenguaje de máquina en lenguaje ensamblador, asumiendo que no fueron generadas por pseudo-operaciones:",
+      "options": {
+        "A": "ASRA",
+        "B": "LOADA h#OD4E, i",
+        "C": "STOREA h#014B, d",
+        "D": "ADDA h#01FE, i"
+      },
+      "sourcePages": {
+        "question": 117
+      },
+      "answer": "A"
+    },
+    {
+      "id": 371,
+      "prompt": "El procesador de macros debe realizar",
+      "options": {
+        "A": "Reconocer definiciones de macro y llamadas de macro",
+        "B": "guardar las definiciones de macros",
+        "C": "expandir llamadas de macro y sustituir argumentos",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 117
+      },
+      "answer": "D"
+    },
+    {
+      "id": 372,
+      "prompt": "En un esquema de carga absoluta, la función del cargador se realiza mediante el ensamblador:",
+      "options": {
+        "A": "reasignación",
+        "B": "Asignación",
+        "C": "vinculación",
+        "D": "cargando"
+      },
+      "sourcePages": {
+        "question": 117
+      },
+      "answer": "A"
+    },
+    {
+      "id": 373,
+      "prompt": "Convierte las pseudo operaciones allenguaje exadecimal",
+      "options": {
+        "A": "0111EF",
+        "B": "03 16",
+        "C": "F8",
+        "D": "42 65 61 72"
+      },
+      "sourcePages": {
+        "question": 118
+      },
+      "answer": "C"
+    },
+    {
+      "id": 374,
+      "prompt": "¿En qué módulo, varias instancias de ejecución producirán el mismo resultado incluso si una instancia no ha terminado antes de que la siguiente haya comenzado?",
+      "options": {
+        "A": "módulo no reutilizable",
+        "B": "reutilizable en serie",
+        "C": "módulo reenterable",
+        "D": "módulo recursivo"
+      },
+      "sourcePages": {
+        "question": 118
+      },
+      "answer": "C"
+    },
+    {
+      "id": 375,
+      "prompt": "Un cargador es",
+      "options": {
+        "A": "un programa que coloca los programas en la memoria y los prepara para la ejecución",
+        "B": "un programa que automatiza la traducción del lenguaje ensamblador al lenguaje de máquina",
+        "C": "es un programa que parece ejecutar un programa fuente como si fuera un lenguaje de máquin a.",
+        "D": "programa que acepta un programa escrito en un lenguaje de alto nivel y produce un programa objeto"
+      },
+      "sourcePages": {
+        "question": 118
+      },
+      "answer": "A"
+    },
+    {
+      "id": 376,
+      "prompt": "Bug significa:",
+      "options": {
+        "A": "Un error lógico en un programa.",
+        "B": "Un error de sintaxis difícil en un programa.",
+        "C": "Documentar programas utilizando una herramienta de documentación eficiente.",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 119
+      },
+      "answer": "A"
+    },
+    {
+      "id": 377,
+      "prompt": "Esta fase del SDLC se conoce como la \"fase continua\" en la que el sistema se evalúa y actualiza periódicamente según sea necesario.",
+      "options": {
+        "A": "investigación preliminar",
+        "B": "diseño del sistema",
+        "C": "implementación del sistema",
+        "D": "mantenimiento del sistema"
+      },
+      "sourcePages": {
+        "question": 119
+      },
+      "answer": "D"
+    },
+    {
+      "id": 378,
+      "prompt": "………. incluye el sistema existente, el sistema propuesto, los diagramas de flujo del sistema, el diseño modular del sistema, los gráficos de diseño de impresión y los diseños de archivos de datos.",
+      "options": {
+        "A": "Informe de viabilidad",
+        "B": "Informe de especificación funcional",
+        "C": "Informe de especificación de diseño",
+        "D": "Términos de Referencia"
+      },
+      "sourcePages": {
+        "question": 119
+      },
+      "answer": "C"
+    },
+    {
+      "id": 379,
+      "prompt": "Después de la implementación del sistema, el mantenimiento del sistema podría hacerse para:",
+      "options": {
+        "A": "Cambios menores en la lógica de procesamiento.",
+        "B": "Errores detectados durante el procesamiento.",
+        "C": "Revisión de los formatos de los informes.",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 120
+      },
+      "answer": "D"
+    },
+    {
+      "id": 380,
+      "prompt": "El paso final de la fase de análisis del sistema en el SDLC es:",
+      "options": {
+        "A": "recopilar datos",
+        "B": "escribir informe de análisis del sistema",
+        "C": "proponer cambios",
+        "D": "analizar datos"
+      },
+      "sourcePages": {
+        "question": 120
+      },
+      "answer": "B"
+    },
+    {
+      "id": 381,
+      "prompt": "Las diferentes fases para el desarrollo y prueba de los sistemas incluyen: i) Desarrollo y prueba de los programas individuales. ii) Desarrollo y prueba de los módulos del sistema como parte de los subsistemas principales iii) Desarrollo y prueba de los subsistemas principales como parte del sistema propuesto",
+      "options": {
+        "A": "solo i y ii",
+        "B": "Solo ii y iii",
+        "C": "i y iii solamente",
+        "D": "Todos los i, ii y iii."
+      },
+      "sourcePages": {
+        "question": 120
+      },
+      "answer": "D"
+    },
+    {
+      "id": 382,
+      "prompt": "El  departamento  de  procesamiento  de  datos  electrónicos  tiene  funciones específicas  para realizar, que incluyen: i) Departamento de sistema y programación. ii) Operación del sistema informático iii) Control sobre datos, informes y archivos. iv) preparación de datos",
+      "options": {
+        "A": "i, ii y iii solamente",
+        "B": "Sólo i, iii y iv",
+        "C": "ii, iii y iv solamente",
+        "D": "Todas las i, ii, iii y iv"
+      },
+      "sourcePages": {
+        "question": 121
+      },
+      "answer": "D"
+    },
+    {
+      "id": 383,
+      "prompt": "Se utiliza un estudio de factibilidad para determinar los sistemas propuestos.",
+      "options": {
+        "A": "requerimientos de recursos",
+        "B": "costos y beneficios",
+        "C": "disponibilidad de hardware y software",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 121
+      },
+      "answer": "D"
+    },
+    {
+      "id": 384,
+      "prompt": "La actividad involucrada en ................. es dividir los módulos del sistema en programas más pequeños y asignar estos programas a los miembros del equipo de desarrollo del sistema.",
+      "options": {
+        "A": "Director de Servicios de Gestión",
+        "B": "Gerente de Procesamiento de Datos",
+        "C": "analista de sistemas",
+        "D": "Analista de Sistemas Senior"
+      },
+      "sourcePages": {
+        "question": 121
+      },
+      "answer": "B"
+    },
+    {
+      "id": 389,
+      "prompt": "Usando el ............ Enfoque, se prueba un nuevo sistema en una parte de la organización antes de implementarse en otras.",
+      "options": {
+        "A": "Directo",
+        "B": "Paralelo",
+        "C": "en fase",
+        "D": "piloto"
+      },
+      "sourcePages": {
+        "question": 123
+      },
+      "answer": "D"
+    },
+    {
+      "id": 390,
+      "prompt": "Para el desarrollo del sistema propuesto, es importante que se proporcione todo el apoyo posible al equipo de desarrollo. Este soporte incluye la disponibilidad de",
+      "options": {
+        "A": "espacio de oficina",
+        "B": "Datos relevantes",
+        "C": "Asistencia Secretarial",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 123
+      },
+      "answer": "D"
+    },
+    {
+      "id": 391,
+      "prompt": "La  evaluación  de la  efectividad  de  los  procedimientos  de  mantenimiento  de archivos  y la idoneidad de los procedimientos de seguridad de archivos son las principales tareas de ...",
+      "options": {
+        "A": "Director de Servicios de Gestión",
+        "B": "Gerente de Procesamiento de Datos",
+        "C": "analista de sistemas",
+        "D": "Analista de Sistemas Senior"
+      },
+      "sourcePages": {
+        "question": 124
+      },
+      "answer": "B"
+    },
+    {
+      "id": 392,
+      "prompt": "Durante una auditoría de sistemas, el rendimiento del sistema se compara con:",
+      "options": {
+        "A": "sistemas similares",
+        "B": "sistemas más nuevos",
+        "C": "las especificaciones de diseño",
+        "D": "sistemas en competencia"
+      },
+      "sourcePages": {
+        "question": 124
+      },
+      "answer": "C"
+    },
+    {
+      "id": 393,
+      "prompt": "El resultado final de la fase ……… es un sistema de software completamente desarrollado y probado, junto con documentación completa y resultados de pruebas.",
+      "options": {
+        "A": "análisis del sistema",
+        "B": "diseño del sistema",
+        "C": "desarrollo del sistema",
+        "D": "implementación del sistema"
+      },
+      "sourcePages": {
+        "question": 124
+      },
+      "answer": "C"
+    },
+    {
+      "id": 394,
+      "prompt": "Los analistas de sistemas avanzan a través de tres niveles durante su carrera, el comienzo como \"analista\" se convierte en \"Analista de Sistemas Senior\" después de haber adquirido la experiencia necesaria y, finalmente, son nombrados como :",
+      "options": {
+        "A": "analista del sistema principal",
+        "B": "director de analista de sistemas",
+        "C": "jefe analista de sistemas",
+        "D": "analista del sistema gerente"
+      },
+      "sourcePages": {
+        "question": 124
+      },
+      "answer": "C"
+    },
+    {
+      "id": 395,
+      "prompt": "Indique si las siguientes afirmaciones son verdaderas o falsas. i) Un gráfico de cuadrícula muestra la relación entre los documentos de entrada y salida. ii) Una tabla de decisiones muestra las diversas reglas que se aplican a una decisión cuando existen ciertas condiciones.",
+      "options": {
+        "A": "i-True, ii-True",
+        "B": "i-True, ii-False",
+        "C": "i-falso, ii-verdadero",
+        "D": "i-falso, ii-falso"
+      },
+      "sourcePages": {
+        "question": 125
+      },
+      "answer": "A"
+    },
+    {
+      "id": 396,
+      "prompt": "La fase de implementación del sistema de SDLC incluye las siguientes actividades i) Planificación para la implementación ii) Preparar el cronograma de implementación. iii) Adquisición de hardware iv) Instalación de software",
+      "options": {
+        "A": "analista",
+        "B": "Analista jefe de sistemas",
+        "C": "analista de sistemas",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 125
+      },
+      "answer": "D"
+    },
+    {
+      "id": 399,
+      "prompt": "Comprensión de la naturaleza, función e interrelaciones de varios subsistemas involucrados en:",
+      "options": {
+        "A": "diseño de sistemas alternativos",
+        "B": "seleccionando el mejor sistema",
+        "C": "escribiendo un informe de diseño de sistemas",
+        "D": "mantenimiento de sistemas 400 ¿Cuál de las siguientes tareas no forma parte de la fase de diseño del sistema?"
+      },
+      "sourcePages": {
+        "question": 126
+      },
+      "answer": "A"
+    },
+    {
+      "id": 401,
+      "prompt": "La investigación del sistema existente mediante entrevistas, cuestionarios y observaciones es la principal responsabilidad de ...",
+      "options": {
+        "A": "analista",
+        "B": "Analista jefe de sistemas",
+        "C": "analista de sistemas",
+        "D": "gerente de procesamiento de datos"
+      },
+      "sourcePages": {
+        "question": 127
+      },
+      "answer": "C"
+    },
+    {
+      "id": 403,
+      "prompt": "Determinar si los empleados, gerentes y clientes se resistirán a un nuevo sistema propuesto es parte de este estudio de factibilidad:",
+      "options": {
+        "A": "viabilidad técnica",
+        "B": "viabilidad económica",
+        "C": "viabilidad organizacional",
+        "D": "viabilidad operacional"
+      },
+      "sourcePages": {
+        "question": 127
+      },
+      "answer": "D"
+    },
+    {
+      "id": 404,
+      "prompt": "Los proyectos del sistema se inician por las siguientes razones. i) capacidad ii) control iii) comunicación iv) costo",
+      "options": {
+        "A": "i, ii y iv solamente",
+        "B": "ii, iii y iv solamente",
+        "C": "i, ii y iii solamente",
+        "D": "todas"
+      },
+      "sourcePages": {
+        "question": 127
+      },
+      "answer": "D"
+    },
+    {
+      "id": 405,
+      "prompt": "……… .. evalúa los niveles de control requeridos y mantiene el enlace con los auditores para que el diseño satisfaga sus necesidades.",
+      "options": {
+        "A": "analista",
+        "B": "Analista jefe de sistemas",
+        "C": "analista de sistemas",
+        "D": "gerente de procesamiento de datos"
+      },
+      "sourcePages": {
+        "question": 128
+      },
+      "answer": "C"
+    },
+    {
+      "id": 406,
+      "prompt": "El primer paso para implementar un nuevo sistema es determinar el:",
+      "options": {
+        "A": "Comité de dirección",
+        "B": "Comité de sistemas de información.",
+        "C": "Comité del grupo de usuarios",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 128
+      },
+      "answer": "C"
+    },
+    {
+      "id": 408,
+      "prompt": "La limitación de …………… es que la documentación de cualquier sistema existente nunca está completa y actualizada.",
+      "options": {
+        "A": "Revisión de la documentación",
+        "B": "Observación de la situación.",
+        "C": "Realización de entrevistas",
+        "D": "Cuestionario de Administración"
+      },
+      "sourcePages": {
+        "question": 129
+      },
+      "answer": "A"
+    },
+    {
+      "id": 409,
+      "prompt": "El  ……….  El  enfoque  de  implementación  se  divide  en  partes  más  pequeñas  que se implementan a lo largo del tiempo.",
+      "options": {
+        "A": "Comité de dirección B Comite de istema de información",
+        "B": "paralelo",
+        "C": "Comité del grupo",
+        "D": "Comité del Grupo de Desarrolladores"
+      },
+      "sourcePages": {
+        "question": 129
+      },
+      "answer": "C"
+    },
+    {
+      "id": 411,
+      "prompt": "El estudio del sistema implica:",
+      "options": {
+        "A": "estudio de un sistema existente",
+        "B": "Documentar el sistema existente.",
+        "C": "Identificar las deficiencias actuales y establecer nuevas metas. D. B. Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 130
+      },
+      "answer": "D"
+    },
+    {
+      "id": 412,
+      "prompt": "La herramienta principal utilizada en el diseño estructurado es una:",
+      "options": {
+        "A": "Ciclo de vida del desarrollo del sistema",
+        "B": "Herramienta CASE",
+        "C": "Conversión por fases",
+        "D": "factores de éxito",
+        "E": "Ninguna de las anteriores."
+      },
+      "sourcePages": {
+        "question": 130
+      },
+      "answer": "A"
+    },
+    {
+      "id": 414,
+      "prompt": "En Prototipado.",
+      "options": {
+        "A": "BASIC se utiliza",
+        "B": "COBOL se utiliza",
+        "C": "Se utilizan 4GLs.",
+        "D": "el sistema está documentado",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 130
+      },
+      "answer": "C"
+    },
+    {
+      "id": 415,
+      "prompt": "Las instrucciones paso a paso que resuelven un problema se llaman:",
+      "options": {
+        "A": "un algoritmo",
+        "B": "una lista",
+        "C": "un plan",
+        "D": "una estructura secuencial",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 131
+      },
+      "answer": "A"
+    },
+    {
+      "id": 416,
+      "prompt": "El enfoque utilizado en el análisis y diseño de arriba a abajo es:",
+      "options": {
+        "A": "para identificar las funciones de nivel superior mediante la combinación de muchos componentes más pequeños en una sola entidad",
+        "B": "Preparar diagramas de flujo una vez finalizada la programación.",
+        "C": "para  identificar  una  función  de  nivel  superior  y  luego  crear  una  jerarquía  de módulos  y componentes de nivel inferior.",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 131
+      },
+      "answer": "C"
+    },
+    {
+      "id": 417,
+      "prompt": "¿Cuál de los siguientes no es un factor en el fracaso de los proyectos de desarrollo de sistemas?",
+      "options": {
+        "A": "tamaño de la empresa",
+        "B": "participación inadecuada del usuario",
+        "C": "falla de integración de sistemas",
+        "D": "continuación de un proyecto que debería haber sido cancelado.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 131
+      },
+      "answer": "A"
+    },
+    {
+      "id": 418,
+      "prompt": "Un anillo, se refiere a una cadena de registros, el último de los cuales se refiere al primer registro, en la cadena, se llama a / an:",
+      "options": {
+        "A": "direccionamiento",
+        "B": "ubicación",
+        "C": "puntero",
+        "D": "bucle",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 132
+      },
+      "answer": "C"
+    },
+    {
+      "id": 419,
+      "prompt": "La herramienta principal utilizada en el diseño estructurado es una:",
+      "options": {
+        "A": "entrada",
+        "B": "Salida",
+        "C": "Procesamiento",
+        "D": "Propósito",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 132
+      },
+      "answer": "C"
+    },
+    {
+      "id": 421,
+      "prompt": "¿Cuál de las siguientes afirmaciones no es cierta para la opción de arrendamiento?",
+      "options": {
+        "A": "Los cargos de arrendamiento son más bajos que los de alquiler para el mismo período y también son deducibles de impuestos.",
+        "B": "El contrato de arrendamiento se puede escribir para mostrar que los pagos más altos son los primeros años para reflejar la disminución en el valor del sistema",
+        "C": "Los gastos de seguro, mantenimiento y otros están incluidos en el cargo de alquiler.",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 133
+      },
+      "answer": "C"
+    },
+    {
+      "id": 422,
+      "prompt": "Las dos clasificaciones de entradas son:",
+      "options": {
+        "A": "energías y mantenimiento",
+        "B": "mantenimiento y residuos",
+        "C": "mantenimiento y señal",
+        "D": "productos y residuos",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 133
+      },
+      "answer": "C"
+    },
+    {
+      "id": 423,
+      "prompt": "Se prepara la documentación.",
+      "options": {
+        "A": "en cada etapa",
+        "B": "en el diseño del sistema",
+        "C": "en el análisis del sistema",
+        "D": "en el desarrollo del sistema",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 133
+      },
+      "answer": "A"
+    },
+    {
+      "id": 424,
+      "prompt": "La fase de implementación del sistema conlleva:",
+      "options": {
+        "A": "Salidas del sistema",
+        "B": "carrera piloto",
+        "C": "carreras paralelas",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 134
+      },
+      "answer": "A"
+    },
+    {
+      "id": 425,
+      "prompt": "¡Cual de los iguientes es incorrecto?",
+      "options": {
+        "A": "El usuario y el personal de sistemas deben trabajar juntos.",
+        "B": "Se deben tomar medidas para eliminar el antiguo sistema.",
+        "C": "la documentación debe ser enfatizada",
+        "D": "Los componentes no mecánicos del sistema deben ser considerados.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 134
+      },
+      "answer": "C"
+    },
+    {
+      "id": 426,
+      "prompt": "Gestores potenciales usuarios del SIG.",
+      "options": {
+        "A": "seleccionar las configuraciones de equipos óptimas",
+        "B": "evaluar configuraciones de equipos alternativos",
+        "C": "describir las necesidades de información",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 134
+      },
+      "answer": "E"
+    },
+    {
+      "id": 427,
+      "prompt": "La prueba positiva es:",
+      "options": {
+        "A": "ejecutar el sistema con datos de línea por el usuario real",
+        "B": "Asegurarse de que los nuevos programas de hecho procesen ciertas transacciones de acuerdo con las Especificaciones",
+        "C": "está verificando la lógica de uno o más programas en el sistema candidato",
+        "D": "Pruebas de cambios realizados en un programa nuevo o existente.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 135
+      },
+      "answer": "B"
+    },
+    {
+      "id": 428,
+      "prompt": "Lenguaje de definición de datos (DDL)",
+      "options": {
+        "A": "describe cómo se estructuran los datos en la base de datos",
+        "B": "especifica para el DBMS lo que se requiere; Las técnicas utilizadas para procesar datos.",
+        "C": "determinar cómo deben estructurarse los datos para producir la vista del usuario",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 135
+      },
+      "answer": "A"
+    },
+    {
+      "id": 429,
+      "prompt": "En la fase 1 del ciclo de vida del desarrollo del sistema, ¿cuáles de los siguientes aspectos generalmente se analizan?",
+      "options": {
+        "A": "salidas",
+        "B": "entrada (transacciones)",
+        "C": "controles",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 135
+      },
+      "answer": "D"
+    },
+    {
+      "id": 430,
+      "prompt": "Durante la fase de mantenimiento.",
+      "options": {
+        "A": "Se establecen los requisitos del sistema.",
+        "B": "Se lleva a cabo el análisis del sistema.",
+        "C": "los programas son probados",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 135
+      },
+      "answer": "E"
+    },
+    {
+      "id": 431,
+      "prompt": "En análisis y diseño de arriba hacia abajo.",
+      "options": {
+        "A": "Cada fase subsiguiente es más detallada que la fase anterior.",
+        "B": "Cada fase subsiguiente es tan detallada como la fase anterior.",
+        "C": "Cada fase subsiguiente es menos detallada que la fase anterior.",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 136
+      },
+      "answer": "A"
+    },
+    {
+      "id": 432,
+      "prompt": "El símbolo __________   se usa en un diagrama de flujo para representar una tarea de cálculo.",
+      "options": {
+        "A": "entrada",
+        "B": "Salida",
+        "C": "proceso",
+        "D": "empezar",
+        "E": "parar"
+      },
+      "sourcePages": {
+        "question": 136
+      },
+      "answer": "C"
+    },
+    {
+      "id": 433,
+      "prompt": "El prototipado del sistema ayuda al diseñador a:",
+      "options": {
+        "A": "Hacer que los programadores entiendan cómo funcionará el sistema.",
+        "B": "Comunicarse con el usuario, rápidamente,  cómo se verá el sistema cuando se desarrolle, y obtendrá una respuesta.",
+        "C": "entregar una demostración del software al administrador del sistema al que informa",
+        "D": "tanto (a) como (b)",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 136
+      },
+      "answer": "B"
+    },
+    {
+      "id": 434,
+      "prompt": "¿Cuál de los siguientes enfoques de implementación de sistemas debe usarse si desea ejecutar el sistema antiguo y el nuevo al mismo tiempo durante un período específico?",
+      "options": {
+        "A": "Directo",
+        "B": "piloto",
+        "C": "paralelo",
+        "D": "en fase",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 137
+      },
+      "answer": "C"
+    },
+    {
+      "id": 435,
+      "prompt": "Característica principal de \"anillo\" (ring), en la estructura de datos, es:",
+      "options": {
+        "A": "El primer registro apunta solo al último registro",
+        "B": "Último registro apunta al primer registro.",
+        "C": "Muchos registros apuntan a un registro",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 137
+      },
+      "answer": "B"
+    },
+    {
+      "id": 436,
+      "prompt": "¿Cuál de los siguientes no se considera una herramienta en la fase de diseño del sistema?",
+      "options": {
+        "A": "gráfico circular",
+        "B": "diagrama de flujo de datos",
+        "C": "mesa de decisiones",
+        "D": "diagrama de flujo de sistemas",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 137
+      },
+      "answer": "A"
+    },
+    {
+      "id": 437,
+      "prompt": "Para evitar errores en la transcripción y la transposición, durante la entrada de datos, el analista del sistema debe:",
+      "options": {
+        "A": "proporcionar un dígito de control (check digit)",
+        "B": "proporcionar un total de preparado (hash)",
+        "C": "proporcionar totales de lote (batch)",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 138
+      },
+      "answer": "D"
+    },
+    {
+      "id": 438,
+      "prompt": "Las pruebas secuenciales o en serie son:",
+      "options": {
+        "A": "ejecutar el sistema con datos de línea por el usuario real",
+        "B": "Asegurarse de que los nuevos programas de hecho procesen ciertas transacciones de acuerdo con las Especificaciones",
+        "C": "está verificando la lógica de uno o más programas en el sistema candidato",
+        "D": "Pruebas de cambios realizados en un programa nuevo o existente.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 138
+      },
+      "answer": "C"
+    },
+    {
+      "id": 439,
+      "prompt": "Una  consideración  evaluada  por  la  gerencia  cuando  se  planea  convertir  a  un sistema  de computadora es:",
+      "options": {
+        "A": "mantenimiento",
+        "B": "software disponible",
+        "C": "velocidad del tamaño de la CPU D. Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 138
+      },
+      "answer": "D"
+    },
+    {
+      "id": 440,
+      "prompt": "Organización de acceso directo",
+      "options": {
+        "A": "significa almacenar registros en bloques contiguos de acuerdo con una clave.",
+        "B": "Almacena los registros de forma secuencial, pero utiliza un índice para localizar los registros.",
+        "C": "utiliza un índice para cada tipo de clave",
+        "D": "tiene registros colocados al azar en todo el archivo",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 139
+      },
+      "answer": "D"
+    },
+    {
+      "id": 441,
+      "prompt": "Una ayuda para el diseño de un Sistema:",
+      "options": {
+        "A": "ayudar a analizar tanto los datos como las actividades",
+        "B": "Ayuda en la documentación.",
+        "C": "generar código",
+        "D": "utilizando una interfaz gráfica de usuario",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 139
+      },
+      "answer": "A"
+    },
+    {
+      "id": 442,
+      "prompt": "La programación estructurada implica:",
+      "options": {
+        "A": "descentralización de la actividad del programa",
+        "B": "modularización funcional",
+        "C": "localización de errores",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 139
+      },
+      "answer": "B"
+    },
+    {
+      "id": 443,
+      "prompt": "Para reconstruir un sistema, cuál de los siguientes elementos clave debe ser considerado:",
+      "options": {
+        "A": "retroalimentación y medio ambiente",
+        "B": "Control y procesadores.",
+        "C": "salidas y entradas",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 139
+      },
+      "answer": "D"
+    },
+    {
+      "id": 444,
+      "prompt": "Se llama a las condiciones inmediatamente fuera de un sistema.",
+      "options": {
+        "A": "el límite",
+        "B": "la interfaz",
+        "C": "el medio ambiente",
+        "D": "los protocolos",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 140
+      },
+      "answer": "C"
+    },
+    {
+      "id": 445,
+      "prompt": "Un documento de viabilidad debe de contener todo lo siguiente excepto:",
+      "options": {
+        "A": "nombre del proyecto",
+        "B": "descripciones de problemas",
+        "C": "alternativa viable",
+        "D": "diagramas de flujo de datos",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 140
+      },
+      "answer": "B"
+    },
+    {
+      "id": 446,
+      "prompt": "¿Cuál de los siguientes se usa cuando una empresa sale de su organización para desarrollar un nuevo sistema?",
+      "options": {
+        "A": "diagrama de flujo de datos",
+        "B": "diagrama de flujo de sistemas",
+        "C": "diccionario del proyecto",
+        "D": "solicitud de propuesta",
+        "E": "Norte de los anteriores."
+      },
+      "sourcePages": {
+        "question": 140
+      },
+      "answer": "D"
+    },
+    {
+      "id": 447,
+      "prompt": "¿Cuál de las siguientes no es una característica de un sistema?",
+      "options": {
+        "A": "opera con algún propósito",
+        "B": "tiene componentes homogéneos",
+        "C": "tiene componentes que interactúan",
+        "D": "opera dentro de un límite",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 141
+      },
+      "answer": "B"
+    },
+    {
+      "id": 448,
+      "prompt": "¿Cuál de los siguientes no se considera una herramienta en la fase de diseño del sistema?",
+      "options": {
+        "A": "Diagrama de flujo de datos",
+        "B": "Tabla de decisiones",
+        "C": "gráfico circular",
+        "D": "Diagrama de flujo del sistema",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 141
+      },
+      "answer": "C"
+    },
+    {
+      "id": 449,
+      "prompt": "¿Cuál de los siguientes es una representación gráfica de los módulos en el  Sistema  y la interconexión entre ellos?",
+      "options": {
+        "A": "gráfico circular",
+        "B": "diagrama de flujo",
+        "C": "Cuadro estructural",
+        "D": "Tabla de sistema"
+      },
+      "sourcePages": {
+        "question": 141
+      },
+      "answer": "C"
+    },
+    {
+      "id": 450,
+      "prompt": "Un grupo de campos relacionados, se conoce como:",
+      "options": {
+        "A": "tuple1",
+        "B": "esquema",
+        "C": "registros",
+        "D": "archivo",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 142
+      },
+      "answer": "A"
+    },
+    {
+      "id": 451,
+      "prompt": "Un ejemplo de una estructura de datos jerárquica es:",
+      "options": {
+        "A": "matriz",
+        "B": "Lista de enlaces",
+        "C": "arbol",
+        "D": "anillo",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 142
+      },
+      "answer": "C"
+    },
+    {
+      "id": 452,
+      "prompt": "Los punteros son útiles en:",
+      "options": {
+        "A": "Localización de un sector particular de un disco magnético",
+        "B": "Señalar los errores en los datos de entrada",
+        "C": "Atravesando una lista enlazada",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 142
+      },
+      "answer": "C"
+    },
+    {
+      "id": 453,
+      "prompt": "La entrada de datos en línea es más adecuada en el caso de:",
+      "options": {
+        "A": "actualizando la nómina maestra",
+        "B": "ingresar entradas mensuales en el diario",
+        "C": "Procesamiento de pago de cheque en un banco",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 142
+      },
+      "answer": "C"
+    },
+    {
+      "id": 454,
+      "prompt": "Un pseudocódigo es:",
+      "options": {
+        "A": "un código de nivel de máquina",
+        "B": "un número al azar",
+        "C": "un diagrama de flujo",
+        "D": "Inglés estructurado para comunicar la lógica de un programa.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 143
+      },
+      "answer": "D"
+    },
+    {
+      "id": 455,
+      "prompt": "¿Cuál de los siguientes tipos de archivo tiene la menor duración?",
+      "options": {
+        "A": "archivo maestro",
+        "B": "archivo de programa",
+        "C": "archivo de transacción",
+        "D": "archivo de trabajo",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 143
+      },
+      "answer": "D"
+    },
+    {
+      "id": 456,
+      "prompt": "Un estudio de viabilidad.",
+      "options": {
+        "A": "Incluye una declaración de los problemas.",
+        "B": "considera una solución única.",
+        "C": "tanto (a) como (b)",
+        "D": "una lista de solución alternativa considerada",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 143
+      },
+      "answer": "A"
+    },
+    {
+      "id": 457,
+      "prompt": "Se llama un procesador de textos diseñado para programadores.",
+      "options": {
+        "A": "un formateador",
+        "B": "un compilador",
+        "C": "un editor",
+        "D": "un depurador",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 143
+      },
+      "answer": "C"
+    },
+    {
+      "id": 458,
+      "prompt": "Una descripción declaración por declaración de un procedimiento se detalla en a;",
+      "options": {
+        "A": "narrativa escrita",
+        "B": "registro de procedimientos",
+        "C": "diagrama de flujo de sistemas",
+        "D": "diseño de registro",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 144
+      },
+      "answer": "A"
+    },
+    {
+      "id": 459,
+      "prompt": "Análisis costo-beneficio.",
+      "options": {
+        "A": "evalúa los factores tangibles y no tangibles",
+        "B": "compara el costo, con los beneficios, de introducir un sistema basado en computadora",
+        "C": "estima los costos de hardware y software",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 144
+      },
+      "answer": "D"
+    },
+    {
+      "id": 460,
+      "prompt": "El término usado para referirse a la verificación de los resultados de una comput adora, con los documentos de entrada correspondientes, se llama:",
+      "options": {
+        "A": "auditar alrededor de la computadora",
+        "B": "Auditoría a través de la computadora.",
+        "C": "control de proceso",
+        "D": "prueba beta",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 144
+      },
+      "answer": "A"
+    },
+    {
+      "id": 461,
+      "prompt": "¿Cuál de los siguientes no es un requisito del diseño estructurado?",
+      "options": {
+        "A": "Debería estar formado por una jerarquía de módulos.",
+        "B": "Debería usar muchas declaraciones GOTO",
+        "C": "El código debe ejecutarse de arriba a abajo dentro de cada módulo",
+        "D": "Cada módulo debe ser lo más independiente posible de todos los demás módulos, excepto su principal.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 145
+      },
+      "answer": "B"
+    },
+    {
+      "id": 462,
+      "prompt": "Un gráfico jerárquico que divide un programa grande en módulos, en los que se diseñan mayores detalles en niveles de programación sucesivamente más bajos, se denomina:",
+      "options": {
+        "A": "esquema",
+        "B": "subesquema",
+        "C": "estructura",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 145
+      },
+      "answer": "C"
+    },
+    {
+      "id": 463,
+      "prompt": "¿Cuál de las siguientes es (son) la (s) característica (s) de un sistema?",
+      "options": {
+        "A": "organización",
+        "B": "interacción",
+        "C": "la interdependencia",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 145
+      },
+      "answer": "D"
+    },
+    {
+      "id": 464,
+      "prompt": "El término ejecución paralela se refiere a:",
+      "options": {
+        "A": "el mismo trabajo se ejecuta en dos computadoras diferentes para probar sus velocidades",
+        "B": "El procesamiento de dos trabajos diferentes iniciados desde dos terminales.",
+        "C": "la operación concurrente de un sistema existente y un nuevo sistema",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 146
+      },
+      "answer": "C"
+    },
+    {
+      "id": 465,
+      "prompt": "El diagrama del \"cuadro grande\" de un sistema es el:",
+      "options": {
+        "A": "diagrama de bloques",
+        "B": "diagrama logico",
+        "C": "diagrama de flujo del sistema",
+        "D": "diagrama de flujo del programa",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 146
+      },
+      "answer": "C"
+    },
+    {
+      "id": 466,
+      "prompt": "¿Cuál de los siguientes es el requisito más crítico de un sistema de reserva de pasajeros?",
+      "options": {
+        "A": "facilidad de programación",
+        "B": "tiempo de respuesta",
+        "C": "interfaz gráfica de usuario",
+        "D": "impresión de entradas",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 146
+      },
+      "answer": "B"
+    },
+    {
+      "id": 467,
+      "prompt": "El anuncio de la implementación de MIS es hecho por:",
+      "options": {
+        "A": "entrada",
+        "B": "Salida",
+        "C": "Procesamiento",
+        "D": "Propósito",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 147
+      },
+      "answer": "D"
+    },
+    {
+      "id": 469,
+      "prompt": "Se llama representación gráfica de un sistema de información.",
+      "options": {
+        "A": "diagrama de flujo",
+        "B": "pictograma",
+        "C": "diagrama de flujo de datos",
+        "D": "histograma",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 147
+      },
+      "answer": "C"
+    },
+    {
+      "id": 470,
+      "prompt": "El archivo de factura pendiente se debe iniciar en un dispositivo de almacenamiento de acceso de perdón si:",
+      "options": {
+        "A": "la entrada de datos de factura está en línea.",
+        "B": "El registro de pago se realiza en un lote de rodeo.",
+        "C": "Las consultas sobre pagos deben ser respondidas en línea.",
+        "D": "El último registro apunta al primer registro.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 148
+      },
+      "answer": "C"
+    },
+    {
+      "id": 471,
+      "prompt": "La instrucción de la receta \"Batir hasta que esté suave\" es un ejemplo de la estructura:",
+      "options": {
+        "A": "control",
+        "B": "Repetición",
+        "C": "selección",
+        "D": "secuencia",
+        "E": "cambio"
+      },
+      "sourcePages": {
+        "question": 148
+      },
+      "answer": "B"
+    },
+    {
+      "id": 472,
+      "prompt": "¿Cuál de los siguientes símbolos no es el Diagrama de flujo de datos (DFD):",
+      "options": {
+        "A": "un cuadrado",
+        "B": "un rectángulo abierto",
+        "C": "un circulo",
+        "D": "un triangulo",
+        "E": "una burbuja"
+      },
+      "sourcePages": {
+        "question": 148
+      },
+      "answer": "D"
+    },
+    {
+      "id": 473,
+      "prompt": "El diseño empaquetado incluye todo lo siguiente excepto;",
+      "options": {
+        "A": "diagramas de flujo del programa",
+        "B": "configuración del sistema",
+        "C": "descripciones del módulo",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 149
+      },
+      "answer": "B"
+    },
+    {
+      "id": 474,
+      "prompt": "El analista se entera de las necesidades de información del gerente a través del uso de:",
+      "options": {
+        "A": "encuesta por correo",
+        "B": "entrevista en profundidad",
+        "C": "experimento controlado",
+        "D": "observación",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 149
+      },
+      "answer": "D"
+    },
+    {
+      "id": 475,
+      "prompt": "En el procesamiento, los controles deben establecerse en un sistema, a fin de:",
+      "options": {
+        "A": "prohibir la manipulación de información por parte de personas no autorizadas",
+        "B": "Verificar que todos los datos hayan sido procesados.",
+        "C": "bloquear o capturar datos defectuosos desde la entrada al procesamiento",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 149
+      },
+      "answer": "B"
+    },
+    {
+      "id": 476,
+      "prompt": "Un elemento de datos en un registro, que distingue de manera única al registro, de todos los demás registros, se llama:",
+      "options": {
+        "A": "tiempo de respuesta",
+        "B": "llave",
+        "C": "Revisión del sistema",
+        "D": "datos de prueba",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 149
+      },
+      "answer": "C"
+    },
+    {
+      "id": 477,
+      "prompt": "Un documento de Turnaround.",
+      "options": {
+        "A": "se distribuye entre todo el personal de una organización.",
+        "B": "se distribuye entre todos los jefes de departamento de una organización.",
+        "C": "se emite en un punto que luego vuelve como entrada",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 150
+      },
+      "answer": "B"
+    },
+    {
+      "id": 478,
+      "prompt": "El primer paso en el proceso de resolución de problemas es            .",
+      "options": {
+        "A": "planear el algoritmo",
+        "B": "analizar el problema",
+        "C": "Escritorio-comprobar el algoritmo",
+        "D": "Evaluar y modificar (si es necesario) el programa.",
+        "E": "Codificar el algoritmo."
+      },
+      "sourcePages": {
+        "question": 150
+      },
+      "answer": "D"
+    },
+    {
+      "id": 479,
+      "prompt": "La verificación de la calidad del software tanto en entornos simulados como en línea, se conoce como:",
+      "options": {
+        "A": "revisando",
+        "B": "usabilidad",
+        "C": "validez",
+        "D": "validación",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 150
+      },
+      "answer": "C"
+    },
+    {
+      "id": 480,
+      "prompt": "Algunas empresas han creado una posición de combinación llamada:",
+      "options": {
+        "A": "gerente / analista",
+        "B": "programador / operador",
+        "C": "analista / programador",
+        "D": "gerente / operador",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 151
+      },
+      "answer": "A"
+    },
+    {
+      "id": 481,
+      "prompt": "El primer paso de la fase de implementación es:",
+      "options": {
+        "A": "planificación de la implementación",
+        "B": "selecciona la computadora",
+        "C": "Anunciar el proyecto de implementación.",
+        "D": "Preparar instalaciones físicas.",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 151
+      },
+      "answer": "B"
+    },
+    {
+      "id": 482,
+      "prompt": "La ventaja de la Opción de Compra es (son):",
+      "options": {
+        "A": "No se requiere financiamiento. El riesgo de obsolescencia del sistema se traslada al arrendador.",
+        "B": "La flexibilidad de modificar el sistema a voluntad.",
+        "C": "Los seguros, el mantenimiento y otros gastos están incluidos en el cargo de alquiler",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 151
+      },
+      "answer": "D"
+    },
+    {
+      "id": 483,
+      "prompt": "La decisión de la gerencia de alquilar un sistema informático puede basarse en",
+      "options": {
+        "A": "deseo de evitar un gran pago de una sola vez",
+        "B": "ventajas fiscales",
+        "C": "flexibilidad operacional en el cambio de hardware",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 151
+      },
+      "answer": "D"
+    },
+    {
+      "id": 484,
+      "prompt": "Todas las siguientes herramientas se utilizan para descripciones de procesos, excepto:",
+      "options": {
+        "A": "Inglés estructurado",
+        "B": "tablas de decisiones",
+        "C": "pseudocódigo",
+        "D": "diccionarios de datos",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 152
+      },
+      "answer": "D"
+    },
+    {
+      "id": 485,
+      "prompt": "¿Cuál de los siguientes no sería un resultado importante de la fase de análisis de sistemas estructurados?",
+      "options": {
+        "A": "diccionarios de datos",
+        "B": "diagramas de flujo de datos",
+        "C": "diagramas de relaciones de entidades",
+        "D": "Modelo prototipo"
+      },
+      "sourcePages": {
+        "question": 152
+      },
+      "answer": "A"
+    },
+    {
+      "id": 486,
+      "prompt": "Las ayudas al diseño del sistema deberían:",
+      "options": {
+        "A": "ayudar a analizar tanto los datos como las actividades",
+        "B": "Ayuda en la documentación.",
+        "C": "ayuda en la programación",
+        "D": "generar código",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 152
+      },
+      "answer": "D"
+    },
+    {
+      "id": 487,
+      "prompt": "Todos los datos que se ingresan en la computadora, por primera vez, pasarán por el proceso de:",
+      "options": {
+        "A": "Pruebas del sistema",
+        "B": "Pruebas secuenciales",
+        "C": "prueba de cuerdas",
+        "D": "Validación",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 153
+      },
+      "answer": "A"
+    },
+    {
+      "id": 488,
+      "prompt": "Los errores cometidos en la etapa de análisis del sistema se muestran en:",
+      "options": {
+        "A": "implementación",
+        "B": "diseño del sistema",
+        "C": "desarrollos del sistema",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 153
+      },
+      "answer": "A"
+    },
+    {
+      "id": 489,
+      "prompt": "La  combinación  de  los  enfoques  de  arriba  hacia  abajo  y  de  abajo  hacia  arriba puede denominarse:",
+      "options": {
+        "A": "enfoque integrador",
+        "B": "enfoque interpretativo",
+        "C": "enfoque interactivo",
+        "D": "ambos b y c",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 153
+      },
+      "answer": "D"
+    },
+    {
+      "id": 490,
+      "prompt": "¿Cuál de las siguientes afirmaciones no es verdadera?",
+      "options": {
+        "A": "Los diagramas de relaciones de entidades se utilizan para diseñar archivos",
+        "B": "Descripción general de los sistemas puede ser prescrito por los diagramas de flujo de datos",
+        "C": "Las fases, en un ciclo de vida de los sistemas, son fijas e invariantes.",
+        "D": "Los archivos indexados son más rápidos que los archivos secuenciales en todas las situaciones"
+      },
+      "sourcePages": {
+        "question": 154
+      },
+      "answer": "A"
+    },
+    {
+      "id": 491,
+      "prompt": "El método más largo de conversión es:",
+      "options": {
+        "A": "Directo",
+        "B": "paralelo",
+        "C": "en fase",
+        "D": "piloto",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 154
+      },
+      "answer": "D"
+    },
+    {
+      "id": 492,
+      "prompt": "Los cambios  realizados  periódicamente  en  un sistema,  después  de  su implementación,  se conocen como Sistema:",
+      "options": {
+        "A": "analisis",
+        "B": "diseño",
+        "C": "desarrollo",
+        "D": "mantenimiento",
+        "E": "ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 154
+      },
+      "answer": "C"
+    },
+    {
+      "id": 493,
+      "prompt": "El primer paso en el ciclo de vida del desarrollo de sistemas es:",
+      "options": {
+        "A": "diseño de base de datos",
+        "B": "diseño del sistema",
+        "C": "investigación preliminar y análisis",
+        "D": "interfaz gráfica de usuario",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 155
+      },
+      "answer": "C"
+    },
+    {
+      "id": 494,
+      "prompt": "Nassi - Schneiderman cartas",
+      "options": {
+        "A": "están siendo reemplazados por diagramas de flujo",
+        "B": "A menudo describe estructuras de control superpuestas",
+        "C": "se componen de cajas dentro de cajas",
+        "D": "ambos (a) y (c)",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 155
+      },
+      "answer": "D"
+    },
+    {
+      "id": 495,
+      "prompt": "¿Cuál de las siguientes herramientas no se usa para modelar el nuevo sistema? A. tablas de decisiones",
+      "options": {
+        "B": "diccionario de datos",
+        "C": "diagramas de flujo de datos",
+        "D": "Todo lo anterior"
+      },
+      "sourcePages": {
+        "question": 155
+      },
+      "answer": "B"
+    },
+    {
+      "id": 496,
+      "prompt": "Un diseño que consiste en una jerarquía de módulos; Cada módulo tiene una sola entrada y una única subrutina de salida, que se conoce como:",
+      "options": {
+        "A": "estructura de jerarquía",
+        "B": "diseño de arriba hacia abajo",
+        "C": "Tuple",
+        "D": "Turnaround",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 155
+      },
+      "answer": "A"
+    },
+    {
+      "id": 497,
+      "prompt": "La creación rápida de prototipos demuestra la calidad de un diseño de:",
+      "options": {
+        "A": "tener un programa simular el sistema real",
+        "B": "hacer que el analista del sistema presente una descripción general del diseño a los usuarios, programadores y consultores",
+        "C": "tener un diagrama de flujo de datos",
+        "D": "tanto (a) como (b)",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 156
+      },
+      "answer": "E"
+    },
+    {
+      "id": 498,
+      "prompt": "El concepto de caja negra:",
+      "options": {
+        "A": "se invoca al describir un sistema en términos de entradas y salidas, dejando el proceso de transformación en una caja negra.",
+        "B": "asume que la caja negra es independiente",
+        "C": "asume que las entradas y salidas permanecerán estables",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 156
+      },
+      "answer": "D"
+    },
+    {
+      "id": 499,
+      "prompt": "Una investigación del sistema puede resultar de:",
+      "options": {
+        "A": "una investigación de análisis",
+        "B": "un sistema programado revisado",
+        "C": "la solicitud formal de un gerente",
+        "D": "Todo lo anterior",
+        "E": "Ninguna de las anteriores"
+      },
+      "sourcePages": {
+        "question": 156
+      },
+      "answer": "B"
+    },
+    {
+      "id": 500,
+      "prompt": "La representación gráfica de la lógica de control de las funciones de procesamiento o módulos que representan un sistema, se conoce como:",
+      "options": {
+        "A": "Análisis estructurado",
+        "B": "gráfica estructurada",
+        "C": "Inglés estructurado",
+        "D": "diagram de flujo del sistema"
+      },
+      "sourcePages": {
+        "question": 157
+      },
+      "answer": "B"
+    }
+  ]
+}
