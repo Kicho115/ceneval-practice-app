@@ -26,7 +26,7 @@ function optionKeys(item: QuestionItem): string[] {
 }
 
 const GOOGLE_SEARCH = "https://www.google.com/search?q=";
-const GEMINI_APP = "https://gemini.google.com/app";
+const OPENAI_APP = "https://chatgpt.com/";
 
 function openGoogleQuery(query: string) {
   const q = query.trim();
@@ -45,8 +45,8 @@ function queryForOptionConcept(optionText: string) {
   return `qué es ${t}`;
 }
 
-/** Abre Gemini: copia el prompt al portapapeles y usa ?prompt= (útil también con extensiones que lo interpretan). */
-async function openGeminiWithPrompt(prompt: string) {
+/** Abre OpenAI: copia el prompt al portapapeles y usa ?prompt= (útil también con extensiones que lo interpretan). */
+async function openOpenAIWithPrompt(prompt: string) {
   const text = prompt.trim();
   if (!text) return;
   try {
@@ -54,9 +54,9 @@ async function openGeminiWithPrompt(prompt: string) {
   } catch {
     /* sin permiso o contexto no seguro */
   }
-  let url = `${GEMINI_APP}?prompt=${encodeURIComponent(text)}`;
+  let url = `${OPENAI_APP}?prompt=${encodeURIComponent(text)}`;
   if (url.length > 6000) {
-    url = GEMINI_APP;
+    url = OPENAI_APP;
   }
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -90,7 +90,7 @@ function IconGoogle() {
   );
 }
 
-function IconGemini() {
+function IconOpenAI() {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -109,14 +109,14 @@ function IconGemini() {
 
 function SearchIconPair({
   googleTitle,
-  geminiTitle,
+  openaiTitle,
   onGoogle,
-  onGemini,
+  onOpenAI,
 }: {
   googleTitle: string;
-  geminiTitle: string;
+  openaiTitle: string;
   onGoogle: () => void;
-  onGemini: () => void | Promise<void>;
+  onOpenAI: () => void | Promise<void>;
 }) {
   return (
     <div
@@ -140,16 +140,16 @@ function SearchIconPair({
       </button>
       <button
         type="button"
-        className="btn-icon-search btn-icon-gemini"
-        title={geminiTitle}
-        aria-label={geminiTitle}
+        className="btn-icon-search btn-icon-openai"
+        title={openaiTitle}
+        aria-label={openaiTitle}
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
-          void onGemini();
+          void onOpenAI();
         }}
       >
-        <IconGemini />
+        <IconOpenAI />
       </button>
     </div>
   );
@@ -361,9 +361,9 @@ function OptionsList({
                 <span className="opt-text">{text}</span>
                 <SearchIconPair
                   googleTitle="Buscar en Google el texto «qué es» + esta opción"
-                  geminiTitle="Abrir Gemini con «qué es» + esta opción (se copia al portapapeles y se abre gemini.google.com)"
+                  openaiTitle="Abrir OpenAI con «qué es» + esta opción (se copia al portapapeles y se abre chatgpt.com)"
                   onGoogle={() => openGoogleQuery(concept)}
-                  onGemini={() => void openGeminiWithPrompt(concept)}
+                  onOpenAI={() => void openOpenAIWithPrompt(concept)}
                 />
               </button>
             </li>
@@ -565,9 +565,9 @@ function PracticeSession({
           <p className="prompt">{current.prompt}</p>
           <SearchIconPair
             googleTitle="Buscar el enunciado de esta pregunta en Google"
-            geminiTitle="Abrir Gemini solo con el texto de la pregunta (se copia al portapapeles y se abre gemini.google.com)"
+            openaiTitle="Abrir OpenAI solo con el texto de la pregunta (se copia al portapapeles y se abre chatgpt.com)"
             onGoogle={() => openGoogleQuery(current.prompt)}
-            onGemini={() => void openGeminiWithPrompt(current.prompt)}
+            onOpenAI={() => void openOpenAIWithPrompt(current.prompt)}
           />
         </div>
         <OptionsList
@@ -971,9 +971,9 @@ function StudySession({
           <p className="prompt">{current.prompt}</p>
           <SearchIconPair
             googleTitle="Buscar el enunciado de esta pregunta en Google"
-            geminiTitle="Abrir Gemini solo con el texto de la pregunta (se copia al portapapeles y se abre gemini.google.com)"
+            openaiTitle="Abrir OpenAI solo con el texto de la pregunta (se copia al portapapeles y se abre chatgpt.com)"
             onGoogle={() => openGoogleQuery(current.prompt)}
-            onGemini={() => void openGeminiWithPrompt(current.prompt)}
+            onOpenAI={() => void openOpenAIWithPrompt(current.prompt)}
           />
         </div>
         <OptionsList
