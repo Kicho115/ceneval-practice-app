@@ -1,4 +1,11 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type KeyboardEvent as ReactKeyboardEvent,
+} from "react";
 import examBank from "../../data/questions.json";
 import type { ExamBank, QuestionItem } from "./types";
 import "./App.css";
@@ -44,6 +51,7 @@ function useAnswerHotkeys(
   useEffect(() => {
     if (!enabled) return;
 
+    /** Capture phase so Enter confirma antes de activar botones (p. ej. Siguiente). */
     const handle = (e: KeyboardEvent) => {
       const el = e.target as HTMLElement | null;
       if (
@@ -60,6 +68,7 @@ function useAnswerHotkeys(
       const k = keysRef.current;
 
       if (e.key === "Escape") {
+        e.preventDefault();
         setPendingIdx(null);
         return;
       }
@@ -68,6 +77,7 @@ function useAnswerHotkeys(
         const idx = pendingRef.current;
         if (idx !== null && idx >= 0 && idx < k.length) {
           e.preventDefault();
+          e.stopPropagation();
           onPick(k[idx]);
         }
         return;
@@ -82,11 +92,93 @@ function useAnswerHotkeys(
       }
     };
 
-    window.addEventListener("keydown", handle);
-    return () => window.removeEventListener("keydown", handle);
+    window.addEventListener("keydown", handle, true);
+    return () => window.removeEventListener("keydown", handle, true);
   }, [enabled, onPick, questionId]);
 
   return pendingIdx;
+}
+
+function useQuizArrowNav(
+  goPrev: () => void,
+  goNext: () => void,
+  enabled: boolean,
+) {
+  useEffect(() => {
+    if (!enabled) return;
+
+    const h = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const el = e.target as HTMLElement | null;
+      if (
+        el &&
+        (el.tagName === "INPUT" ||
+          el.tagName === "TEXTAREA" ||
+          el.tagName === "SELECT" ||
+          el.isContentEditable)
+      ) {
+        return;
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        goPrev();
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        goNext();
+      }
+    };
+
+    window.addEventListener("keydown", h);
+    return () => window.removeEventListener("keydown", h);
+  }, [enabled, goPrev, goNext]);
+}
+
+/**
+ * Tras responder la pregunta actual, Enter avanza a la siguiente (misma acción que «Siguiente»).
+ */
+function useEnterGoesNextAfterAnswer(
+  answered: boolean,
+  goNext: () => void,
+  enabled: boolean,
+) {
+  useEffect(() => {
+    if (!enabled) return;
+
+    const h = (e: KeyboardEvent) => {
+      if (e.key !== "Enter") return;
+      if (e.repeat) return;
+      if (!answered) return;
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      const el = e.target as HTMLElement | null;
+      if (
+        el &&
+        (el.tagName === "INPUT" ||
+          el.tagName === "TEXTAREA" ||
+          el.tagName === "SELECT" ||
+          el.isContentEditable)
+      ) {
+        return;
+      }
+      e.preventDefault();
+      e.stopPropagation();
+      goNext();
+    };
+
+    window.addEventListener("keydown", h, true);
+    return () => window.removeEventListener("keydown", h, true);
+  }, [answered, goNext, enabled]);
+}
+
+/** Evita que Enter/Espacio activen Siguiente sin haber respondido (el clic con ratón sigue permitido). */
+function blockEnterAdvance(
+  e: ReactKeyboardEvent<HTMLButtonElement>,
+  answered: boolean,
+) {
+  if (answered) return;
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    e.stopPropagation();
+  }
 }
 
 function OptionsList({
@@ -143,8 +235,9 @@ function OptionsList({
       </ul>
       {canHotkey && (
         <p className="kbd-hint">
-          Teclado: <kbd>1</kbd>–<kbd>{keys.length}</kbd> elige la opción,{" "}
-          <kbd>Enter</kbd> confirma, <kbd>Esc</kbd> cancela.
+          Teclado: <kbd>1</kbd>–<kbd>{keys.length}</kbd> elige, <kbd>Enter</kbd>{" "}
+          confirma, <kbd>Esc</kbd> cancela. <kbd>←</kbd> <kbd>→</kbd> cambian de
+          pregunta. Sin respuesta, <kbd>Enter</kbd> no avanza.
         </p>
       )}
     </>
@@ -282,6 +375,9 @@ function PracticeSession({
     [items],
   );
 
+  useQuizArrowNav(goPrev, goNext, true);
+  useEnterGoesNextAfterAnswer(answered, goNext, items.length > 0);
+
   if (!current) {
     return (
       <>
@@ -342,6 +438,16 @@ function PracticeSession({
         {!current.answer && (
           <p className="warn">Esta pregunta no tiene respuesta en el banco.</p>
         )}
+        {answered && pos < order.length - 1 && (
+          <p className="kbd-hint kbd-hint-after">
+            <kbd>Enter</kbd> pasa a la siguiente pregunta.
+          </p>
+        )}
+        {answered && pos >= order.length - 1 && (
+          <p className="kbd-hint kbd-hint-after">
+            Última pregunta del banco.
+          </p>
+        )}
       </article>
 
       <nav className="nav">
@@ -358,6 +464,7 @@ function PracticeSession({
           className="btn secondary"
           onClick={goNext}
           disabled={pos >= order.length - 1}
+          onKeyDown={(e) => blockEnterAdvance(e, answered)}
         >
           Siguiente
         </button>
@@ -514,6 +621,13 @@ function StudySession({
   }, []);
 
   const sessionTotal = order.length;
+
+  useQuizArrowNav(goPrev, goNext, phase === "active" && order.length > 0);
+  useEnterGoesNextAfterAnswer(
+    answered,
+    goNext,
+    phase === "active" && order.length > 0,
+  );
 
   if (phase === "config") {
     return (
@@ -695,6 +809,16 @@ function StudySession({
         {!current.answer && (
           <p className="warn">Esta pregunta no tiene respuesta en el banco.</p>
         )}
+        {answered && pos < sessionTotal - 1 && (
+          <p className="kbd-hint kbd-hint-after">
+            <kbd>Enter</kbd> pasa a la siguiente pregunta.
+          </p>
+        )}
+        {answered && pos >= sessionTotal - 1 && (
+          <p className="kbd-hint kbd-hint-after">
+            <kbd>Enter</kbd> para ver resultados de la sesión.
+          </p>
+        )}
       </article>
 
       <nav className="nav">
@@ -706,7 +830,12 @@ function StudySession({
         >
           Anterior
         </button>
-        <button type="button" className="btn secondary" onClick={goNext}>
+        <button
+          type="button"
+          className="btn secondary"
+          onClick={goNext}
+          onKeyDown={(e) => blockEnterAdvance(e, answered)}
+        >
           {pos >= sessionTotal - 1 ? "Ver resultados" : "Siguiente"}
         </button>
       </nav>

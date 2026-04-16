@@ -140,6 +140,10 @@
   line-height: 1.4;
 }
 
+.kbd-hint-after {
+  margin-top: 0.75rem;
+}
+
 .kbd-hint kbd {
   display: inline-block;
   padding: 0.1rem 0.35rem;
