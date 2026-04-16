@@ -25,6 +25,136 @@ function optionKeys(item: QuestionItem): string[] {
   return Object.keys(item.options).sort((a, b) => a.localeCompare(b, "es"));
 }
 
+const GOOGLE_SEARCH = "https://www.google.com/search?q=";
+const GEMINI_APP = "https://gemini.google.com/app";
+
+function openGoogleQuery(query: string) {
+  const q = query.trim();
+  if (!q) return;
+  window.open(
+    `${GOOGLE_SEARCH}${encodeURIComponent(q)}`,
+    "_blank",
+    "noopener,noreferrer",
+  );
+}
+
+/** Texto para buscar una opción: prefijo pedido para Gemini / búsqueda del concepto. */
+function queryForOptionConcept(optionText: string) {
+  const t = optionText.trim();
+  if (!t) return "";
+  return `qué es ${t}`;
+}
+
+/** Abre Gemini: copia el prompt al portapapeles y usa ?prompt= (útil también con extensiones que lo interpretan). */
+async function openGeminiWithPrompt(prompt: string) {
+  const text = prompt.trim();
+  if (!text) return;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    /* sin permiso o contexto no seguro */
+  }
+  let url = `${GEMINI_APP}?prompt=${encodeURIComponent(text)}`;
+  if (url.length > 6000) {
+    url = GEMINI_APP;
+  }
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function IconGoogle() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        fill="#4285F4"
+        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+      />
+      <path
+        fill="#34A853"
+        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+      />
+      <path
+        fill="#FBBC05"
+        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+      />
+      <path
+        fill="#EA4335"
+        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+      />
+    </svg>
+  );
+}
+
+function IconGemini() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        fill="currentColor"
+        d="M12 2.2c.3 0 .6.2.7.5l1.5 4.6h4.8c.7 0 1 .9.5 1.4l-3.9 2.8 1.5 4.6c.2.7-.6 1.3-1.2.9L12 16.9l-3.9 2.8c-.6.4-1.4-.2-1.2-.9l1.5-4.6-3.9-2.8c-.5-.5-.2-1.4.5-1.4h4.8l1.5-4.6c.1-.3.4-.5.7-.5z"
+      />
+    </svg>
+  );
+}
+
+function SearchIconPair({
+  googleTitle,
+  geminiTitle,
+  onGoogle,
+  onGemini,
+}: {
+  googleTitle: string;
+  geminiTitle: string;
+  onGoogle: () => void;
+  onGemini: () => void | Promise<void>;
+}) {
+  return (
+    <div
+      className="search-icon-pair"
+      role="group"
+      onClick={(e) => e.stopPropagation()}
+      onMouseDown={(e) => e.stopPropagation()}
+    >
+      <button
+        type="button"
+        className="btn-icon-search btn-icon-google"
+        title={googleTitle}
+        aria-label={googleTitle}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          onGoogle();
+        }}
+      >
+        <IconGoogle />
+      </button>
+      <button
+        type="button"
+        className="btn-icon-search btn-icon-gemini"
+        title={geminiTitle}
+        aria-label={geminiTitle}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          void onGemini();
+        }}
+      >
+        <IconGemini />
+      </button>
+    </div>
+  );
+}
+
 /**
  * 1–9 = select option by position (first option = 1). Enter confirms. Esc clears selection.
  */
@@ -218,8 +348,9 @@ function OptionsList({
           } else if (pendingIdx === index) {
             cls += " opt-pending";
           }
+          const concept = queryForOptionConcept(text);
           return (
-            <li key={key}>
+            <li key={key} className="opt-line">
               <button
                 type="button"
                 className={cls}
@@ -228,6 +359,12 @@ function OptionsList({
               >
                 <span className="opt-key">{key}</span>
                 <span className="opt-text">{text}</span>
+                <SearchIconPair
+                  googleTitle="Buscar en Google el texto «qué es» + esta opción"
+                  geminiTitle="Abrir Gemini con «qué es» + esta opción (se copia al portapapeles y se abre gemini.google.com)"
+                  onGoogle={() => openGoogleQuery(concept)}
+                  onGemini={() => void openGeminiWithPrompt(concept)}
+                />
               </button>
             </li>
           );
@@ -424,7 +561,15 @@ function PracticeSession({
       </p>
 
       <article className="card">
-        <p className="prompt">{current.prompt}</p>
+        <div className="prompt-row">
+          <p className="prompt">{current.prompt}</p>
+          <SearchIconPair
+            googleTitle="Buscar el enunciado de esta pregunta en Google"
+            geminiTitle="Abrir Gemini solo con el texto de la pregunta (se copia al portapapeles y se abre gemini.google.com)"
+            onGoogle={() => openGoogleQuery(current.prompt)}
+            onGemini={() => void openGeminiWithPrompt(current.prompt)}
+          />
+        </div>
         <OptionsList
           keys={keys}
           current={current}
@@ -444,9 +589,7 @@ function PracticeSession({
           </p>
         )}
         {answered && pos >= order.length - 1 && (
-          <p className="kbd-hint kbd-hint-after">
-            Última pregunta del banco.
-          </p>
+          <p className="kbd-hint kbd-hint-after">Última pregunta del banco.</p>
         )}
       </article>
 
@@ -824,7 +967,15 @@ function StudySession({
       </p>
 
       <article className="card">
-        <p className="prompt">{current.prompt}</p>
+        <div className="prompt-row">
+          <p className="prompt">{current.prompt}</p>
+          <SearchIconPair
+            googleTitle="Buscar el enunciado de esta pregunta en Google"
+            geminiTitle="Abrir Gemini solo con el texto de la pregunta (se copia al portapapeles y se abre gemini.google.com)"
+            onGoogle={() => openGoogleQuery(current.prompt)}
+            onGemini={() => void openGeminiWithPrompt(current.prompt)}
+          />
+        </div>
         <OptionsList
           keys={keys}
           current={current}

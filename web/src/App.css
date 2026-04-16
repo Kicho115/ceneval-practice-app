@@ -64,11 +64,71 @@
   box-shadow: var(--shadow);
 }
 
-.prompt {
-  margin: 0 0 1.25rem;
+.prompt-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prompt-row .prompt {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
   font-size: 1.05rem;
   line-height: 1.5;
   color: var(--text-h);
+}
+
+.search-icon-pair {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: 0.25rem;
+  align-items: flex-start;
+  padding-top: 0.15rem;
+}
+
+.btn-icon-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.btn-icon-search:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.btn-icon-gemini {
+  color: #6366f1;
+}
+
+.opt-line {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.opt-line .opt {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+}
+
+.opt-line .search-icon-pair {
+  padding-top: 0;
+  align-self: center;
 }
 
 .options {
