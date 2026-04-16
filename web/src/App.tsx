@@ -25,6 +25,16 @@ function optionKeys(item: QuestionItem): string[] {
   return Object.keys(item.options).sort((a, b) => a.localeCompare(b, "es"));
 }
 
+/** Categoría, PDF y página de la guía, si están en el banco. */
+function formatQuestionMeta(item: QuestionItem): string | null {
+  const bits: string[] = [];
+  if (item.category) bits.push(item.category);
+  if (item.sourcePdf) bits.push(item.sourcePdf);
+  const p = item.sourcePages?.question;
+  if (p != null) bits.push(`p. ${p}`);
+  return bits.length ? bits.join(" · ") : null;
+}
+
 const GOOGLE_SEARCH = "https://www.google.com/search?q=";
 const OPENAI_APP = "https://chatgpt.com/";
 
@@ -529,6 +539,7 @@ function PracticeSession({
   const keys = optionKeys(current);
   const attempt = attempts[current.id];
   const progress = ((pos + 1) / order.length) * 100;
+  const questionMeta = formatQuestionMeta(current);
 
   return (
     <>
@@ -561,6 +572,7 @@ function PracticeSession({
       </p>
 
       <article className="card">
+        {questionMeta && <p className="question-meta">{questionMeta}</p>}
         <div className="prompt-row">
           <p className="prompt">{current.prompt}</p>
           <SearchIconPair
@@ -650,16 +662,31 @@ function StudySession({
   items: QuestionItem[];
   onBack: () => void;
 }) {
-  /** Índices al banco original: solo preguntas con respuesta en el JSON. */
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+
+  const categoryOptions = useMemo(() => {
+    const set = new Set<string>();
+    for (const it of items) {
+      const cat = it.category?.trim();
+      if (cat) set.add(cat);
+    }
+    return [...set].sort((a, b) => a.localeCompare(b, "es"));
+  }, [items]);
+
+  /** Índices al banco original: solo preguntas con respuesta y de las categorías elegidas. */
   const eligibleIndices = useMemo(
     () =>
       items
         .map((_, i) => i)
         .filter((i) => {
-          const a = items[i]?.answer;
-          return typeof a === "string" && a.trim() !== "";
+          const item = items[i];
+          const a = item?.answer;
+          if (!(typeof a === "string" && a.trim() !== "")) return false;
+          if (selectedCategories.length === 0) return true;
+          const cat = item?.category?.trim();
+          return !!cat && selectedCategories.includes(cat);
         }),
-    [items],
+    [items, selectedCategories],
   );
   const maxN = eligibleIndices.length;
 
@@ -685,6 +712,22 @@ function StudySession({
     null,
   );
   const [hasTimeLimit, setHasTimeLimit] = useState(false);
+
+  useEffect(() => {
+    setSelectedCategories((prev) =>
+      prev.filter((cat) => categoryOptions.includes(cat)),
+    );
+  }, [categoryOptions]);
+
+  useEffect(() => {
+    if (maxN === 0) {
+      setCountInput("0");
+      return;
+    }
+    const current = Math.max(1, parseInt(countInput, 10) || 0);
+    if (current > maxN) setCountInput(String(maxN));
+    else if (current <= 0) setCountInput(String(Math.min(20, maxN)));
+  }, [countInput, maxN]);
 
   useEffect(() => {
     if (phase !== "active" || deadlineMs === null) return;
@@ -780,6 +823,8 @@ function StudySession({
   }, []);
 
   const sessionTotal = order.length;
+  const selectedCount = selectedCategories.length;
+  const isAllCategories = selectedCount === 0;
 
   useQuizArrowNav(goPrev, goNext, phase === "active" && order.length > 0);
   useEnterGoesNextAfterAnswer(
@@ -797,6 +842,43 @@ function StudySession({
         <h1 className="title">{examName}</h1>
         <p className="subtitle">Sesión de estudio</p>
         <div className="card study-config">
+          <div className="field">
+            <span className="field-label">Categorías</span>
+            <label className="checkbox-field">
+              <input
+                type="checkbox"
+                checked={isAllCategories}
+                onChange={(e) => {
+                  if (e.target.checked) setSelectedCategories([]);
+                }}
+              />
+              <span>Todas las categorías</span>
+            </label>
+            <div className="category-list">
+              {categoryOptions.map((cat) => (
+                <label key={cat} className="checkbox-field">
+                  <input
+                    type="checkbox"
+                    checked={selectedCategories.includes(cat)}
+                    onChange={(e) => {
+                      setSelectedCategories((prev) => {
+                        if (e.target.checked) {
+                          return [...prev, cat];
+                        }
+                        return prev.filter((c) => c !== cat);
+                      });
+                    }}
+                  />
+                  <span>{cat}</span>
+                </label>
+              ))}
+            </div>
+            <span className="field-hint">
+              {isAllCategories
+                ? "Se usarán todas las categorías."
+                : `${selectedCount} categoría(s) seleccionada(s).`}
+            </span>
+          </div>
           <label className="field">
             <span className="field-label">Número de preguntas</span>
             <input
@@ -808,8 +890,11 @@ function StudySession({
               onChange={(e) => setCountInput(e.target.value)}
             />
             <span className="field-hint">
-              Máximo {maxN} (solo preguntas con respuesta en el banco; orden
-              aleatorio).
+              Máximo {maxN} (solo preguntas con respuesta
+              {isAllCategories
+                ? " en el banco"
+                : " en las categorías seleccionadas"}
+              ; orden aleatorio).
             </span>
           </label>
           {maxN === 0 && (
@@ -915,6 +1000,7 @@ function StudySession({
   const attempt = attempts[current.id];
   const progress = ((pos + 1) / sessionTotal) * 100;
   const timed = hasTimeLimit;
+  const questionMeta = formatQuestionMeta(current);
 
   return (
     <>
@@ -967,6 +1053,7 @@ function StudySession({
       </p>
 
       <article className="card">
+        {questionMeta && <p className="question-meta">{questionMeta}</p>}
         <div className="prompt-row">
           <p className="prompt">{current.prompt}</p>
           <SearchIconPair

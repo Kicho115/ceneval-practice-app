@@ -64,6 +64,14 @@
   box-shadow: var(--shadow);
 }
 
+.question-meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: color-mix(in oklab, var(--text-h) 55%, var(--border));
+  word-break: break-word;
+}
+
 .prompt-row {
   display: flex;
   align-items: flex-start;
@@ -348,6 +356,16 @@
   font-variant-numeric: tabular-nums;
 }
 
+.field select {
+  max-width: 100%;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
 .field-hint {
   font-size: 0.8rem;
   opacity: 0.85;
@@ -362,6 +380,15 @@
 
 .checkbox-field input {
   width: auto;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 12rem;
+  overflow: auto;
+  padding-right: 0.25rem;
 }
 
 .timer-bar {

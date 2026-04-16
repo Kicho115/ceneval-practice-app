@@ -5935,6 +5935,566 @@
         "question": 157
       },
       "answer": "B"
+    },
+    {
+      "id": 501,
+      "prompt": "¿Cuál de las siguientes opciones mejor define un algoritmo?",
+      "options": {
+        "A": "Un programa de computadora.",
+        "B": "Una serie de instrucciones paso a paso para resolver un problema.",
+        "C": "Un dispositivo de almacenamiento.",
+        "D": "Una unidad central de procesamiento."
+      },
+      "answer": "B",
+      "category": "Algoritmia",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 55
+      }
+    },
+    {
+      "id": 502,
+      "prompt": "¿Cuál es el propósito principal del análisis de algoritmos?",
+      "options": {
+        "A": "Escribir código de manera eficiente.",
+        "B": "Comprender el funcionamiento de las computadoras.",
+        "C": "Evaluar el rendimiento y eficiencia de los algoritmos.",
+        "D": "Diseñar interfaces de usuario intuitivas."
+      },
+      "answer": "C",
+      "category": "Algoritmia",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 55
+      }
+    },
+    {
+      "id": 503,
+      "prompt": "¿Qué implica el diseño de un algoritmo?",
+      "options": {
+        "A": "Implementar código sin considerar la eficiencia.",
+        "B": "Desarrollar una solución paso a paso para un problema.",
+        "C": "Analizar el rendimiento de algoritmos existentes.",
+        "D": "Ignorar la optimización en favor de la simplicidad."
+      },
+      "answer": "B",
+      "category": "Análisis y Diseño de Algoritmos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 55
+      }
+    },
+    {
+      "id": 504,
+      "prompt": "¿Cuál es el objetivo del análisis de algoritmos?",
+      "options": {
+        "A": "Mejorar la legibilidad del código.",
+        "B": "Evaluar la eficiencia y rendimiento de los algoritmos.",
+        "C": "Diseñar interfaces de usuario atractivas.",
+        "D": "Ignorar la complejidad de los problemas."
+      },
+      "answer": "B",
+      "category": "Análisis y Diseño de Algoritmos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 56
+      }
+    },
+    {
+      "id": 505,
+      "prompt": "¿Cuál de las siguientes no es una estructura de datos lineal?",
+      "options": {
+        "A": "Pila.",
+        "B": "Cola.",
+        "C": "Árbol.",
+        "D": "Grafo."
+      },
+      "answer": "D",
+      "category": "Estructuras de Datos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 56
+      }
+    },
+    {
+      "id": 506,
+      "prompt": "¿Para qué se utiliza comúnmente una lista enlazada?",
+      "options": {
+        "A": "Almacenar elementos ordenados.",
+        "B": "Implementar estructuras de árbol.",
+        "C": "Facilitar la búsqueda binaria.",
+        "D": "Representar secuencias de datos dinámicas."
+      },
+      "answer": "D",
+      "category": "Estructuras de Datos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 56
+      }
+    },
+    {
+      "id": 507,
+      "prompt": "¿Qué rama de las matemáticas se centra en objetos distintos y separados?",
+      "options": {
+        "A": "Álgebra.",
+        "B": "Análisis.",
+        "C": "Cálculo.",
+        "D": "Matemáticas Discretas."
+      },
+      "answer": "D",
+      "category": "Matemáticas Discretas",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 57
+      }
+    },
+    {
+      "id": 508,
+      "prompt": "¿Cuál es el propósito principal de la teoría de grafos en matemáticas discretas?",
+      "options": {
+        "A": "Estudiar funciones continuas.",
+        "B": "Analizar la continuidad de ecuaciones.",
+        "C": "Modelar relaciones entre objetos.",
+        "D": "Resolver ecuaciones diferenciales."
+      },
+      "answer": "C",
+      "category": "Matemáticas Discretas",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 57
+      }
+    },
+    {
+      "id": 509,
+      "prompt": "¿Cuál es el propósito de la lógica proposicional en informática?",
+      "options": {
+        "A": "Analizar algoritmos.",
+        "B": "Modelar la relación entre objetos.",
+        "C": "Representar la estructura de datos.",
+        "D": "Expresar proposiciones lógicas."
+      },
+      "answer": "D",
+      "category": "Lógica Computacional",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 57
+      }
+    },
+    {
+      "id": 510,
+      "prompt": "¿Qué área de la lógica se ocupa de la inferencia basada en reglas?",
+      "options": {
+        "A": "Lógica de Primer Orden.",
+        "B": "Lógica Modal.",
+        "C": "Lógica Inductiva.",
+        "D": "Lógica de Programación."
+      },
+      "answer": "A",
+      "category": "Lógica Computacional",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 58
+      }
+    },
+    {
+      "id": 511,
+      "prompt": "¿Qué aborda principalmente la arquitectura de computadoras?",
+      "options": {
+        "A": "Diseño de interfaces de usuario.",
+        "B": "Optimización de algoritmos.",
+        "C": "Organización y estructura del hardware.",
+        "D": "Implementación de bases de datos."
+      },
+      "answer": "C",
+      "category": "Desarrollo de Software de Base",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 58
+      }
+    },
+    {
+      "id": 512,
+      "prompt": "¿Cuál es el papel de un sistema operativo en el desarrollo de software?",
+      "options": {
+        "A": "Crear algoritmos eficientes.",
+        "B": "Gestionar recursos del sistema.",
+        "C": "Diseñar interfaces gráficas.",
+        "D": "Desarrollar aplicaciones web."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Base",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 59
+      }
+    },
+    {
+      "id": 513,
+      "prompt": "¿Cuál es la función principal de un compilador en el desarrollo de software?",
+      "options": {
+        "A": "Ejecutar programas.",
+        "B": "Traducir código fuente a código máquina.",
+        "C": "Depurar errores de código.",
+        "D": "Diseñar interfaces de usuario."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Base - Compiladores",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 59
+      }
+    },
+    {
+      "id": 514,
+      "prompt": "¿Por qué es importante la fase de optimización en un compilador?",
+      "options": {
+        "A": "Aumentar la complejidad del código.",
+        "B": "Reducir el tiempo de compilación.",
+        "C": "Mejorar el rendimiento del código generado.",
+        "D": "Eliminar la necesidad de depuración."
+      },
+      "answer": "C",
+      "category": "Desarrollo de Software de Base - Compiladores",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 59
+      }
+    },
+    {
+      "id": 515,
+      "prompt": "¿Cuál es el propósito principal de las redes de computadoras en el desarrollo de software?",
+      "options": {
+        "A": "Mejorar la velocidad de procesamiento.",
+        "B": "Facilitar la interacción entre hardware y software.",
+        "C": "Compartir recursos y facilitar la comunicación.",
+        "D": "Aumentar la capacidad de almacenamiento."
+      },
+      "answer": "C",
+      "category": "Desarrollo de Software de Base - Redes de Computadoras",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 60
+      }
+    },
+    {
+      "id": 516,
+      "prompt": "¿Qué tecnología es esencial para la comunicación en redes de computadoras?",
+      "options": {
+        "A": "Algoritmos de clasificación.",
+        "B": "Protocolos de comunicación.",
+        "C": "Sistemas operativos.",
+        "D": "Compiladores avanzados."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Base - Redes de Computadoras",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 60
+      }
+    },
+    {
+      "id": 517,
+      "prompt": "¿Cuál es el objetivo principal de la ingeniería de software?",
+      "options": {
+        "A": "Desarrollar hardware eficiente.",
+        "B": "Crear interfaces de usuario atractivas.",
+        "C": "Aplicar principios de diseño a nivel de sistema.",
+        "D": "Desarrollar software de manera sistemática y eficiente."
+      },
+      "answer": "D",
+      "category": "Desarrollo de Software de Aplicación - Ingeniería de Software",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 60
+      }
+    },
+    {
+      "id": 518,
+      "prompt": "¿En qué fase del ciclo de vida del desarrollo de software se realiza la planificación de proyectos?",
+      "options": {
+        "A": "Implementación.",
+        "B": "Pruebas.",
+        "C": "Mantenimiento.",
+        "D": "Fase de planificación."
+      },
+      "answer": "D",
+      "category": "Desarrollo de Software de Aplicación - Ingeniería de Software",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 61
+      }
+    },
+    {
+      "id": 519,
+      "prompt": "¿Qué determina la elección de un lenguaje de programación en el desarrollo de software?",
+      "options": {
+        "A": "La popularidad del lenguaje.",
+        "B": "La preferencia personal del desarrollador.",
+        "C": "Los requisitos y objetivos del proyecto.",
+        "D": "El rendimiento del compilador."
+      },
+      "answer": "C",
+      "category": "Desarrollo de Software de Aplicación - Lenguajes de Programación",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 61
+      }
+    },
+    {
+      "id": 520,
+      "prompt": "¿Cuál es una característica clave de los lenguajes de programación de alto nivel?",
+      "options": {
+        "A": "Código ejecutable de bajo nivel.",
+        "B": "Mayor abstracción del hardware.",
+        "C": "Menor legibilidad del código.",
+        "D": "Dependencia directa del sistema operativo."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Aplicación - Lenguajes de Programación",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 62
+      }
+    },
+    {
+      "id": 521,
+      "prompt": "¿Cuál es el propósito principal de una base de datos en el desarrollo de software?",
+      "options": {
+        "A": "Mejorar el rendimiento del hardware.",
+        "B": "Almacenar y gestionar datos de manera eficiente.",
+        "C": "Optimizar algoritmos de búsqueda.",
+        "D": "Desarrollar interfaces de usuario interactivas."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Aplicación - Bases de Datos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 62
+      }
+    },
+    {
+      "id": 522,
+      "prompt": "¿Qué tipo de base de datos se utiliza comúnmente para aplicaciones web dinámicas?",
+      "options": {
+        "A": "Base de datos jerárquica.",
+        "B": "Base de datos relacional.",
+        "C": "Base de datos de red.",
+        "D": "Base de datos orientada a objetos."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Aplicación - Bases de Datos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 62
+      }
+    },
+    {
+      "id": 523,
+      "prompt": "¿Por qué es importante la seguridad informática en el desarrollo de software?",
+      "options": {
+        "A": "Aumentar la velocidad de procesamiento.",
+        "B": "Garantizar la privacidad y protección de datos.",
+        "C": "Mejorar la usabilidad del software.",
+        "D": "Reducir la complejidad del código."
+      },
+      "answer": "B",
+      "category": "Desarrollo de Software de Aplicación - Seguridad Informática",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 63
+      }
+    },
+    {
+      "id": 524,
+      "prompt": "¿Qué es un elemento clave para la seguridad en el desarrollo de software?",
+      "options": {
+        "A": "Ofrecer interfaces de usuario atractivas.",
+        "B": "Implementar algoritmos de búsqueda avanzados.",
+        "C": "Aplicar prácticas de codificación segura.",
+        "D": "Desarrollar hardware eficiente."
+      },
+      "answer": "C",
+      "category": "Desarrollo de Software de Aplicación - Seguridad Informática",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 63
+      }
+    },
+    {
+      "id": 525,
+      "prompt": "¿Cuál es una característica esencial de las soluciones de cómputo inteligente?",
+      "options": {
+        "A": "Bajo rendimiento.",
+        "B": "Dependencia del hardware.",
+        "C": "Capacidad para aprender y adaptarse.",
+        "D": "Enfoque exclusivo en software."
+      },
+      "answer": "C",
+      "category": "Soluciones de Cómputo Inteligente",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 64
+      }
+    },
+    {
+      "id": 526,
+      "prompt": "¿Por qué la ética es importante en el desarrollo de soluciones de cómputo inteligente?",
+      "options": {
+        "A": "Para mejorar la velocidad de procesamiento.",
+        "B": "Garantizar la privacidad y protección de datos.",
+        "C": "Aumentar la complejidad del código.",
+        "D": "Reducir la usabilidad del software."
+      },
+      "answer": "B",
+      "category": "Soluciones de Cómputo Inteligente",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 64
+      }
+    },
+    {
+      "id": 527,
+      "prompt": "¿Qué define mejor la inteligencia artificial?",
+      "options": {
+        "A": "Desarrollo de hardware eficiente.",
+        "B": "Capacidad de aprender y tomar decisiones autónomas.",
+        "C": "Enfoque exclusivo en el análisis de datos.",
+        "D": "Implementación de algoritmos de búsqueda avanzados."
+      },
+      "answer": "B",
+      "category": "Soluciones de Cómputo Inteligente - Inteligencia Artificial",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 64
+      }
+    },
+    {
+      "id": 528,
+      "prompt": "¿Qué técnica es fundamental en la inteligencia artificial para mejorar el rendimiento de los modelos?",
+      "options": {
+        "A": "Desarrollo de interfaces de usuario.",
+        "B": "Redes neuronales.",
+        "C": "Algoritmos de clasificación.",
+        "D": "Compiladores avanzados."
+      },
+      "answer": "B",
+      "category": "Soluciones de Cómputo Inteligente - Inteligencia Artificial",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 65
+      }
+    },
+    {
+      "id": 529,
+      "prompt": "¿Cuál es el propósito principal de la minería de datos?",
+      "options": {
+        "A": "Desarrollar interfaces de usuario atractivas.",
+        "B": "Traducir código fuente a código máquina.",
+        "C": "Descubrir patrones y conocimientos en grandes conjuntos de datos.",
+        "D": "Modelar la relación entre objetos."
+      },
+      "answer": "C",
+      "category": "Soluciones de Cómputo Inteligente - Minería de Datos",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 65
+      }
+    },
+    {
+      "id": 530,
+      "prompt": "¿Cuál es uno de los beneficios clave del cómputo distribuido?",
+      "options": {
+        "A": "Mayor dependencia de hardware centralizado.",
+        "B": "Menor escalabilidad.",
+        "C": "Redundancia limitada.",
+        "D": "Escalabilidad mejorada."
+      },
+      "answer": "D",
+      "category": "Soluciones de Cómputo Inteligente - Cómputo Distribuido",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 65
+      }
+    },
+    {
+      "id": 531,
+      "prompt": "¿En qué contexto es esencial el cómputo distribuido?",
+      "options": {
+        "A": "Desarrollo de algoritmos.",
+        "B": "Procesamiento de grandes volúmenes de datos.",
+        "C": "Optimización de interfaces de usuario.",
+        "D": "Implementación de sistemas operativos."
+      },
+      "answer": "B",
+      "category": "Soluciones de Cómputo Inteligente - Cómputo Distribuido",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 66
+      }
+    },
+    {
+      "id": 532,
+      "prompt": "¿Qué tecnología es esencial para la comunicación eficiente en sistemas distribuidos?",
+      "options": {
+        "A": "Protocolos de comunicación.",
+        "B": "Compiladores avanzados.",
+        "C": "Herramientas de análisis de algoritmos.",
+        "D": "Sistemas de gestión de clúster."
+      },
+      "answer": "A",
+      "category": "Soluciones de Cómputo Inteligente - Cómputo Distribuido",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 66
+      }
+    },
+    {
+      "id": 533,
+      "prompt": "¿Cuál es uno de los desafíos en el cómputo distribuido?",
+      "options": {
+        "A": "Escasa redundancia.",
+        "B": "Falta de escalabilidad.",
+        "C": "Consistencia de datos.",
+        "D": "Uso eficiente de la energía."
+      },
+      "answer": "C",
+      "category": "Soluciones de Cómputo Inteligente - Cómputo Distribuido",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 66
+      }
+    },
+    {
+      "id": 534,
+      "prompt": "¿Cuál es una tendencia futura en inteligencia artificial?",
+      "options": {
+        "A": "Menos integración con otras disciplinas.",
+        "B": "Mayor dependencia de hardware tradicional.",
+        "C": "Integración con minería de datos.",
+        "D": "Reducción en la complejidad de los modelos."
+      },
+      "answer": "C",
+      "category": "Soluciones de Cómputo Inteligente - Inteligencia Artificial",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 67
+      }
+    },
+    {
+      "id": 535,
+      "prompt": "¿Qué impulsa principalmente la capacidad de adaptación en la inteligencia artificial?",
+      "options": {
+        "A": "Implementación de algoritmos de búsqueda avanzados.",
+        "B": "Redes neuronales.",
+        "C": "Mayor dependencia de hardware centralizado.",
+        "D": "Desarrollo de hardware eficiente."
+      },
+      "answer": "B",
+      "category": "Soluciones de Cómputo Inteligente - Inteligencia Artificial",
+      "sourcePdf": "2.pdf",
+      "sourcePages": {
+        "question": 67
+      }
     }
   ]
 }
