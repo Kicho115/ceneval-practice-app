@@ -507,10 +507,22 @@ function StudySession({
   items: QuestionItem[];
   onBack: () => void;
 }) {
-  const maxN = items.length;
+  /** Índices al banco original: solo preguntas con respuesta en el JSON. */
+  const eligibleIndices = useMemo(
+    () =>
+      items
+        .map((_, i) => i)
+        .filter((i) => {
+          const a = items[i]?.answer;
+          return typeof a === "string" && a.trim() !== "";
+        }),
+    [items],
+  );
+  const maxN = eligibleIndices.length;
+
   const [phase, setPhase] = useState<StudyPhase>("config");
   const [countInput, setCountInput] = useState(() =>
-    String(Math.min(20, maxN)),
+    maxN === 0 ? "0" : String(Math.min(20, maxN)),
   );
   const [useTimer, setUseTimer] = useState(false);
   const [minutesInput, setMinutesInput] = useState("15");
@@ -547,8 +559,12 @@ function StudySession({
   }, [phase, deadlineMs]);
 
   const startStudy = useCallback(() => {
-    const n = Math.min(maxN, Math.max(1, parseInt(countInput, 10) || 0));
-    const allIdx = shuffle(items.map((_, i) => i));
+    if (eligibleIndices.length === 0) return;
+    const n = Math.min(
+      eligibleIndices.length,
+      Math.max(1, parseInt(countInput, 10) || 0),
+    );
+    const allIdx = shuffle([...eligibleIndices]);
     setOrder(allIdx.slice(0, n));
     setCursor(0);
     setAttempts({});
@@ -566,7 +582,7 @@ function StudySession({
       setRemainingSec(0);
     }
     setPhase("active");
-  }, [countInput, items, maxN, minutesInput, useTimer]);
+  }, [countInput, eligibleIndices, minutesInput, useTimer]);
 
   const togglePause = useCallback(() => {
     if (pausedSec === null) {
@@ -642,15 +658,23 @@ function StudySession({
             <span className="field-label">Número de preguntas</span>
             <input
               type="number"
-              min={1}
+              min={maxN === 0 ? 0 : 1}
               max={maxN}
               value={countInput}
+              disabled={maxN === 0}
               onChange={(e) => setCountInput(e.target.value)}
             />
             <span className="field-hint">
-              Máximo {maxN} (se eligen al azar del banco).
+              Máximo {maxN} (solo preguntas con respuesta en el banco; orden
+              aleatorio).
             </span>
           </label>
+          {maxN === 0 && (
+            <p className="warn">
+              No hay preguntas con solución en el banco; no se puede iniciar una
+              sesión.
+            </p>
+          )}
           <label className="field checkbox-field">
             <input
               type="checkbox"
@@ -671,7 +695,12 @@ function StudySession({
               />
             </label>
           )}
-          <button type="button" className="btn btn-large" onClick={startStudy}>
+          <button
+            type="button"
+            className="btn btn-large"
+            onClick={startStudy}
+            disabled={maxN === 0}
+          >
             Comenzar sesión
           </button>
         </div>
