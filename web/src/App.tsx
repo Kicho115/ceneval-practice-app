@@ -8,6 +8,7 @@ import {
 } from "react";
 import examBank from "../../data/questions.json";
 import type { ExamBank, QuestionItem } from "./types";
+import { LatexText } from "./LatexText";
 import "./App.css";
 
 const bank = examBank as ExamBank;
@@ -368,7 +369,9 @@ function OptionsList({
                 onClick={() => onPick(key)}
               >
                 <span className="opt-key">{key}</span>
-                <span className="opt-text">{text}</span>
+                <span className="opt-text">
+                  <LatexText text={text} />
+                </span>
                 <SearchIconPair
                   googleTitle="Buscar en Google el texto «qué es» + esta opción"
                   openaiTitle="Abrir OpenAI con «qué es» + esta opción (se copia al portapapeles y se abre chatgpt.com)"
@@ -574,7 +577,9 @@ function PracticeSession({
       <article className="card">
         {questionMeta && <p className="question-meta">{questionMeta}</p>}
         <div className="prompt-row">
-          <p className="prompt">{current.prompt}</p>
+          <p className="prompt">
+            <LatexText text={current.prompt} />
+          </p>
           <SearchIconPair
             googleTitle="Buscar el enunciado de esta pregunta en Google"
             openaiTitle="Abrir OpenAI solo con el texto de la pregunta (se copia al portapapeles y se abre chatgpt.com)"
@@ -1055,7 +1060,9 @@ function StudySession({
       <article className="card">
         {questionMeta && <p className="question-meta">{questionMeta}</p>}
         <div className="prompt-row">
-          <p className="prompt">{current.prompt}</p>
+          <p className="prompt">
+            <LatexText text={current.prompt} />
+          </p>
           <SearchIconPair
             googleTitle="Buscar el enunciado de esta pregunta en Google"
             openaiTitle="Abrir OpenAI solo con el texto de la pregunta (se copia al portapapeles y se abre chatgpt.com)"

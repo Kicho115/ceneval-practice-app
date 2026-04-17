@@ -88,6 +88,12 @@
   color: var(--text-h);
 }
 
+/* KaTeX default color is near-black; inherit question / option text color (incl. dark mode). */
+.prompt .katex,
+.opt-text .katex {
+  color: inherit;
+}
+
 .search-icon-pair {
   display: flex;
   flex-direction: row;

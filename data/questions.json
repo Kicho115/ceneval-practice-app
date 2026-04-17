@@ -6495,6 +6495,516 @@
       "sourcePages": {
         "question": 67
       }
+    },
+    {
+      "id": 1,
+      "prompt": "¿Cuál es la complejidad temporal en el peor de los casos del algoritmo de búsqueda binaria en un arreglo ordenado de $n$ elementos?",
+      "options": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(log n)",
+        "D": "O(n log n)"
+      },
+      "answer": "C",
+      "explanation": "En cada paso, la búsqueda binaria divide el espacio de búsqueda a la mitad. La relación de recurrencia es $T(n) = T(n/2) + O(1)$, lo que, por el Teorema Maestro, resulta en $T(n) = O(\\log n)$.",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 2,
+      "prompt": "En el contexto de transacciones de bases de datos (ACID), ¿qué propiedad asegura que una transacción se ejecute de manera completa o no se ejecute en absoluto?",
+      "options": {
+        "A": "Consistencia",
+        "B": "Aislamiento",
+        "C": "Durabilidad",
+        "D": "Atomicidad"
+      },
+      "answer": "D",
+      "explanation": "La atomicidad garantiza que todas las operaciones dentro de una transacción se completen exitosamente como una unidad indivisible; si ocurre un fallo en cualquier parte de la transacción, todo el sistema vuelve a su estado original haciendo un 'rollback'.",
+      "category": "Bases de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 3,
+      "prompt": "¿Cuántos bits utiliza una dirección en el protocolo IPv6?",
+      "options": {
+        "A": "32 bits",
+        "B": "64 bits",
+        "C": "128 bits",
+        "D": "256 bits"
+      },
+      "answer": "C",
+      "explanation": "Mientras que IPv4 utiliza 32 bits, IPv6 fue diseñado para resolver la escasez de direcciones usando 128 bits, lo que permite un espacio de direcciones de $2^{128}$.",
+      "category": "Redes de Computadoras",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 4,
+      "prompt": "¿Qué problema principal de la gestión de memoria se resuelve mediante la técnica de paginación?",
+      "options": {
+        "A": "Fragmentación interna",
+        "B": "Fragmentación externa",
+        "C": "Interbloqueo (Deadlock)",
+        "D": "Inanición (Starvation)"
+      },
+      "answer": "B",
+      "explanation": "La paginación divide la memoria física en bloques fijos ('marcos') y la memoria lógica en 'páginas' del mismo tamaño. Esto elimina la necesidad de memoria contigua para los procesos, erradicando la fragmentación externa, aunque puede introducir ligera fragmentación interna en la última página.",
+      "category": "Sistemas Operativos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 5,
+      "prompt": "¿Qué estructura de datos es fundamental y típicamente utilizada para la evaluación de expresiones matemáticas en notación postfija (Polaca Inversa)?",
+      "options": {
+        "A": "Cola (Queue)",
+        "B": "Pila (Stack)",
+        "C": "Árbol Binario",
+        "D": "Grafo"
+      },
+      "answer": "B",
+      "explanation": "Una pila opera con la política LIFO. Al evaluar notación postfija, se apilan los operandos y, al encontrar un operador, se extraen (pop) los últimos dos operandos, se aplica el operador y el resultado se vuelve a apilar.",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 6,
+      "prompt": "En Ingeniería de Software, ¿qué patrón de diseño restringe la instanciación de una clase a un solo objeto y proporciona un punto de acceso global a él?",
+      "options": {
+        "A": "Factory Method",
+        "B": "Observer",
+        "C": "Singleton",
+        "D": "Decorator"
+      },
+      "answer": "C",
+      "explanation": "El patrón Singleton asegura que una clase tenga solo una instancia. Esto se logra ocultando el constructor (haciéndolo privado) y proveyendo un método estático que crea la instancia si no existe o la devuelve si ya fue creada.",
+      "category": "Ingeniería de Software",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 7,
+      "prompt": "Según la Jerarquía de Chomsky, ¿qué modelo computacional es exactamente equivalente en poder de reconocimiento a los lenguajes regulares?",
+      "options": {
+        "A": "Autómata de Pila",
+        "B": "Autómata Finito Determinista (AFD)",
+        "C": "Máquina de Turing",
+        "D": "Autómata Linealmente Acotado"
+      },
+      "answer": "B",
+      "explanation": "Los lenguajes regulares (Tipo 3) se pueden describir mediante expresiones regulares y son reconocidos por autómatas finitos (ya sean deterministas AFD o no deterministas AFND).",
+      "category": "Teoría de la Computación",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 8,
+      "prompt": "En teoría de grafos, el Teorema del Apretón de Manos establece que la suma de los grados de todos los vértices $V$ en un grafo no dirigido es igual a:",
+      "options": {
+        "A": "$|E|$",
+        "B": "$2|E|$",
+        "C": "$|E|/2$",
+        "D": "$|V|^2$"
+      },
+      "answer": "B",
+      "explanation": "Cada arista contribuye exactamente con 2 al grado total del grafo, uno por cada vértice que conecta. Por lo tanto, la fórmula matemática es $\\sum_{v \\in V} \\text{deg}(v) = 2|E|$.",
+      "category": "Matemáticas Discretas",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 9,
+      "prompt": "¿Qué técnica arquitectónica se utiliza en procesadores segmentados (pipelining) para mitigar las penalizaciones de tiempo generadas por las instrucciones de salto condicional?",
+      "options": {
+        "A": "Predicción de saltos (Branch Prediction)",
+        "B": "Memoria Caché L1",
+        "C": "Ejecución fuera de orden",
+        "D": "Memoria virtual"
+      },
+      "answer": "A",
+      "explanation": "La predicción de saltos intenta adivinar el camino que tomará una instrucción condicional (if/else) para mantener el cauce (pipeline) lleno. Si la predicción falla, el cauce se vacía, generando un costo, pero su éxito frecuente mejora el rendimiento.",
+      "category": "Arquitectura de Computadoras",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 10,
+      "prompt": "¿Cuál es la complejidad temporal promedio del algoritmo de ordenamiento QuickSort?",
+      "options": {
+        "A": "O(n)",
+        "B": "O(n log n)",
+        "C": "O(n^2)",
+        "D": "O(log n)"
+      },
+      "answer": "B",
+      "explanation": "En el caso promedio, el pivote divide el arreglo en sub-arreglos proporcionales. La relación es $T(n) = 2T(n/2) + O(n)$, lo que resulta en $O(n \\log n)$. En el peor caso (arreglo ya ordenado con mal pivote) se degrada a $O(n^2)$.",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 11,
+      "prompt": "En SQL, ¿qué cláusula se utiliza para aplicar condiciones y filtrar los resultados después de que se ha aplicado la cláusula GROUP BY?",
+      "options": {
+        "A": "WHERE",
+        "B": "ORDER BY",
+        "C": "HAVING",
+        "D": "FILTER"
+      },
+      "answer": "C",
+      "explanation": "La cláusula `WHERE` filtra registros individuales antes de la agregación, mientras que `HAVING` se evalúa después de `GROUP BY` y puede aplicar condiciones sobre los resultados de funciones agregadas como `SUM()`, `COUNT()`, etc.",
+      "category": "Bases de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 12,
+      "prompt": "En la capa de transporte, ¿cuál de los siguientes protocolos ofrece un servicio de entrega de datagramas sin conexión y sin confirmación de recepción?",
+      "options": {
+        "A": "TCP",
+        "B": "IP",
+        "C": "UDP",
+        "D": "ICMP"
+      },
+      "answer": "C",
+      "explanation": "El protocolo UDP (User Datagram Protocol) no establece una conexión formal ('handshake') ni garantiza la entrega, el orden o la no duplicación, lo que minimiza la sobrecarga (overhead), siendo ideal para VoIP y streaming en tiempo real.",
+      "category": "Redes de Computadoras",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 13,
+      "prompt": "En sistemas operativos, ¿qué primitiva de sincronización se basa en una variable entera que se manipula exclusivamente mediante dos operaciones atómicas inseparables clásicamente llamadas P (wait) y V (signal)?",
+      "options": {
+        "A": "Semáforo",
+        "B": "Monitor",
+        "C": "Candado mutuo (Mutex Lock)",
+        "D": "Tubería (Pipe)"
+      },
+      "answer": "A",
+      "explanation": "Los semáforos, inventados por Dijkstra, mantienen un contador interno entero. La operación P() decrementa y puede bloquear el hilo si el valor baja de cero, y V() incrementa liberando a los hilos en espera.",
+      "category": "Sistemas Operativos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 14,
+      "prompt": "En el contexto de una Tabla Hash, ¿cómo se denomina a la situación en la que la función hash asigna dos claves distintas al mismo índice de la tabla?",
+      "options": {
+        "A": "Desbordamiento (Overflow)",
+        "B": "Colisión",
+        "C": "Fragmentación",
+        "D": "Agrupamiento (Clustering)"
+      },
+      "answer": "B",
+      "explanation": "Ocurre una colisión cuando $h(k_1) = h(k_2)$ a pesar de que $k_1 \\neq k_2$. Este problema ineludible se mitiga mediante técnicas de resolución como el encadenamiento (chaining) o el sondeo abierto (open addressing).",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 15,
+      "prompt": "En el marco de trabajo Scrum, ¿cómo se llama el artefacto que actúa como una lista ordenada y emergente de todo lo que podría ser necesario en el producto?",
+      "options": {
+        "A": "Sprint Backlog",
+        "B": "Product Backlog",
+        "C": "Incremento de Producto",
+        "D": "Gráfico de Trabajo Pendiente (Burndown)"
+      },
+      "answer": "B",
+      "explanation": "El Product Backlog es gestionado por el Product Owner y es la única fuente de requisitos e historias de usuario para cualquier cambio a realizarse en el sistema.",
+      "category": "Ingeniería de Software",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 16,
+      "prompt": "¿Cuál es la fórmula para calcular el número de permutaciones (disposiciones ordenadas) de $k$ elementos tomados de un conjunto de $n$ elementos distintos?",
+      "options": {
+        "A": "$\\frac{n!}{k!(n-k)!}$",
+        "B": "$n^k$",
+        "C": "$\\frac{n!}{(n-k)!}$",
+        "D": "$n! - k!$"
+      },
+      "answer": "C",
+      "explanation": "Las permutaciones sin repetición donde el orden sí importa se calculan con $P(n,k) = \\frac{n!}{(n-k)!}$. La opción A corresponde a combinaciones $C(n,k)$, donde el orden no es relevante.",
+      "category": "Matemáticas Discretas",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 17,
+      "prompt": "¿Cuál de los siguientes es el ejemplo clásico de un problema demostradamente 'indecidible' para el cual no puede existir un algoritmo en una Máquina de Turing que siempre se detenga con la respuesta correcta?",
+      "options": {
+        "A": "Determinar si una cadena es aceptada por un AFD.",
+        "B": "El Problema de la Parada (Halting Problem).",
+        "C": "Convertir un Autómata No Determinista a uno Determinista.",
+        "D": "La satisfacibilidad de una expresión booleana (SAT)."
+      },
+      "answer": "B",
+      "explanation": "Alan Turing demostró matemáticamente en 1936 que no existe un algoritmo general (programa) que pueda analizar otro programa y determinar si éste eventualmente se detendrá o si entrará en un ciclo infinito.",
+      "category": "Teoría de la Computación",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 18,
+      "prompt": "El principio de la arquitectura de computadoras que establece que los datos a los que se accedió recientemente tienen una alta probabilidad de ser accedidos nuevamente en un futuro cercano se denomina:",
+      "options": {
+        "A": "Localidad temporal",
+        "B": "Localidad espacial",
+        "C": "Ley de Amdahl",
+        "D": "Acceso Directo a Memoria (DMA)"
+      },
+      "answer": "A",
+      "explanation": "La 'localidad temporal' se refiere al tiempo (variables en bucles). La 'localidad espacial' se refiere a acceder a direcciones de memoria cercanas a las recientemente accedidas (como recorrer arreglos). Ambas justifican el uso de memoria caché.",
+      "category": "Arquitectura de Computadoras",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 19,
+      "prompt": "En el algoritmo de Dijkstra para encontrar los caminos más cortos desde un nodo origen, ¿cuál es un requisito indispensable para garantizar que el algoritmo funcione correctamente?",
+      "options": {
+        "A": "El grafo debe ser dirigido.",
+        "B": "Los pesos de las aristas deben ser no negativos.",
+        "C": "El grafo debe ser un árbol de expansión libre de ciclos.",
+        "D": "Debe aplicarse solo en matrices de adyacencia."
+      },
+      "answer": "B",
+      "explanation": "El algoritmo de Dijkstra se basa en una aproximación 'codiciosa' asumiendo que el vértice más cercano evaluado ya tiene la distancia óptima final. Si hay pesos negativos, esta suposición es errónea. Para pesos negativos se utiliza el algoritmo de Bellman-Ford.",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 20,
+      "prompt": "¿En qué forma normal de bases de datos relacionales se exige que, para toda dependencia funcional no trivial $X \\rightarrow Y$, el determinante $X$ deba ser una superclave?",
+      "options": {
+        "A": "Primera Forma Normal (1NF)",
+        "B": "Segunda Forma Normal (2NF)",
+        "C": "Tercera Forma Normal (3NF)",
+        "D": "Forma Normal de Boyce-Codd (BCNF)"
+      },
+      "answer": "D",
+      "explanation": "La BCNF elimina anomalías residuales de la 3NF, estipulando estrictamente que el lado izquierdo de toda dependencia funcional (determinante) debe identificar de forma única la tupla entera (ser superclave).",
+      "category": "Bases de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 21,
+      "prompt": "En el modelo de referencia OSI, ¿cuál de las 7 capas se encarga de establecer, gestionar y terminar el diálogo (sesiones) entre las aplicaciones de dos hosts?",
+      "options": {
+        "A": "Capa 3: Red",
+        "B": "Capa 4: Transporte",
+        "C": "Capa 5: Sesión",
+        "D": "Capa 6: Presentación"
+      },
+      "answer": "C",
+      "explanation": "La capa de Sesión controla las conexiones (diálogos) entre computadoras; establece, administra y finaliza las sesiones de comunicación entre procesos de extremo a extremo, añadiendo puntos de control (checkpoints).",
+      "category": "Redes de Computadoras",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 22,
+      "prompt": "En los algoritmos de planificación de procesos, ¿cómo se denomina al problema donde un proceso de baja prioridad retiene indefinidamente la CPU, causando que los procesos de alta prioridad esperen permanentemente?",
+      "options": {
+        "A": "Inversión de prioridades",
+        "B": "Inanición (Starvation)",
+        "C": "Interbloqueo mutuo",
+        "D": "Paginación por demanda"
+      },
+      "answer": "B",
+      "explanation": "La inanición (Starvation) sucede cuando un proceso siempre es saltado por el planificador (usualmente por tener prioridad muy baja) y nunca se ejecuta. Se suele solucionar mediante 'envejecimiento' (aging), aumentando gradualmente su prioridad.",
+      "category": "Sistemas Operativos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 23,
+      "prompt": "En un árbol binario de búsqueda balanceado tipo AVL, el 'factor de balanceo' de cualquier nodo no debe exceder en valor absoluto a:",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "$\\log n$"
+      },
+      "answer": "B",
+      "explanation": "El factor de balanceo se calcula como la altura del subárbol izquierdo menos la altura del subárbol derecho. Un árbol AVL requiere que este factor esté estrictamente en el conjunto $\\{-1, 0, 1\\}$ para mantener el tiempo de búsqueda en $O(\\log n)$.",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 24,
+      "prompt": "¿Qué nivel de pruebas de software tiene como objetivo específico verificar el comportamiento conjunto de distintos módulos cuando interactúan o intercambian datos entre sí?",
+      "options": {
+        "A": "Pruebas Unitarias",
+        "B": "Pruebas de Integración",
+        "C": "Pruebas de Sistema",
+        "D": "Pruebas de Aceptación del Usuario (UAT)"
+      },
+      "answer": "B",
+      "explanation": "Tras las pruebas unitarias que evalúan componentes individuales de forma aislada, las pruebas de integración evalúan el ensamblaje de estos componentes para asegurar que sus interfaces se comuniquen correctamente.",
+      "category": "Ingeniería de Software",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 25,
+      "prompt": "En aritmética modular, la congruencia lineal $a \\equiv b \\pmod m$ significa matemáticamente que:",
+      "options": {
+        "A": "$a$ es múltiplo estricto de $b$.",
+        "B": "El entero $m$ divide exactamente a la diferencia $(a - b)$.",
+        "C": "$a$ y $b$ son números primos relativos con respecto a $m$.",
+        "D": "$m$ es el cociente de dividir $a$ entre $b$."
+      },
+      "answer": "B",
+      "explanation": "Por definición de congruencia de enteros, $a \\equiv b \\pmod m$ si y solo si existe un entero $k$ tal que $a - b = k \\cdot m$, lo que es equivalente a afirmar que $m | (a - b)$ (m divide a a menos b).",
+      "category": "Matemáticas Discretas",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 26,
+      "prompt": "¿Qué expresión regular describe al lenguaje de todas las cadenas sobre el alfabeto $\\{0, 1\\}$ que terminan con el sufijo '01'?",
+      "options": {
+        "A": "$(0|1)^* 01$",
+        "B": "$(0|1) 01$",
+        "C": "$01 (0|1)^*$ ",
+        "D": "$0^* 1^* 01$"
+      },
+      "answer": "A",
+      "explanation": "El componente inicial $(0|1)^*$ (estrella de Kleene) representa cualquier cantidad (incluyendo cero) de combinaciones de 0s y 1s, lo cual forma cualquier prefijo, y el final $01$ asegura estricta y únicamente la terminación deseada.",
+      "category": "Teoría de la Computación",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 27,
+      "prompt": "En arquitectura y rendimiento de computadoras, ¿para qué se utiliza la Ley de Amdahl?",
+      "options": {
+        "A": "Calcular la velocidad máxima del bus de datos.",
+        "B": "Determinar el aumento de rendimiento (speedup) máximo teórico de un sistema al paralelizar una fracción del programa.",
+        "C": "Predecir la disipación térmica basada en los transistores.",
+        "D": "Estimar el tiempo de acceso de una memoria en disco duro magnético."
+      },
+      "answer": "B",
+      "explanation": "La Ley de Amdahl establece que la mejora de rendimiento de usar procesadores en paralelo está estrictamente limitada por la fracción del programa que es puramente secuencial. Su fórmula teórica es $S = \\frac{1}{(1-P) + \\frac{P}{N}}$.",
+      "category": "Arquitectura de Computadoras",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 28,
+      "prompt": "¿Qué técnica de diseño algorítmico se caracteriza por resolver problemas dividiéndolos en subproblemas superpuestos y almacenando sus resultados en tablas (tabulación) o memoria (memorización) para evitar recálculos?",
+      "options": {
+        "A": "Divide y Vencerás (Divide and Conquer)",
+        "B": "Búsqueda con Retroceso (Backtracking)",
+        "C": "Algoritmos Ávidos (Greedy Algorithms)",
+        "D": "Programación Dinámica"
+      },
+      "answer": "D",
+      "explanation": "A diferencia de Divide y Vencerás (donde los subproblemas son independientes, como Merge Sort), la Programación Dinámica se aplica cuando los subproblemas se solapan (ej. secuencia de Fibonacci) y usa almacenamiento auxiliar para optimizar de tiempo exponencial a polinomial.",
+      "category": "Algoritmia y Estructuras de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 29,
+      "prompt": "En el Álgebra Relacional, ¿qué operación binaria produce como resultado todas las combinaciones posibles de tuplas formadas a partir de dos relaciones, sumando los atributos de ambas?",
+      "options": {
+        "A": "Selección ($\\sigma$)",
+        "B": "Proyección ($\\pi$)",
+        "C": "Producto Cartesiano ($\\times$)",
+        "D": "Unión ($\\cup$)"
+      },
+      "answer": "C",
+      "explanation": "El Producto Cartesiano, denotado por $\\times$, empareja exhaustivamente cada fila de una relación $R$ con cada fila de una relación $S$, siendo la base conceptual de la operación JOIN en SQL al combinarse con una operación de selección $\\sigma$.",
+      "category": "Bases de Datos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
+    },
+    {
+      "id": 30,
+      "prompt": "En sistemas de archivos de la familia UNIX/Linux, el concepto de 'i-nodo' (inode) se refiere fundamentalmente a:",
+      "options": {
+        "A": "El sector físico 0 del disco donde inicia el sistema operativo.",
+        "B": "Una estructura de datos que almacena metadatos del archivo y apuntadores a los bloques de datos donde reside la información.",
+        "C": "Un proceso de segundo plano (daemon) que indexa archivos.",
+        "D": "La tabla lógica que vincula nombres DNS con direcciones de red."
+      },
+      "answer": "B",
+      "explanation": "Un index node (i-nodo) guarda los atributos del archivo (tamaño, permisos, fechas de creación/modificación, dueño) y los punteros directos e indirectos a los bloques de disco real. Curiosamente, no almacena el nombre del archivo, el cual reside en el directorio que vincula el nombre al i-nodo.",
+      "category": "Sistemas Operativos",
+      "sourcePdf": "IA",
+      "sourcePages": {
+        "question": 1
+      }
     }
   ]
 }
