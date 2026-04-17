@@ -322,6 +322,25 @@ function blockEnterAdvance(
   }
 }
 
+function QuestionExplanation({
+  item,
+  answered,
+}: {
+  item: QuestionItem;
+  answered: boolean;
+}) {
+  const raw = item.explanation?.trim();
+  if (!answered || !raw) return null;
+  return (
+    <div className="explanation" role="note">
+      <p className="explanation-heading">Explicación</p>
+      <div className="explanation-body">
+        <LatexText text={raw} />
+      </div>
+    </div>
+  );
+}
+
 function OptionsList({
   keys,
   current,
@@ -600,6 +619,7 @@ function PracticeSession({
         {!current.answer && (
           <p className="warn">Esta pregunta no tiene respuesta en el banco.</p>
         )}
+        <QuestionExplanation item={current} answered={answered} />
         {answered && pos < order.length - 1 && (
           <p className="kbd-hint kbd-hint-after">
             <kbd>Enter</kbd> pasa a la siguiente pregunta.
@@ -1083,6 +1103,7 @@ function StudySession({
         {!current.answer && (
           <p className="warn">Esta pregunta no tiene respuesta en el banco.</p>
         )}
+        <QuestionExplanation item={current} answered={answered} />
         {answered && pos < sessionTotal - 1 && (
           <p className="kbd-hint kbd-hint-after">
             <kbd>Enter</kbd> pasa a la siguiente pregunta.
