@@ -499,9 +499,10 @@ function PracticeSession({
   >({});
 
   const pos = Math.min(cursor, Math.max(0, order.length - 1));
+  /** Índice estable en `items[]` (el `id` del JSON puede repetirse entre ítems). */
   const itemIndex = order[pos] ?? 0;
   const current = items[itemIndex];
-  const answered = current ? attempts[current.id] !== undefined : false;
+  const answered = current ? attempts[itemIndex] !== undefined : false;
 
   const stats = useMemo(() => {
     const vals = Object.values(attempts);
@@ -513,14 +514,13 @@ function PracticeSession({
   const handlePick = useCallback(
     (letter: string) => {
       if (!current?.answer) return;
-      if (attempts[current.id] !== undefined) return;
-      const ok = letter === current.answer;
-      setAttempts((a) => ({
-        ...a,
-        [current.id]: { choice: letter, correct: ok },
-      }));
+      setAttempts((a) => {
+        if (a[itemIndex] !== undefined) return a;
+        const ok = letter === current.answer;
+        return { ...a, [itemIndex]: { choice: letter, correct: ok } };
+      });
     },
-    [attempts, current],
+    [current, itemIndex],
   );
 
   const goNext = useCallback(() => {
@@ -559,7 +559,7 @@ function PracticeSession({
   }
 
   const keys = optionKeys(current);
-  const attempt = attempts[current.id];
+  const attempt = attempts[itemIndex];
   const progress = ((pos + 1) / order.length) * 100;
   const questionMeta = formatQuestionMeta(current);
 
@@ -612,7 +612,7 @@ function PracticeSession({
           attempt={attempt}
           answered={answered}
           onPick={handlePick}
-          questionId={current.id}
+          questionId={itemIndex}
           hotkeysEnabled
           optionDisabled={false}
         />
@@ -809,9 +809,10 @@ function StudySession({
   }, [deadlineMs, pausedSec]);
 
   const pos = Math.min(cursor, Math.max(0, order.length - 1));
+  /** Índice estable en `items[]` (el `id` del JSON puede repetirse entre ítems). */
   const itemIndex = order[pos] ?? 0;
   const current = order.length ? items[itemIndex] : undefined;
-  const answered = current ? attempts[current.id] !== undefined : false;
+  const answered = current ? attempts[itemIndex] !== undefined : false;
 
   const stats = useMemo(() => {
     const vals = Object.values(attempts);
@@ -824,14 +825,13 @@ function StudySession({
     (letter: string) => {
       if (phase !== "active") return;
       if (!current?.answer) return;
-      if (attempts[current.id] !== undefined) return;
-      const ok = letter === current.answer;
-      setAttempts((a) => ({
-        ...a,
-        [current.id]: { choice: letter, correct: ok },
-      }));
+      setAttempts((a) => {
+        if (a[itemIndex] !== undefined) return a;
+        const ok = letter === current.answer;
+        return { ...a, [itemIndex]: { choice: letter, correct: ok } };
+      });
     },
-    [attempts, current, phase],
+    [current, itemIndex, phase],
   );
 
   const goNext = useCallback(() => {
@@ -1022,7 +1022,7 @@ function StudySession({
   }
 
   const keys = optionKeys(current);
-  const attempt = attempts[current.id];
+  const attempt = attempts[itemIndex];
   const progress = ((pos + 1) / sessionTotal) * 100;
   const timed = hasTimeLimit;
   const questionMeta = formatQuestionMeta(current);
@@ -1096,7 +1096,7 @@ function StudySession({
           attempt={attempt}
           answered={answered}
           onPick={handlePick}
-          questionId={current.id}
+          questionId={itemIndex}
           hotkeysEnabled={phase === "active"}
           optionDisabled={timed && pausedSec !== null}
         />

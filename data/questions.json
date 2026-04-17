@@ -6497,7 +6497,7 @@
       }
     },
     {
-      "id": 1,
+      "id": 536,
       "prompt": "¿Cuál es la complejidad temporal en el peor de los casos del algoritmo de búsqueda binaria en un arreglo ordenado de $n$ elementos?",
       "options": {
         "A": "O(1)",
@@ -6514,7 +6514,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 537,
       "prompt": "En el contexto de transacciones de bases de datos (ACID), ¿qué propiedad asegura que una transacción se ejecute de manera completa o no se ejecute en absoluto?",
       "options": {
         "A": "Consistencia",
@@ -6531,7 +6531,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 538,
       "prompt": "¿Cuántos bits utiliza una dirección en el protocolo IPv6?",
       "options": {
         "A": "32 bits",
@@ -6548,7 +6548,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 539,
       "prompt": "¿Qué problema principal de la gestión de memoria se resuelve mediante la técnica de paginación?",
       "options": {
         "A": "Fragmentación interna",
@@ -6565,7 +6565,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 540,
       "prompt": "¿Qué estructura de datos es fundamental y típicamente utilizada para la evaluación de expresiones matemáticas en notación postfija (Polaca Inversa)?",
       "options": {
         "A": "Cola (Queue)",
@@ -6582,7 +6582,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 541,
       "prompt": "En Ingeniería de Software, ¿qué patrón de diseño restringe la instanciación de una clase a un solo objeto y proporciona un punto de acceso global a él?",
       "options": {
         "A": "Factory Method",
@@ -6599,7 +6599,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 542,
       "prompt": "Según la Jerarquía de Chomsky, ¿qué modelo computacional es exactamente equivalente en poder de reconocimiento a los lenguajes regulares?",
       "options": {
         "A": "Autómata de Pila",
@@ -6616,7 +6616,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 543,
       "prompt": "En teoría de grafos, el Teorema del Apretón de Manos establece que la suma de los grados de todos los vértices $V$ en un grafo no dirigido es igual a:",
       "options": {
         "A": "$|E|$",
@@ -6633,7 +6633,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 544,
       "prompt": "¿Qué técnica arquitectónica se utiliza en procesadores segmentados (pipelining) para mitigar las penalizaciones de tiempo generadas por las instrucciones de salto condicional?",
       "options": {
         "A": "Predicción de saltos (Branch Prediction)",
@@ -6650,7 +6650,7 @@
       }
     },
     {
-      "id": 10,
+      "id": 545,
       "prompt": "¿Cuál es la complejidad temporal promedio del algoritmo de ordenamiento QuickSort?",
       "options": {
         "A": "O(n)",
@@ -6667,7 +6667,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 546,
       "prompt": "En SQL, ¿qué cláusula se utiliza para aplicar condiciones y filtrar los resultados después de que se ha aplicado la cláusula GROUP BY?",
       "options": {
         "A": "WHERE",
@@ -6684,7 +6684,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 547,
       "prompt": "En la capa de transporte, ¿cuál de los siguientes protocolos ofrece un servicio de entrega de datagramas sin conexión y sin confirmación de recepción?",
       "options": {
         "A": "TCP",
@@ -6701,7 +6701,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 548,
       "prompt": "En sistemas operativos, ¿qué primitiva de sincronización se basa en una variable entera que se manipula exclusivamente mediante dos operaciones atómicas inseparables clásicamente llamadas P (wait) y V (signal)?",
       "options": {
         "A": "Semáforo",
@@ -6718,7 +6718,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 549,
       "prompt": "En el contexto de una Tabla Hash, ¿cómo se denomina a la situación en la que la función hash asigna dos claves distintas al mismo índice de la tabla?",
       "options": {
         "A": "Desbordamiento (Overflow)",
@@ -6735,7 +6735,7 @@
       }
     },
     {
-      "id": 15,
+      "id": 550,
       "prompt": "En el marco de trabajo Scrum, ¿cómo se llama el artefacto que actúa como una lista ordenada y emergente de todo lo que podría ser necesario en el producto?",
       "options": {
         "A": "Sprint Backlog",
@@ -6752,7 +6752,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 551,
       "prompt": "¿Cuál es la fórmula para calcular el número de permutaciones (disposiciones ordenadas) de $k$ elementos tomados de un conjunto de $n$ elementos distintos?",
       "options": {
         "A": "$\\frac{n!}{k!(n-k)!}$",
@@ -6769,7 +6769,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 552,
       "prompt": "¿Cuál de los siguientes es el ejemplo clásico de un problema demostradamente 'indecidible' para el cual no puede existir un algoritmo en una Máquina de Turing que siempre se detenga con la respuesta correcta?",
       "options": {
         "A": "Determinar si una cadena es aceptada por un AFD.",
@@ -6786,7 +6786,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 553,
       "prompt": "El principio de la arquitectura de computadoras que establece que los datos a los que se accedió recientemente tienen una alta probabilidad de ser accedidos nuevamente en un futuro cercano se denomina:",
       "options": {
         "A": "Localidad temporal",
@@ -6803,7 +6803,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 554,
       "prompt": "En el algoritmo de Dijkstra para encontrar los caminos más cortos desde un nodo origen, ¿cuál es un requisito indispensable para garantizar que el algoritmo funcione correctamente?",
       "options": {
         "A": "El grafo debe ser dirigido.",
@@ -6820,7 +6820,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 555,
       "prompt": "¿En qué forma normal de bases de datos relacionales se exige que, para toda dependencia funcional no trivial $X \\rightarrow Y$, el determinante $X$ deba ser una superclave?",
       "options": {
         "A": "Primera Forma Normal (1NF)",
@@ -6837,7 +6837,7 @@
       }
     },
     {
-      "id": 21,
+      "id": 556,
       "prompt": "En el modelo de referencia OSI, ¿cuál de las 7 capas se encarga de establecer, gestionar y terminar el diálogo (sesiones) entre las aplicaciones de dos hosts?",
       "options": {
         "A": "Capa 3: Red",
@@ -6854,7 +6854,7 @@
       }
     },
     {
-      "id": 22,
+      "id": 557,
       "prompt": "En los algoritmos de planificación de procesos, ¿cómo se denomina al problema donde un proceso de baja prioridad retiene indefinidamente la CPU, causando que los procesos de alta prioridad esperen permanentemente?",
       "options": {
         "A": "Inversión de prioridades",
@@ -6871,7 +6871,7 @@
       }
     },
     {
-      "id": 23,
+      "id": 558,
       "prompt": "En un árbol binario de búsqueda balanceado tipo AVL, el 'factor de balanceo' de cualquier nodo no debe exceder en valor absoluto a:",
       "options": {
         "A": "0",
@@ -6888,7 +6888,7 @@
       }
     },
     {
-      "id": 24,
+      "id": 559,
       "prompt": "¿Qué nivel de pruebas de software tiene como objetivo específico verificar el comportamiento conjunto de distintos módulos cuando interactúan o intercambian datos entre sí?",
       "options": {
         "A": "Pruebas Unitarias",
@@ -6905,7 +6905,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 560,
       "prompt": "En aritmética modular, la congruencia lineal $a \\equiv b \\pmod m$ significa matemáticamente que:",
       "options": {
         "A": "$a$ es múltiplo estricto de $b$.",
@@ -6922,7 +6922,7 @@
       }
     },
     {
-      "id": 26,
+      "id": 561,
       "prompt": "¿Qué expresión regular describe al lenguaje de todas las cadenas sobre el alfabeto $\\{0, 1\\}$ que terminan con el sufijo '01'?",
       "options": {
         "A": "$(0|1)^* 01$",
@@ -6939,7 +6939,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 562,
       "prompt": "En arquitectura y rendimiento de computadoras, ¿para qué se utiliza la Ley de Amdahl?",
       "options": {
         "A": "Calcular la velocidad máxima del bus de datos.",
@@ -6956,7 +6956,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 563,
       "prompt": "¿Qué técnica de diseño algorítmico se caracteriza por resolver problemas dividiéndolos en subproblemas superpuestos y almacenando sus resultados en tablas (tabulación) o memoria (memorización) para evitar recálculos?",
       "options": {
         "A": "Divide y Vencerás (Divide and Conquer)",
@@ -6973,7 +6973,7 @@
       }
     },
     {
-      "id": 29,
+      "id": 564,
       "prompt": "En el Álgebra Relacional, ¿qué operación binaria produce como resultado todas las combinaciones posibles de tuplas formadas a partir de dos relaciones, sumando los atributos de ambas?",
       "options": {
         "A": "Selección ($\\sigma$)",
@@ -6990,7 +6990,7 @@
       }
     },
     {
-      "id": 30,
+      "id": 565,
       "prompt": "En sistemas de archivos de la familia UNIX/Linux, el concepto de 'i-nodo' (inode) se refiere fundamentalmente a:",
       "options": {
         "A": "El sector físico 0 del disco donde inicia el sistema operativo.",
